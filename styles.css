@@ -161,6 +161,129 @@ body {
     height: 24px;
 }
 
+/* Hosts Section */
+.hosts-section {
+    padding: 80px 0;
+    background: #f7f7f7;
+}
+
+.hosts-section h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 48px;
+    color: #06466A;
+}
+
+.hosts-content {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hosts-photos {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-photo .photo-placeholder {
+    width: 300px;
+    height: 300px;
+}
+
+.host-photo {
+    text-align: center;
+}
+
+.photo-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background: #e0e0e0;
+    border: 1px solid #06466A;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-fallback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #06466A, #0766A6);
+    color: white;
+}
+
+.photo-fallback i {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.photo-fallback span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.hosts-text {
+    flex: 0 0 60%;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #484848;
+}
+
+.hosts-text p {
+    margin-bottom: 16px;
+}
+
+.hosts-text p:last-child {
+    margin-bottom: 0;
+}
+
+.hosts-text strong {
+    color: #06466A;
+}
+
+/* Responsive Design for Hosts Section */
+@media (max-width: 768px) {
+    .hosts-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 32px;
+    }
+    
+    .hosts-photos {
+        flex: none;
+        justify-content: center;
+    }
+    
+    .single-photo .photo-placeholder {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .hosts-text {
+        flex: none;
+        font-size: 15px;
+    }
+}
+
 /* Awards Carousel */
 .awards-carousel {
     padding: 48px 0;
@@ -199,12 +322,80 @@ body {
 .award-card {
     background: white;
     color: #222222;
-    padding: 32px 24px;
-    text-align: center;
+    padding: 32px;
     border-radius: 16px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-height: 240px;
+    height: 240px;
 }
 
+.award-icon {
+    flex: 0 0 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.award-icon svg {
+    width: 120px;
+    height: 120px;
+    max-width: 100%;
+    max-height: 100%;
+    fill: #FF385C;
+}
+
+.award-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.award-icon .french-stars {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.award-icon .french-stars .award-icon-large {
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
+    margin: 0;
+    color: #FFD700;
+}
+
+.award-content {
+    flex: 0 0 50%;
+    text-align: left;
+    min-height: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.award-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #06466A;
+    line-height: 1.3;
+}
+
+.award-content p {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #484848;
+    margin: 0;
+}
+
+/* Legacy styles for backward compatibility */
 .award-icon-large {
     width: 48px;
     height: 48px;
@@ -231,19 +422,6 @@ body {
     font-size: 36px;
     margin: 0;
     color: #FFD700;
-}
-
-.award-card h3 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 12px;
-    color: #06466A;
-}
-
-.award-card p {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #484848;
 }
 
 .carousel-dots {
@@ -1184,8 +1362,8 @@ body {
     line-height: 1.5;
 }
 
-/* Booking Card */
-.booking-card {
+/* Contact Card */
+.contact-card {
     background: white;
     border: 1px solid #DDDDDD;
     border-radius: 12px;
@@ -1193,6 +1371,106 @@ body {
     position: sticky;
     top: 100px;
     box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.contact-card .rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    justify-content: center;
+}
+
+.contact-card .rating i {
+    color: #06466A;
+}
+
+.contact-card .rating .reviews {
+    color: #717171;
+}
+
+.contact-card .btn-full {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.contact-card .contact-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 24px 0;
+}
+
+.contact-card .contact-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #DDDDDD;
+}
+
+.contact-card .contact-divider span {
+    background: white;
+    padding: 0 16px;
+    color: #717171;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.contact-card h3 {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contact-card .contact-methods {
+    margin-bottom: 16px;
+}
+
+.contact-card .contact-method {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    justify-content: center;
+}
+
+.contact-card .contact-method i {
+    color: #06466A;
+    width: 20px;
+}
+
+.contact-card .contact-method div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-card .contact-method strong {
+    font-size: 14px;
+    color: #222222;
+}
+
+.contact-card .contact-method a {
+    color: #06466A;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact-card .contact-method a:hover {
+    text-decoration: underline;
+}
+
+.contact-card .contact-note {
+    color: #717171;
+    font-size: 14px;
+    text-align: center;
 }
 
 .price {
@@ -1348,43 +1626,121 @@ body {
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 32px;
+    text-align: center;
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.booking-section {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.contact-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 16px 0;
+}
+
+.contact-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #DDDDDD;
+}
+
+.contact-divider span {
+    background: #f7f7f7;
+    padding: 0 16px;
+    color: #717171;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.contact-info {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .contact-info h3 {
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .contact-info p {
     color: #484848;
     margin-bottom: 24px;
+    text-align: center;
 }
 
 .contact-methods {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-bottom: 24px;
 }
 
 .contact-method {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 12px;
-    background: white;
+    padding: 16px;
+    background: #f7f7f7;
     border-radius: 8px;
+    justify-content: center;
 }
 
 .contact-method i {
-    color: #FF385C;
+    color: #06466A;
     font-size: 18px;
+}
+
+.contact-method div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+}
+
+.contact-method strong {
+    font-size: 14px;
+    color: #222222;
+}
+
+.contact-method a {
+    color: #06466A;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact-method a:hover {
+    text-decoration: underline;
+}
+
+.contact-note {
+    color: #717171;
+    font-size: 14px;
+    text-align: center;
 }
 
 .contact-form {

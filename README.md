@@ -12,7 +12,7 @@ A professional static website for the "Gîte cosy style château avec vue sur é
 - **Beds**: 2
 - **Bathrooms**: 1.5
 - **Rating**: 5.0 stars (42 reviews)
-- **Host**: Alexis (Superhôte)
+- **Host**: Alexis & Sylvia (Superhôtes)
 
 ## Awards & Certifications
 

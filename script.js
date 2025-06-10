@@ -437,7 +437,12 @@ const translations = {
         'private-space': 'Espace Privé : Profitez d\'un espace isolé avec entrée indépendante donnant sur un étang.',
         'comfort': 'Confort et Commodités : Cuisine équipée, espace nuit confortable, poêle à bois.',
         'relaxation': 'Détente : Profitez de votre véranda, de votre espace extérieur privé et du barbecue en pierre.',
-        'location': 'Emplacement Idéal : Explorez Angers à proximité, à seulement 10 minutes.'
+        'location': 'Emplacement Idéal : Explorez Angers à proximité, à seulement 10 minutes.',
+        'hosts-title': 'À propos de vos hôtes',
+        'hosts-intro': '👋 Bonjour, nous sommes Alexis et Sylvia, et nous sommes ravis de vous accueillir.',
+        'hosts-description': 'Nous sommes des passionnés de gastronomie et de vin 🍷🧀 et des amateurs de voyage ✈️ qui apprécient les plaisirs simples de la vie. Alexis travaille dans l\'informatique 💻 et adore rénover notre maison 🔨 et cultiver nos propres légumes 🥕. Sylvia a travaillé dans les domaines de l\'art et du design 🎨 et canalise maintenant ses passions dans la cuisine 👩‍🍳, la plantation 🌱 et le jardinage 🌻.',
+        'hosts-passion': 'Nous avons mis tout notre cœur ❤️ à rendre notre maison confortable et unique, alliant simplicité et tout le confort que vous attendez. Nous espérons que vous vous sentirez chez vous ici 🏡.',
+        'hosts-welcome': 'Bienvenue et profitez bien de votre séjour ! 🌟'
     },
     en: {
         'nav-overview': 'Overview',
@@ -469,7 +474,12 @@ const translations = {
         'private-space': 'Private Space: Enjoy an isolated space with independent entrance overlooking a pond.',
         'comfort': 'Comfort and Amenities: Equipped kitchen, comfortable sleeping area, wood stove.',
         'relaxation': 'Relaxation: Enjoy your veranda, private outdoor space and stone barbecue.',
-        'location': 'Ideal Location: Explore nearby Angers, just 10 minutes away.'
+        'location': 'Ideal Location: Explore nearby Angers, just 10 minutes away.',
+        'hosts-title': 'About Your Hosts',
+        'hosts-intro': '👋 Hello, we\'re Alexis and Sylvia, and we\'re delighted to host you.',
+        'hosts-description': 'We\'re avid food/wine lovers 🍷🧀 and travel enthusiasts ✈️ who enjoy the simple pleasures of life. Alexis works in software 💻 and love renovating our house 🔨 and growing our own vegetables 🥕. Sylvia used to work in art and design fields 🎨 and now she channels her passions into cooking 👩‍🍳, planting 🌱 and gardening 🌻.',
+        'hosts-passion': 'We\'ve poured our hearts ❤️ into making our home comfortable and unique, blending simplicity with all the comforts you\'d expect. We hope you feel at home here 🏡.',
+        'hosts-welcome': 'Welcome, and enjoy your stay! 🌟'
     }
 };
 
@@ -544,18 +554,19 @@ function updateLanguage() {
 }
 
 // Description tab functionality
-function showDescriptionTab(tabId) {
-    // Hide all tab contents
-    const contents = document.getElementsByClassName('desc-tab-content');
-    for (let content of contents) {
-        content.classList.remove('active');
+function showDescriptionTab(tabId, event) {
+    // Prevent default behavior if event exists
+    if (event) {
+        event.preventDefault();
     }
     
+    // Hide all tab contents
+    const contents = document.querySelectorAll('.desc-tab-content');
+    contents.forEach(content => content.classList.remove('active'));
+    
     // Remove active class from all tabs
-    const tabs = document.getElementsByClassName('desc-tab-btn');
-    for (let tab of tabs) {
-        tab.classList.remove('active');
-    }
+    const tabs = document.querySelectorAll('.desc-tab-btn');
+    tabs.forEach(tab => tab.classList.remove('active'));
     
     // Show selected tab content
     const selectedContent = document.getElementById(tabId);
@@ -564,9 +575,17 @@ function showDescriptionTab(tabId) {
     }
     
     // Add active class to clicked tab
-    const clickedTab = document.querySelector(`[onclick="showDescriptionTab('${tabId}')"]`);
-    if (clickedTab) {
-        clickedTab.classList.add('active');
+    if (event) {
+        const clickedTab = event.currentTarget;
+        if (clickedTab) {
+            clickedTab.classList.add('active');
+        }
+    } else {
+        // Fallback: find the tab by onclick attribute
+        const targetTab = document.querySelector(`[onclick*="showDescriptionTab('${tabId}'"]`);
+        if (targetTab) {
+            targetTab.classList.add('active');
+        }
     }
 }
 

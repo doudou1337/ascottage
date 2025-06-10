@@ -46,7 +46,7 @@
                     <a href="https://www.airbnb.fr/rooms/1150517326023370688" target="_blank" class="btn btn-primary">
                         <i class="fab fa-airbnb"></i> Réserver sur Airbnb
                     </a>
-                    <a href="#contact" class="btn btn-secondary">Nous contacter</a>
+                        <a href="mailto:hello@ascottage.fr" class="btn btn-secondary">Nous contacter</a>
                 </div>
             </div>
             <div class="hero-images">
@@ -73,6 +73,33 @@
         </div>
     </section>
 
+    <!-- About Your Hosts Section -->
+    <section class="hosts-section">
+        <div class="container">
+            <h2 data-key="hosts-title">À propos de vos hôtes</h2>
+            <div class="hosts-content">
+                <div class="hosts-photos">
+                    <div class="host-photo single-photo">
+                        <div class="photo-placeholder hosts-photo">
+                            <!-- Photo of Alexis & Sylvia together -->
+                            <img src="img/profil.jpg" alt="Alexis & Sylvia" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="photo-fallback">
+                                <i class="fas fa-users"></i>
+                                <span>Alexis & Sylvia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hosts-text">
+                    <p data-key="hosts-intro">👋 Hello, we're Alexis and Sylvia, and we're delighted to host you.</p>
+                    <p data-key="hosts-description">We're avid food/wine lovers 🍷🧀 and travel enthusiasts ✈️ who enjoy the simple pleasures of life. Alexis works in software 💻 and love renovating our house 🔨 and growing our own vegetables 🥕. Sylvia used to work in art and design fields 🎨 and now she channels her passions into cooking 👩‍🍳, planting 🌱 and gardening 🌻.</p>
+                    <p data-key="hosts-passion">We've poured our hearts ❤️ into making our home comfortable and unique, blending simplicity with all the comforts you'd expect. We hope you feel at home here 🏡.</p>
+                    <p data-key="hosts-welcome"><strong>Welcome, and enjoy your stay! 🌟</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Awards Carousel Section -->
     <section class="awards-carousel">
         <div class="container">
@@ -81,32 +108,37 @@
                 <div class="carousel-track" id="awardsCarousel">
                     <div class="award-slide active">
                         <div class="award-card">
-                            <div style="display: inline-block; position: relative; vertical-align: middle;">
-                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="width: 60px; height: 60px; margin: 0 auto 16px; display: block; fill: currentcolor;">
+                            <div class="award-icon">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M26.8125 5.5C25.2844 4.0344 23.2281 3.25 21 3.25S16.7156 4.0344 15.1875 5.5L14.3906 6.2781L13.5938 5.5C12.0656 4.0344 10.0094 3.25 7.78125 3.25S3.49687 4.0344 1.96875 5.5C0.715625 6.7031 0 8.3312 0 10.0938S0.715625 13.4844 1.96875 14.6875L2.765625 15.4656L14.3906 26.8969L16 28.4812L17.6094 26.8969L29.2344 15.4656L30.0312 14.6875C31.2844 13.4844 32 11.8562 32 10.0938S31.2844 6.7031 30.0312 5.5C28.5031 4.0344 26.4469 3.25 24.2187 3.25S20.9344 4.0344 19.4062 5.5L18.6094 6.2781L17.8125 5.5C16.2844 4.0344 14.2281 3.25 12 3.25S7.71563 4.0344 6.1875 5.5Z" fill="#FF385C"/>
                                 </svg>
                             </div>
-                            <h3>Coup de cœur voyageurs</h3>
-                            <p>Un des logements préférés des voyageurs sur Airbnb, reconnu pour son excellente qualité et l'expérience exceptionnelle qu'il offre.</p>
-                        </div>
-                    </div>
-                    <div class="award-slide">
-                        <div class="award-card">
-                            <i class="fas fa-crown award-icon-large"></i>
-                            <h3>Superhôte</h3>
-                            <p>Alexis est un Superhôte expérimenté avec 5 ans d'expérience, reconnu pour son excellence dans l'accueil et la qualité de service.</p>
-                        </div>
-                    </div>
-                    <div class="award-slide">
-                        <div class="award-card">
-                            <div class="french-stars">
-                                <i class="fas fa-star award-icon-large"></i>
-                                <i class="fas fa-star award-icon-large"></i>
-                                <i class="fas fa-star award-icon-large"></i>
-                                <i class="fas fa-star award-icon-large"></i>
+                            <div class="award-content">
+                                <h3>Coup de cœur voyageurs</h3>
+                                <p>Un des logements préférés des voyageurs sur Airbnb, reconnu pour son excellente qualité et l'expérience exceptionnelle qu'il offre.</p>
                             </div>
-                            <h3>4 étoiles Meublé de Tourisme</h3>
-                            <p>Certification officielle française reconnaissant la qualité supérieure de l'hébergement et des services proposés.</p>
+                        </div>
+                    </div>
+                    <div class="award-slide">
+                        <div class="award-card">
+                            <div class="award-icon">
+                                <img src="img/airbnb.png" alt="Superhost Badge">
+                            </div>
+                            <div class="award-content">
+                                <h3>Superhôte</h3>
+                                <p>Alexis & Sylvia sont des Superhôtes expérimentés avec 5 ans d'expérience, reconnus pour leur excellence dans l'accueil et la qualité de service.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="award-slide">
+                        <div class="award-card">
+                            <div class="award-icon">
+                                <img src="img/meublétourisme.jpg" alt="Superhost Badge">
+                            </div>
+                            <div class="award-content">
+                                <h3>4 étoiles Meublé de Tourisme</h3>
+                                <p>Certification officielle française reconnaissant la qualité supérieure de l'hébergement et des services proposés.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -126,7 +158,7 @@
         <div class="container">
             <div class="overview-content">
                 <div class="overview-main">
-                    <h2>Logement entier : maison d'hôtes hébergé par Alexis</h2>
+                    <h2>Logement entier : maison d'hôtes hébergé par Alexis & Sylvia</h2>
                     <div class="property-specs">
                         <span><i class="fas fa-user-friends"></i> <span data-key="guests">3 voyageurs</span></span>
                         <span><i class="fas fa-bed"></i> <span data-key="bedroom">1 chambre</span></span>
@@ -145,7 +177,7 @@
                         <div class="feature">
                             <i class="fas fa-crown"></i>
                             <div>
-                                <h3>Alexis est Superhôte</h3>
+                                <h3>Alexis & Sylvia sont Superhôtes</h3>
                                 <p>Les Superhôtes sont des hôtes expérimentés et très bien notés.</p>
                             </div>
                         </div>
@@ -163,28 +195,28 @@
                         
                         <!-- Description Tabs -->
                         <div class="description-tabs">
-                            <button class="desc-tab-btn active" onclick="showDescriptionTab('overview')">
+                            <button class="desc-tab-btn active" onclick="showDescriptionTab('overview-tab', event)">
                                 <i class="fas fa-home"></i> <span data-key="tab-overview">Aperçu</span>
                             </button>
-                            <button class="desc-tab-btn" onclick="showDescriptionTab('accommodation')">
+                            <button class="desc-tab-btn" onclick="showDescriptionTab('accommodation', event)">
                                 <i class="fas fa-door-open"></i> <span data-key="tab-accommodation">Le logement</span>
                             </button>
-                            <button class="desc-tab-btn" onclick="showDescriptionTab('access')">
+                            <button class="desc-tab-btn" onclick="showDescriptionTab('access', event)">
                                 <i class="fas fa-key"></i> <span data-key="tab-access">Accès</span>
                             </button>
-                            <button class="desc-tab-btn" onclick="showDescriptionTab('cycling')">
+                            <button class="desc-tab-btn" onclick="showDescriptionTab('cycling', event)">
                                 <i class="fas fa-bicycle"></i> <span data-key="tab-cycling">Cyclisme</span>
                             </button>
-                            <button class="desc-tab-btn" onclick="showDescriptionTab('attractions')">
+                            <button class="desc-tab-btn" onclick="showDescriptionTab('attractions', event)">
                                 <i class="fas fa-map-marked-alt"></i> <span data-key="tab-attractions">Attractions</span>
                             </button>
-                            <button class="desc-tab-btn" onclick="showDescriptionTab('rules')">
+                            <button class="desc-tab-btn" onclick="showDescriptionTab('rules', event)">
                                 <i class="fas fa-clipboard-list"></i> <span data-key="tab-rules">Règles</span>
                             </button>
                         </div>
 
                         <!-- Description Content -->
-                        <div id="overview" class="desc-tab-content active">
+                        <div id="overview-tab" class="desc-tab-content active">
                             <p data-key="overview-text">
                                 Bienvenue dans notre gîte du XVIIIe, classé 4 étoiles Meublé de Tourisme. Ce logement au style château alliant le charme historique et le confort moderne.
                             </p>
@@ -343,16 +375,26 @@
                     </div>
                 </div>
 
-                <div class="booking-card">
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <span>5.0</span>
-                        <span class="reviews">(42 avis)</span>
-                    </div>
+                <div class="contact-card">
                     <a href="https://www.airbnb.fr/rooms/1150517326023370688" target="_blank" class="btn btn-primary btn-full">
                         <i class="fab fa-airbnb"></i> Réserver sur Airbnb
                     </a>
-                    <p class="booking-note">Ou contactez-nous directement pour plus d'informations</p>
+                    
+                    <div class="contact-divider">
+                        <span>ou</span>
+                    </div>
+                    
+                    <h3>Nous contacter</h3>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:hello@ascottage.fr">hello@ascottage.fr</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="contact-note">Nous vous répondrons dans les plus brefs délais</p>
                 </div>
             </div>
         </div>
@@ -827,7 +869,7 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="review-text">Séjour parfait dans ce gîte de charme ! La vue sur l'étang est magnifique et l'endroit respire la sérénité. Alexis est un hôte formidable, toujours disponible.</p>
+                    <p class="review-text">Séjour parfait dans ce gîte de charme ! La vue sur l'étang est magnifique et l'endroit respire la sérénité. Alexis & Sylvia sont des hôtes formidables, toujours disponibles.</p>
                 </div>
 
                 <div class="review-card">
@@ -915,7 +957,7 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="review-text">Un véritable havre de paix ! Le gîte est magnifique, la décoration raffinée et l'équipement complet. Alexis est aux petits soins, merci pour ce séjour mémorable.</p>
+                    <p class="review-text">Un véritable havre de paix ! Le gîte est magnifique, la décoration raffinée et l'équipement complet. Alexis & Sylvia sont aux petits soins, merci pour ce séjour mémorable.</p>
                 </div>
 
                 <div class="review-card">
@@ -937,7 +979,7 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="review-text">Séjour parfait dans ce gîte de charme. L'authenticité du lieu, la propreté irréprochable et l'accueil d'Alexis rendent ce lieu unique. À recommander sans réserve !</p>
+                    <p class="review-text">Séjour parfait dans ce gîte de charme. L'authenticité du lieu, la propreté irréprochable et l'accueil d'Alexis & Sylvia rendent ce lieu unique. À recommander sans réserve !</p>
                 </div>
             </div>
 
@@ -949,25 +991,6 @@
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Nous contacter</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contactez-nous directement</h3>
-                    <p>Pour toute question ou pour effectuer une réservation, n'hésitez pas à nous contacter :</p>
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:hello@ascottage.fr">hello@ascottage.fr</a>
-                        </div>
-                    </div>
-                    <p class="contact-note">Nous vous répondrons dans les plus brefs délais pour toutes vos questions et demandes de réservation.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Photo Gallery Modal -->
     <div id="photoGallery" class="gallery-modal">
@@ -1004,7 +1027,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-bottom">
-                <p>&copy; 2024 A.S. Cottage - Alexis. Tous droits réservés.</p>
+                <p>&copy; 2024 A.S. Cottage - Alexis & Sylvia. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
