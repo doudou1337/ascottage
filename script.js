@@ -198,112 +198,112 @@ window.addEventListener('scroll', function() {
 // Photo Gallery functionality - Curated collection showcasing all property features
 const galleryImages = [
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE1MDUxNzMyNjAyMzM3MDY4OA==/original/5db8af1d-2a84-45fb-ae73-07887bb9cf82.jpeg',
+        src: 'img/1.jpeg',
         title: 'Gîte cosy style château avec vue sur étang',
         alt: 'Image 1 du logement Gîte cosy style château avec vue sur étang'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1150517326023370688/original/7d305fdf-f872-4577-aca5-9f9c392d4247.jpeg',
+        src: 'img/2.jpeg',
         title: 'Salon avec cuisine ouverte, plein de lumière naturelle',
         alt: 'Living area with open kitchen, full of natural light'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1150517326023370688/original/e95df338-8096-40e3-9a6d-e6a5f4066435.jpeg',
+        src: 'img/3.jpeg',
         title: 'Canapé-lit pliant',
         alt: 'Foldable sofa bed'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1150517326023370688/original/b5159a2a-ce04-49e4-9253-8ecb3c31e28b.jpeg',
+        src: 'img/4.jpeg',
         title: 'Cheminée',
         alt: 'Fireplace'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1150517326023370688/original/f10958eb-453d-4c3c-8370-1c8c98c1ea34.jpeg',
+        src: 'img/5.jpeg',
         title: 'Table à manger pour 3 personnes',
         alt: 'Dining table for 3 people'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1150517326023370688/original/9e51642a-5c03-4926-8746-ee5ea7e46343.jpeg',
+        src: 'img/6.jpeg',
         title: 'Rideau épais pour séparer l\'espace nuit et salon',
         alt: 'Thick curtain to separate the sleeping area and living area'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1150517326023370688/original/e920a246-ab58-4943-a730-9ece68eaf032.jpeg',
+        src: 'img/7.jpeg',
         title: 'Cuisine entièrement équipée, accès de plain-pied',
         alt: 'Fully equipped kitchen, step-free access'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/miso/Hosting-1150517326023370688/original/50a417ea-c23f-430d-b8c9-d326a9dfb170.jpeg',
+        src: 'img/8.jpeg',
         title: 'Chambre avec lit Queen Size',
         alt: 'Chambre (French for Bedroom)'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/miso/Hosting-1150517326023370688/original/6a8263ee-51b7-4e68-ab8f-f31377ea672e.jpeg',
+        src: 'img/9.jpeg',
         title: 'Chambre vue 2',
         alt: 'Bedroom image 2'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1150517326023370688/original/a1c16b86-a089-4e31-a9cc-5f0fe3d7f801.jpeg',
+        src: 'img/10.jpeg',
         title: 'Chambre vue 3',
         alt: 'Bedroom image 3'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1150517326023370688/original/fef06ab6-e039-44ce-91f8-0671ededd1ce.jpeg',
+        src: 'img/11.jpeg',
         title: 'Chambre vue 4',
         alt: 'Bedroom image 4'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1150517326023370688/original/300229e8-8237-48bd-ad49-4b5ae623c732.jpeg',
+        src: 'img/12.jpeg',
         title: 'Salle de bain vue 1',
         alt: 'Salle de bain image 1'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/miso/Hosting-1150517326023370688/original/931678e0-0ed5-42e5-92f7-e9926f09d296.jpeg',
+        src: 'img/13.jpeg',
         title: 'Salle de bain vue 2',
         alt: 'Salle de bain image 2'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/miso/Hosting-1150517326023370688/original/b2241378-09b5-447b-b2ff-570b172612c1.jpeg',
+        src: 'img/14.jpeg',
         title: 'Salle de bain vue 3',
         alt: 'Salle de bain image 3'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1150517326023370688/original/0f41dcdb-32b3-429b-8acc-fcaf3c1fcd3c.jpeg',
+        src: 'img/15.jpeg',
         title: 'Barbecue en pierre extérieur',
         alt: 'Outdoor stone BBQ'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1150517326023370688/original/db92ddcb-798c-4618-8e88-e25076c223d5.jpeg',
+        src: 'img/16.jpeg',
         title: 'L\'étang et le jardin',
         alt: 'The pond and the garden'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1150517326023370688/original/00110d1f-529e-4f1d-9c54-ee78c437e849.jpeg',
+        src: 'img/17.jpeg',
         title: 'Chaises et table extérieures dans le jardin',
         alt: 'A set of 2 outdoor chairs and a small table, perfect for having coffee in the morning, plus one comfortable outdoor chair'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1150517326023370688/original/62945365-1b51-46bc-b2d7-44d90e6b67a3.jpeg',
+        src: 'img/18.jpeg',
         title: 'Vue supplémentaire de la véranda',
         alt: 'Veranda image 3'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1150517326023370688/original/57518033-dfc4-4ccc-83fa-ad3af5e7cd16.jpeg',
+        src: 'img/19.jpeg',
         title: 'Savon pour les mains et articles de salle de bain',
         alt: 'Hand soap'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1150517326023370688/original/09a2fe08-5861-4d0e-b5e7-2b88f7459df6.jpeg',
+        src: 'img/20.jpeg',
         title: 'Nourriture pour poissons fournie avec le séjour',
         alt: 'We provide you with fish food if you want to feed them during your stay.'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE1MDUxNzMyNjAyMzM3MDY4OA%3D%3D/original/eb7a4d6d-741b-4440-9421-570dcd2cf3dd.jpeg',
+        src: 'img/21.jpeg',
         title: 'Livraison du petit-déjeuner à la véranda',
         alt: 'We will deliver the breakfast to your the Veranda at the time of your choice.'
     },
     {
-        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1150517326023370688/original/31251c46-a8a6-4760-8ac7-0146f560ff20.jpeg',
+        src: 'img/22.jpeg',
         title: 'Sèche-cheveux et autres accessoires de salle de bain',
         alt: 'Hair dryer, body scale, cotton pads and cotton swabs'
     }
