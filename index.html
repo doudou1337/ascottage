@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.S. Cottage - Gîte cosy style château avec vue sur étang - Loire-Authion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Circular:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>A.S. Cottage</h1>
+            </div>
+            <nav class="nav">
+                <a href="#overview" data-key="nav-overview">Aperçu</a>
+                <a href="#amenities" data-key="nav-amenities">Équipements</a>
+                <a href="#location" data-key="nav-location">Localisation</a>
+                <a href="#reviews" data-key="nav-reviews">Avis</a>
+                <a href="#contact" data-key="nav-contact">Contact</a>
+            </nav>
+            <div class="language-switcher">
+                <button class="lang-btn" onclick="toggleLanguage()">
+                    <i class="fas fa-globe"></i>
+                    <span id="currentLang">FR</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>A.S. Cottage</h1>
+                <h2 class="hero-subtitle-main" data-key="hero-title">Gîte cosy style château avec vue sur étang</h2>
+                <p class="hero-subtitle" data-key="hero-subtitle">Bienvenue dans notre gîte du XVIIIe, classé 4 étoiles Meublé de Tourisme</p>
+                <div class="hero-details">
+                    <span><i class="fas fa-star"></i> 5.0 (42 avis)</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Loire-Authion, Pays de la Loire, France</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="https://www.airbnb.fr/rooms/1150517326023370688" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-airbnb"></i> Réserver sur Airbnb
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Nous contacter</a>
+                </div>
+            </div>
+            <div class="hero-images">
+                <div class="main-image" onclick="openGallery(0)">
+                    <!-- Main property image -->
+                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE1MDUxNzMyNjAyMzM3MDY4OA==/original/5db8af1d-2a84-45fb-ae73-07887bb9cf82.jpeg" alt="Vue principale du gîte cosy style château">
+                    <div class="image-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="sub-images">
+                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE1MDUxNzMyNjAyMzM3MDY4OA==/original/00110d1f-529e-4f1d-9c54-ee78c437e849.jpeg" alt="Salon lumineux avec cheminée" onclick="openGallery(1)">
+                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE1MDUxNzMyNjAyMzM3MDY4OA==/original/50a417ea-c23f-430d-b8c9-d326a9dfb170.jpeg" alt="Chambre principale confortable" onclick="openGallery(2)">
+                    <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE1MDUxNzMyNjAyMzM3MDY4OA==/original/5a5b71e9-b6bf-46df-9059-c12fc5c77fce.jpeg" alt="Cuisine entièrement équipée" onclick="openGallery(3)">
+                    <div class="more-photos" onclick="openGallery(4)">
+                        <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE1MDUxNzMyNjAyMzM3MDY4OA==/original/6ff694d4-87ba-46ea-aaad-2c1fe6f63234.jpeg" alt="Vue magnifique sur l'étang">
+                        <div class="more-photos-overlay">
+                            <i class="fas fa-th"></i>
+                            <span data-key="view-all-photos">Voir toutes les photos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Carousel Section -->
+    <section class="awards-carousel">
+        <div class="container">
+            <h2>Nos Récompenses et Certifications</h2>
+            <div class="carousel-container">
+                <div class="carousel-track" id="awardsCarousel">
+                    <div class="award-slide active">
+                        <div class="award-card">
+                            <div style="display: inline-block; position: relative; vertical-align: middle;">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="width: 60px; height: 60px; margin: 0 auto 16px; display: block; fill: currentcolor;">
+                                    <path d="M26.8125 5.5C25.2844 4.0344 23.2281 3.25 21 3.25S16.7156 4.0344 15.1875 5.5L14.3906 6.2781L13.5938 5.5C12.0656 4.0344 10.0094 3.25 7.78125 3.25S3.49687 4.0344 1.96875 5.5C0.715625 6.7031 0 8.3312 0 10.0938S0.715625 13.4844 1.96875 14.6875L2.765625 15.4656L14.3906 26.8969L16 28.4812L17.6094 26.8969L29.2344 15.4656L30.0312 14.6875C31.2844 13.4844 32 11.8562 32 10.0938S31.2844 6.7031 30.0312 5.5C28.5031 4.0344 26.4469 3.25 24.2187 3.25S20.9344 4.0344 19.4062 5.5L18.6094 6.2781L17.8125 5.5C16.2844 4.0344 14.2281 3.25 12 3.25S7.71563 4.0344 6.1875 5.5Z" fill="#FF385C"/>
+                                </svg>
+                            </div>
+                            <h3>Coup de cœur voyageurs</h3>
+                            <p>Un des logements préférés des voyageurs sur Airbnb, reconnu pour son excellente qualité et l'expérience exceptionnelle qu'il offre.</p>
+                        </div>
+                    </div>
+                    <div class="award-slide">
+                        <div class="award-card">
+                            <i class="fas fa-crown award-icon-large"></i>
+                            <h3>Superhôte</h3>
+                            <p>Alexis est un Superhôte expérimenté avec 5 ans d'expérience, reconnu pour son excellence dans l'accueil et la qualité de service.</p>
+                        </div>
+                    </div>
+                    <div class="award-slide">
+                        <div class="award-card">
+                            <div class="french-stars">
+                                <i class="fas fa-star award-icon-large"></i>
+                                <i class="fas fa-star award-icon-large"></i>
+                                <i class="fas fa-star award-icon-large"></i>
+                                <i class="fas fa-star award-icon-large"></i>
+                            </div>
+                            <h3>4 étoiles Meublé de Tourisme</h3>
+                            <p>Certification officielle française reconnaissant la qualité supérieure de l'hébergement et des services proposés.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-dots">
+                    <button class="dot active" onclick="currentSlide(1)"></button>
+                    <button class="dot" onclick="currentSlide(2)"></button>
+                    <button class="dot" onclick="currentSlide(3)"></button>
+                </div>
+                <button class="carousel-btn prev" onclick="plusSlides(-1)">❮</button>
+                <button class="carousel-btn next" onclick="plusSlides(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Overview -->
+    <section id="overview" class="overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-main">
+                    <h2>Logement entier : maison d'hôtes hébergé par Alexis</h2>
+                    <div class="property-specs">
+                        <span><i class="fas fa-user-friends"></i> <span data-key="guests">3 voyageurs</span></span>
+                        <span><i class="fas fa-bed"></i> <span data-key="bedroom">1 chambre</span></span>
+                        <span><i class="fas fa-moon"></i> <span data-key="beds">2 lits</span></span>
+                        <span><i class="fas fa-bath"></i> <span data-key="bathrooms">1,5 salles de bain</span></span>
+                    </div>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-home"></i>
+                            <div>
+                                <h3>Logement entier</h3>
+                                <p>Vous aurez la maison d'hôtes pour vous tout seul.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-crown"></i>
+                            <div>
+                                <h3>Alexis est Superhôte</h3>
+                                <p>Les Superhôtes sont des hôtes expérimentés et très bien notés.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-water"></i>
+                            <div>
+                                <h3>Vue sur étang</h3>
+                                <p>Magnifique vue sur l'étang depuis le gîte.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="description">
+                        <h3 data-key="about-title">À propos de ce logement</h3>
+                        
+                        <!-- Description Tabs -->
+                        <div class="description-tabs">
+                            <button class="desc-tab-btn active" onclick="showDescriptionTab('overview')">
+                                <i class="fas fa-home"></i> <span data-key="tab-overview">Aperçu</span>
+                            </button>
+                            <button class="desc-tab-btn" onclick="showDescriptionTab('accommodation')">
+                                <i class="fas fa-door-open"></i> <span data-key="tab-accommodation">Le logement</span>
+                            </button>
+                            <button class="desc-tab-btn" onclick="showDescriptionTab('access')">
+                                <i class="fas fa-key"></i> <span data-key="tab-access">Accès</span>
+                            </button>
+                            <button class="desc-tab-btn" onclick="showDescriptionTab('cycling')">
+                                <i class="fas fa-bicycle"></i> <span data-key="tab-cycling">Cyclisme</span>
+                            </button>
+                            <button class="desc-tab-btn" onclick="showDescriptionTab('attractions')">
+                                <i class="fas fa-map-marked-alt"></i> <span data-key="tab-attractions">Attractions</span>
+                            </button>
+                            <button class="desc-tab-btn" onclick="showDescriptionTab('rules')">
+                                <i class="fas fa-clipboard-list"></i> <span data-key="tab-rules">Règles</span>
+                            </button>
+                        </div>
+
+                        <!-- Description Content -->
+                        <div id="overview" class="desc-tab-content active">
+                            <p data-key="overview-text">
+                                Bienvenue dans notre gîte du XVIIIe, classé 4 étoiles Meublé de Tourisme. Ce logement au style château alliant le charme historique et le confort moderne.
+                            </p>
+                            <div class="highlight-list">
+                                <div class="highlight-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span data-key="private-space">Espace Privé : Profitez d'un espace isolé avec entrée indépendante donnant sur un étang.</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-couch"></i>
+                                    <span data-key="comfort">Confort et Commodités : Cuisine équipée, espace nuit confortable, poêle à bois.</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-leaf"></i>
+                                    <span data-key="relaxation">Détente : Profitez de votre véranda, de votre espace extérieur privé et du barbecue en pierre.</span>
+                                </div>
+                                <div class="highlight-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span data-key="location">Emplacement Idéal : Explorez Angers à proximité, à seulement 10 minutes.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="accommodation" class="desc-tab-content">
+                            <p data-key="accommodation-intro">
+                                Inspiré par le Château d'Angers, notre logement présente des éléments uniques tels qu'une tour, des pierres apparentes et une toiture unique. À l'intérieur, le gîte offre un mélange harmonieux de matériaux modernes avec de vieilles poutres et des pierres, créant une atmosphère chaleureuse et accueillante.
+                            </p>
+                            <h4 data-key="accommodation-includes">Le gîte comprend :</h4>
+                            <div class="room-details">
+                                <div class="room-item">
+                                    <h5><i class="fas fa-bed"></i> <span data-key="bedroom-title">Chambre</span></h5>
+                                    <p data-key="bedroom-desc">Une chambre confortable avec un lit queen-size, une télévision avec Netflix directement en face du lit, et la possibilité de fermer la chambre avec des stores et un épais rideau pour la séparer de l'espace de vie et garantir votre intimité.</p>
+                                </div>
+                                <div class="room-item">
+                                    <h5><i class="fas fa-sofa"></i> <span data-key="living-title">Espace de vie</span></h5>
+                                    <p data-key="living-desc">Un salon ouvert avec une cuisine entièrement équipée et tous les éléments essentiels dont vous avez besoin, parfait pour préparer vos propres repas. Le salon dispose d'un canapé qui peut se transformer en lit supplémentaire et d'une cheminée à bois fermée (bois fourni) pour des soirées chaleureuses.</p>
+                                </div>
+                                <div class="room-item">
+                                    <h5><i class="fas fa-sun"></i> <span data-key="veranda-title">Véranda</span></h5>
+                                    <p data-key="veranda-desc">Une véranda vitrée offrant une superbe vue sur l'étang serein et le jardin verdoyant — un lieu idéal pour votre café du matin ou pour vous détendre en fin de journée.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="access" class="desc-tab-content">
+                            <p data-key="access-intro">
+                                Les invités ont un accès exclusif au gîte, y compris la véranda, l'espace extérieur, le patio en plein air et le barbecue en pierre. Votre espace jardin privé est bien délimité et réservé à votre seul usage, garantissant votre intimité.
+                            </p>
+                            <div class="important-notes">
+                                <h4 data-key="important-notes">Veuillez noter :</h4>
+                                <ul>
+                                    <li data-key="no-additional-guests">Toute personne ne figurant pas sur la réservation n'est pas autorisée à séjourner au gîte ou à profiter des extérieurs.</li>
+                                    <li data-key="connected-building">Le gîte fait partie du même bâtiment que notre maison, mais il est connecté par une porte qui est verrouillée en permanence des deux côtés pendant votre séjour.</li>
+                                    <li data-key="garden-access">Bien que nous entretenions et utilisions le reste du jardin, vous êtes les bienvenus pour explorer et profiter de sa totalité.</li>
+                                    <li data-key="tesla-dog">Nous avons un chien Cane Corso amical nommé Tesla. Il est de grande taille et peut sembler impressionnant, mais il est très gentil avec les gens — gardez simplement un œil sur sa queue qui remue !</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="cycling" class="desc-tab-content">
+                            <h4><i class="fas fa-bicycle"></i> <span data-key="cycling-welcome">Amateurs de cyclisme bienvenus !</span></h4>
+                            <p data-key="cycling-intro">
+                                Nous sommes idéalement situés à proximité de la célèbre Loire à Vélo, un itinéraire cyclable unique de 900 km qui fait également partie de l'EuroVelo 6 (de l'Atlantique à la mer Noire). Nous accueillons les cyclistes en offrant :
+                            </p>
+                            <div class="cycling-features">
+                                <div class="cycling-item">
+                                    <i class="fas fa-warehouse"></i>
+                                    <span data-key="bike-storage">Rangement pour vélos : Un stockage sécurisé pour vos bicyclettes.</span>
+                                </div>
+                                <div class="cycling-item">
+                                    <i class="fas fa-charging-station"></i>
+                                    <span data-key="bike-charging">Recharge pour vélos électriques : Stations de recharge gratuites pour vélos électriques.</span>
+                                </div>
+                                <div class="cycling-item">
+                                    <i class="fas fa-tools"></i>
+                                    <span data-key="bike-maintenance">Atelier de maintenance : Outils de réparation de base pour vélos et station de nettoyage disponibles si nécessaire.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="attractions" class="desc-tab-content">
+                            <h4 data-key="local-attractions">Conseils Locaux et Attractions à Proximité :</h4>
+                            <div class="attractions-grid">
+                                <div class="attraction-item">
+                                    <i class="fas fa-castle"></i>
+                                    <div>
+                                        <strong>Saumur</strong> <span data-key="saumur-distance">(à 35 minutes)</span>
+                                        <p data-key="saumur-desc">Ville historique avec un majestueux château et des vignobles.</p>
+                                    </div>
+                                </div>
+                                <div class="attraction-item">
+                                    <i class="fas fa-paw"></i>
+                                    <div>
+                                        <strong data-key="zoos">Zoos</strong> <span data-key="zoo-distance">(à 40 minutes)</span>
+                                        <p data-key="zoo-desc">Zoo de La Flèche et Bioparc de Doué-la-Fontaine : Des zoos fantastiques pour des expériences inoubliables.</p>
+                                    </div>
+                                </div>
+                                <div class="attraction-item">
+                                    <i class="fas fa-seedling"></i>
+                                    <div>
+                                        <strong>Terra Botanica</strong> <span data-key="terra-distance">(à 20 minutes)</span>
+                                        <p data-key="terra-desc">Le premier parc européen consacré au monde végétal.</p>
+                                    </div>
+                                </div>
+                                <div class="attraction-item">
+                                    <i class="fas fa-crown"></i>
+                                    <div>
+                                        <strong>Puy du Fou</strong> <span data-key="puy-distance">(à 1 heure)</span>
+                                        <p data-key="puy-desc">Parc à thème historique primé.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h4 data-key="wine-title">Découvrez les Vins Célèbres de la Vallée de la Loire</h4>
+                            <p data-key="wine-intro">La région autour d'Angers est renommée pour ses vins d'exception. Nous pouvons vous recommander nos vignobles sélectionnés produisant :</p>
+                            <div class="wine-list">
+                                <span>Savennières</span> <span>Coteaux du Layon</span> <span>Quarts de Chaume Grand Cru</span>
+                                <span>Anjou-Villages</span> <span>Rosé de Loire</span> <span>Cabernet d'Anjou</span> <span>Bonnezeaux</span>
+                            </div>
+                        </div>
+
+                        <div id="rules" class="desc-tab-content">
+                            <h4 data-key="house-rules">Règles de la Maison :</h4>
+                            <div class="rules-grid">
+                                <div class="rule-item">
+                                    <i class="fas fa-smoking-ban"></i>
+                                    <span data-key="smoking-rule">Fumer est autorisé uniquement à l'extérieur.</span>
+                                </div>
+                                <div class="rule-item">
+                                    <i class="fas fa-ban"></i>
+                                    <span data-key="pets-rule">Nous ne pouvons pas accueillir d'autres animaux de compagnie en raison de la présence de notre chien, Tesla.</span>
+                                </div>
+                                <div class="rule-item">
+                                    <i class="fas fa-volume-down"></i>
+                                    <span data-key="quiet-hours">Les heures de silence sont de 23h00 à 8h00 afin de garantir un environnement paisible pour tous.</span>
+                                </div>
+                                <div class="rule-item">
+                                    <i class="fas fa-swimming-pool"></i>
+                                    <span data-key="swimming-rule">La baignade dans l'étang n'est pas autorisée.</span>
+                                </div>
+                            </div>
+                            
+                            <h4 data-key="accessibility-title">Accessibilité :</h4>
+                            <ul class="accessibility-list">
+                                <li data-key="wheelchair">Le gîte n'est pas accessible en fauteuil roulant.</li>
+                                <li data-key="family-friendly">Convient aux enfants et aux personnes âgées ; cependant, les enfants doivent être surveillés, surtout près de l'étang et de la cheminée.</li>
+                            </ul>
+
+                            <h4 data-key="security-title">Mesures de Sécurité :</h4>
+                            <ul class="security-list">
+                                <li data-key="cameras">Caméras de sécurité extérieures (couvrant uniquement les espaces extérieurs).</li>
+                                <li data-key="detectors">Détecteur de fumée et détecteur de monoxyde de carbone à l'intérieur du gîte.</li>
+                                <li data-key="emergency">Extincteur et trousse de premiers soins pour votre sécurité.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>5.0</span>
+                        <span class="reviews">(42 avis)</span>
+                    </div>
+                    <a href="https://www.airbnb.fr/rooms/1150517326023370688" target="_blank" class="btn btn-primary btn-full">
+                        <i class="fab fa-airbnb"></i> Réserver sur Airbnb
+                    </a>
+                    <p class="booking-note">Ou contactez-nous directement pour plus d'informations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities -->
+    <section id="amenities" class="amenities">
+        <div class="container">
+            <h2>Ce que ce lieu propose</h2>
+            
+            <!-- Category Tabs -->
+            <div class="amenity-tabs">
+                <button class="tab-btn active" onclick="showCategory('bathroom')">
+                    <i class="fas fa-bath"></i> Salle de bain
+                </button>
+                <button class="tab-btn" onclick="showCategory('bedroom')">
+                    <i class="fas fa-bed"></i> Chambre et linge
+                </button>
+                <button class="tab-btn" onclick="showCategory('entertainment')">
+                    <i class="fas fa-tv"></i> Divertissement
+                </button>
+                <button class="tab-btn" onclick="showCategory('family')">
+                    <i class="fas fa-baby"></i> Famille
+                </button>
+                <button class="tab-btn" onclick="showCategory('heating')">
+                    <i class="fas fa-thermometer-half"></i> Chauffage
+                </button>
+                <button class="tab-btn" onclick="showCategory('security')">
+                    <i class="fas fa-shield-alt"></i> Sécurité
+                </button>
+                <button class="tab-btn" onclick="showCategory('internet')">
+                    <i class="fas fa-wifi"></i> Internet & Bureau
+                </button>
+                <button class="tab-btn" onclick="showCategory('kitchen')">
+                    <i class="fas fa-utensils"></i> Cuisine
+                </button>
+                <button class="tab-btn" onclick="showCategory('location')">
+                    <i class="fas fa-map-marker-alt"></i> Emplacement
+                </button>
+                <button class="tab-btn" onclick="showCategory('outdoor')">
+                    <i class="fas fa-tree"></i> Extérieur
+                </button>
+                <button class="tab-btn" onclick="showCategory('parking')">
+                    <i class="fas fa-car"></i> Parking
+                </button>
+                <button class="tab-btn" onclick="showCategory('services')">
+                    <i class="fas fa-concierge-bell"></i> Services
+                </button>
+            </div>
+
+            <!-- Amenities Content -->
+            <div id="bathroom" class="amenity-category active">
+                <div class="amenities-grid">
+                    <div class="amenity">
+                        <i class="fas fa-wind"></i>
+                        <span>Sèche-cheveux</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-spray-can"></i>
+                        <span>Produits de nettoyage</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-pump-soap"></i>
+                        <span>Shampooing</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-soap"></i>
+                        <span>Savon pour le corps</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-thermometer-hot"></i>
+                        <span>Eau chaude</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-shower"></i>
+                        <span>Gel douche</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-toilet-paper"></i>
+                        <span>Papier toilette</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bedroom" class="amenity-category">
+                <div class="amenities-grid">
+                    <div class="amenity">
+                        <i class="fas fa-washing-machine"></i>
+                        <span>Lave-linge gratuit</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-towel"></i>
+                        <span>Serviettes et draps</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-hanger"></i>
+                        <span>Cintres</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-bed"></i>
+                        <span>Draps</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-pillow"></i>
+                        <span>Oreillers et couvertures supplémentaires</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-window-restore"></i>
+                        <span>Stores</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-iron"></i>
+                        <span>Fer à repasser</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-hanger"></i>
+                        <span>Étendoir à linge</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-bug-slash"></i>
+                        <span>Moustiquaire</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-archive"></i>
+                        <span>Espace de rangement</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="entertainment" class="amenity-category">
+                <div class="amenities-grid">
+                    <div class="amenity">
+                        <i class="fas fa-ethernet"></i>
+                        <span>Connexion Ethernet</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-tv"></i>
+                        <span>Télévision</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-music"></i>
+                        <span>Système audio Harman Kardon</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="family" class="amenity-category">
+                <div class="amenities-grid">
+                    <div class="amenity">
+                        <i class="fas fa-baby"></i>
+                        <span>Lit pour bébé sur demande</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-bed"></i>
+                        <span>Lit parapluie</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="heating" class="amenity-category">
+                <div class="amenities-grid">
+                    <div class="amenity">
+                        <i class="fas fa-fire"></i>
+                        <span>Cheminée</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-fan"></i>
+                        <span>Ventilateurs portables</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-thermometer-half"></i>
+                        <span>Chauffage</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="security" class="amenity-category">
+                <div class="amenities-grid">
+                    <div class="amenity">
+                        <i class="fas fa-video"></i>
+                        <span>Caméras de surveillance extérieures</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-smoke"></i>
+                        <span>Détecteur de fumée</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <span>Détecteur de monoxyde de carbone</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-fire-extinguisher"></i>
+                        <span>Extincteur</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-first-aid"></i>
+                        <span>Kit de premiers secours</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="internet" class="amenity-category">
+                <div class="amenities-grid">
+                    <div class="amenity">
+                        <i class="fas fa-wifi"></i>
+                        <span>WiFi</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Espace de travail dédié</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="kitchen" class="amenity-category">
+                <div class="amenities-grid">
+                    <div class="amenity">
+                        <i class="fas fa-utensils"></i>
+                        <span>Cuisine équipée</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-cube"></i>
+                        <span>Réfrigérateur</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-microwave"></i>
+                        <span>Four à micro-ondes</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-spoon"></i>
+                        <span>Équipements de cuisine de base</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-plate-wheat"></i>
+                        <span>Vaisselle et couverts</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-temperature-low"></i>
+                        <span>Congélateur</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-circle-dot"></i>
+                        <span>Cuisinière à induction</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-coffee"></i>
+                        <span>Bouilloire électrique</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-coffee-pot"></i>
+                        <span>Cafetière</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-wine-glass"></i>
+                        <span>Verres à vin</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-grill-hot"></i>
+                        <span>Ustensiles de barbecue</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-table"></i>
+                        <span>Table à manger</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-mug-hot"></i>
+                        <span>Café</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="location" class="amenity-category">
+                <div class="amenities-grid">
+                    <div class="amenity">
+                        <i class="fas fa-water"></i>
+                        <span>Accès au lac</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-door-open"></i>
+                        <span>Entrée privée</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-washing-machine"></i>
+                        <span>Laverie automatique à proximité</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="outdoor" class="amenity-category">
+                <div class="amenities-grid">
+                    <div class="amenity">
+                        <i class="fas fa-couch"></i>
+                        <span>Patio ou balcon privé</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-seedling"></i>
+                        <span>Arrière-cour</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-chair"></i>
+                        <span>Mobilier d'extérieur</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-utensils"></i>
+                        <span>Espace repas en plein air</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-fire-alt"></i>
+                        <span>Barbecue</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-bicycle"></i>
+                        <span>Vélos</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-chair"></i>
+                        <span>Chaises longues</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="parking" class="amenity-category">
+                <div class="amenities-grid">
+                    <div class="amenity">
+                        <i class="fas fa-car"></i>
+                        <span>Parking gratuit sur place</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-road"></i>
+                        <span>Parking gratuit dans la rue</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="services" class="amenity-category">
+                <div class="amenities-grid">
+                    <div class="amenity">
+                        <i class="fas fa-suitcase"></i>
+                        <span>Dépôt de bagages autorisé</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-coffee"></i>
+                        <span>Petit déjeuner inclus</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-calendar-plus"></i>
+                        <span>Séjours longue durée autorisés</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-key"></i>
+                        <span>Clés remises par l'hôte</span>
+                    </div>
+                    <div class="amenity">
+                        <i class="fas fa-handshake"></i>
+                        <span>Accueil personnalisé</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section id="location" class="location">
+        <div class="container">
+            <h2>Où vous dormirez</h2>
+            <div class="location-info">
+                <div class="map-placeholder">
+                    <!-- Replace with actual map or location image -->
+                    <div class="map-placeholder-content">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Loire-Authion, Pays de la Loire, France</p>
+                        <small>Ajoutez ici une carte ou une image de la localisation</small>
+                    </div>
+                </div>
+                <div class="location-details">
+                    <h3>À propos du quartier</h3>
+                    <p>
+                        Situé à Loire-Authion dans les Pays de la Loire, ce gîte se trouve 
+                        dans un cadre paisible avec vue sur étang. La région offre de nombreuses 
+                        activités et attractions touristiques à proximité.
+                    </p>
+                    <ul>
+                        <li>Proche de la Loire et de ses châteaux</li>
+                        <li>Accès facile aux vignobles de la région</li>
+                        <li>Sentiers de randonnée à proximité</li>
+                        <li>Vue magnifique sur l'étang</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>Ce que disent nos voyageurs</h2>
+            <div class="reviews-summary">
+                <div class="overall-rating">
+                    <span class="rating-number">5.0</span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="review-count">42 avis · Tous 5 étoiles</span>
+                </div>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-details">
+                                <h4>Dupuy</h4>
+                                <span>Mars 2025</span>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">Logement très agréable, décoré avec beaucoup de goût, très propre. Des petites attentions et un petit mot très appréciables.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-details">
+                                <h4>Agnès</h4>
+                                <span>Février 2025</span>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">En terme de tranquillité, il n'y a rien à redire. Endroit paisible, privé, propre, rien ne manque. Hôtes accueillant et aux petits soins. Je recommande les yeux fermés.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-details">
+                                <h4>Marie</h4>
+                                <span>Janvier 2025</span>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">Séjour parfait dans ce gîte de charme ! La vue sur l'étang est magnifique et l'endroit respire la sérénité. Alexis est un hôte formidable, toujours disponible.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-details">
+                                <h4>Laurent</h4>
+                                <span>Décembre 2024</span>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">Gîte exceptionnel alliant charme historique et confort moderne. L'équipement est complet, la décoration soignée. Un vrai coup de cœur !</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-details">
+                                <h4>Sophie</h4>
+                                <span>Novembre 2024</span>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">Cadre idyllique et accueil chaleureux. Le gîte est impeccable, très bien situé pour découvrir la région. Nous reviendrons sans hésiter !</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-details">
+                                <h4>Thomas</h4>
+                                <span>Octobre 2024</span>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">Excellent séjour ! Le logement est conforme aux photos, très propre et bien équipé. L'emplacement est calme avec une belle vue. Parfait pour se ressourcer.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-details">
+                                <h4>Émilie</h4>
+                                <span>Septembre 2024</span>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">Un véritable havre de paix ! Le gîte est magnifique, la décoration raffinée et l'équipement complet. Alexis est aux petits soins, merci pour ce séjour mémorable.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-details">
+                                <h4>Pierre</h4>
+                                <span>Août 2024</span>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">Séjour parfait dans ce gîte de charme. L'authenticité du lieu, la propreté irréprochable et l'accueil d'Alexis rendent ce lieu unique. À recommander sans réserve !</p>
+                </div>
+            </div>
+
+            <div class="reviews-cta">
+                <a href="https://www.airbnb.fr/rooms/1150517326023370688" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-airbnb"></i> Voir tous les avis sur Airbnb
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Nous contacter</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contactez Alexis directement</h3>
+                    <p>Pour toute question ou réservation directe, n'hésitez pas à contacter Alexis, votre Superhôte :</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>alexis@ascottage.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+33 X XX XX XX XX</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <h3>Envoyer un message</h3>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="dates" name="dates" placeholder="Dates souhaitées">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Votre message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Modal -->
+    <div id="photoGallery" class="gallery-modal">
+        <div class="gallery-content">
+            <div class="gallery-header">
+                <h3 id="galleryTitle">Photos du gîte</h3>
+                <button class="gallery-close" onclick="closeGallery()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="gallery-main">
+                <button class="gallery-nav prev" onclick="previousImage()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="gallery-image-container">
+                    <img id="galleryImage" src="" alt="">
+                    <div class="gallery-counter">
+                        <span id="currentImage">1</span> / <span id="totalImages">22</span>
+                    </div>
+                </div>
+                <button class="gallery-nav next" onclick="nextImage()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="gallery-thumbnails">
+                <div class="thumbnails-container" id="thumbnailsContainer">
+                    <!-- Thumbnails will be generated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 A.S. Cottage - Alexis. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
