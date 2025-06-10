@@ -12,39 +12,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Contact form handling
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(this);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const dates = formData.get('dates');
-    const message = formData.get('message');
-    
-    // Basic validation
-    if (!name || !email || !message) {
-        alert('Veuillez remplir tous les champs obligatoires.');
-        return;
-    }
-    
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert('Veuillez entrer une adresse email valide.');
-        return;
-    }
-    
-    // Show success message (you can replace this with actual form submission)
-    alert('Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.');
-    
-    // Reset form
-    this.reset();
-    
-    // Here you would typically send the data to your server
-    console.log('Form submitted:', { name, email, dates, message });
-});
+// Email contact handling - no form needed, direct mailto links
 
 // Awards Carousel functionality
 let slideIndex = 1;
