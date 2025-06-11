@@ -1,0 +1,185 @@
+{
+  "guinguettes": [
+    {
+      "id": "ile-behuard",
+      "name": "Guinguette de l'Île Béhuard",
+      "distance": "25 min en voiture",
+      "season": "Avril à Octobre",
+      "badge": "🏆 Notre Préférée",
+      "current_photo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e8/c7/20200717-133907-largejpg.jpg",
+      "additional_photos": [
+        "URL_PHOTO_2_ILE_BEHUARD",
+        "URL_PHOTO_3_ILE_BEHUARD"
+      ],
+      "maps_link": "https://maps.app.goo.gl/ofcdePS5iJu2tsxw5"
+    },
+    {
+      "id": "banchais",
+      "name": "Guinguette des Banchais",
+      "distance": "Loire-Authion, 12 min en voiture",
+      "season": "Mai à Septembre",
+      "badge": "📍 La Plus Proche",
+      "current_photo": "https://lh3.googleusercontent.com/p/AF1QipPK_7ZdN8YHQ_KcwBjyH4dEGrYx8g2R5vWnxzMO=s1360-w1360-h1020",
+      "additional_photos": [
+        "URL_PHOTO_2_BANCHAIS",
+        "URL_PHOTO_3_BANCHAIS"
+      ],
+      "maps_link": "https://maps.app.goo.gl/TjUJptXTbEP2CfxG6"
+    },
+    {
+      "id": "port-thibault",
+      "name": "Guinguette Port Thibault",
+      "distance": "Angers, 25 min en voiture",
+      "season": "Avril à Octobre",
+      "current_photo": "https://lh3.googleusercontent.com/p/AF1QipNr8D6mU7JKlYwVGfXYkPZH_Jx9L2R4VgMwS8KF=s1360-w1360-h1020",
+      "additional_photos": [
+        "URL_PHOTO_2_PORT_THIBAULT",
+        "URL_PHOTO_3_PORT_THIBAULT"
+      ],
+      "maps_link": "https://maps.app.goo.gl/xN4WbEaefzDWeSjt9"
+    },
+    {
+      "id": "chalonnes",
+      "name": "Guinguette de Chalonnes",
+      "distance": "30 min en voiture",
+      "season": "Mai à Septembre",
+      "current_photo": "https://lh3.googleusercontent.com/p/AF1QipOw5L8_KXxRHGjQwfKJmYXBP7_c4r3F2gH9VwN8=s1360-w1360-h1020",
+      "additional_photos": [
+        "URL_PHOTO_2_CHALONNES",
+        "URL_PHOTO_3_CHALONNES"
+      ],
+      "maps_link": "https://maps.app.goo.gl/CjRXQ9p26ghitEqU7"
+    },
+    {
+      "id": "rochefort",
+      "name": "Guinguette de Rochefort",
+      "distance": "35 min en voiture",
+      "season": "Juin à Septembre",
+      "current_photo": "https://lh3.googleusercontent.com/p/AF1QipM7vQ8N5RkfTYwHUzXjL9K4BP6cF2dH1VgMwT8J=s1360-w1360-h1020",
+      "additional_photos": [
+        "URL_PHOTO_2_ROCHEFORT",
+        "URL_PHOTO_3_ROCHEFORT"
+      ],
+      "maps_link": "https://maps.app.goo.gl/1e6RTA6HKWJudiiG6"
+    }
+  ],
+  "restaurants": {
+    "angers": [
+      {
+        "id": "bistrot-des-ducs",
+        "name": "Bistrot des Ducs",
+        "rating": "★★★★★",
+        "current_photo": "https://lh3.googleusercontent.com/p/AF1QipNXm8Z1K4fYZfQ8cBhNx5wJ8Y3K6v1A4dFcTqXI=s1360-w1360-h1020",
+        "additional_photos": [
+          "URL_PHOTO_2_BISTROT_DES_DUCS",
+          "URL_PHOTO_3_BISTROT_DES_DUCS"
+        ],
+        "maps_link": "https://www.google.com/maps/search/Bistrot+des+Ducs+Angers"
+      },
+      {
+        "id": "kazumi",
+        "name": "KAZUMI",
+        "current_photo": "https://lh3.googleusercontent.com/p/AF1QipNQX3qX4vr_8QKWU8yOhYBfVs5F1R2yTcKjG7xT=s1360-w1360-h1020",
+        "additional_photos": [
+          "URL_PHOTO_2_KAZUMI",
+          "URL_PHOTO_3_KAZUMI"
+        ],
+        "maps_link": "https://www.google.com/maps/search/KAZUMI+restaurant+Angers"
+      },
+      {
+        "id": "la-cantina-cafe",
+        "name": "La Cantina Café",
+        "current_photo": "https://media-cdn.tripadvisor.com/media/photo-s/04/32/d2/fb/la-cantina-cafe.jpg",
+        "additional_photos": [
+          "URL_PHOTO_2_LA_CANTINA_CAFE"
+        ],
+        "maps_link": "https://www.google.com/maps/search/La+Cantina+Café+Angers"
+      }
+    ],
+    "loire_authion": [
+      {
+        "id": "la-bafouille",
+        "name": "La Bafouille",
+        "distance": "30 min en voiture",
+        "current_photo": "https://media-cdn.tripadvisor.com/media/photo-s/1d/63/c2/16/la-bafouille.jpg",
+        "additional_photos": [
+          "URL_PHOTO_2_LA_BAFOUILLE",
+          "URL_PHOTO_3_LA_BAFOUILLE"
+        ],
+        "maps_link": "https://www.google.com/maps/search/La+Bafouille+La+Pointe+Loire"
+      },
+      {
+        "id": "la-route-du-sel",
+        "name": "La Route du Sel",
+        "distance": "20 min en voiture",
+        "current_photo": "https://lh3.googleusercontent.com/p/AF1QipOaBM8vD9QK5FvLz6H2M8sP3cN1X4wY7eR2K9sL=s1360-w1360-h1020",
+        "additional_photos": [
+          "URL_PHOTO_2_LA_ROUTE_DU_SEL"
+        ],
+        "maps_link": "https://www.google.com/maps/search/La+Route+du+Sel+Loire+Authion"
+      }
+    ]
+  },
+  "bars": [
+    {
+      "id": "le-cercle-rouge",
+      "name": "Le Cercle Rouge",
+      "distance": "Angers, 20 min en voiture",
+      "current_photo": "https://media-cdn.tripadvisor.com/media/photo-s/0c/b3/8b/9c/le-cercle-rouge.jpg",
+      "additional_photos": [
+        "URL_PHOTO_2_LE_CERCLE_ROUGE"
+      ],
+      "maps_link": "https://www.google.com/maps/search/Le+Cercle+Rouge+Angers"
+    }
+  ],
+  "shops": {
+    "epiceries": [
+      {
+        "id": "le-luluberlu",
+        "name": "Le Luluberlu",
+        "distance": "Angers, 20 min en voiture",
+        "current_photo": "https://lh3.googleusercontent.com/p/AF1QipP3X4vR8Y2sK7HxbV9QzWt5L1mFg6dN8eJ2A3Tw=s1360-w1360-h1020",
+        "additional_photos": [
+          "URL_PHOTO_2_LE_LULUBERLU"
+        ],
+        "maps_link": "https://www.google.com/maps/search/Le+Luluberlu+Angers"
+      }
+    ],
+    "boulangeries": [
+      {
+        "id": "maison-becam",
+        "name": "Maison Bécam - Corné",
+        "current_photo": "https://maisonbecam.com/cdn/shop/files/ambiance_5_resultat_6b371fda-482e-4432-b7d6-ac9fa77f6c77_960x.jpg",
+        "maps_link": "https://www.google.com/maps/search/Maison+Bécam+Corné+boulangerie"
+      }
+    ]
+  },
+  "vineyards": [
+    {
+      "id": "chateau-epire",
+      "name": "CHÂTEAU D'EPIRÉ - SAVENNIÈRES",
+      "distance": "30 min en voiture",
+      "current_photo": "https://www.chateau-epire.com/wp-content/uploads/2023/01/chteau-depir-le-hu-boyau.jpg",
+      "additional_photos": [
+        "URL_PHOTO_2_CHATEAU_EPIRE",
+        "URL_PHOTO_3_CHATEAU_EPIRE"
+      ],
+      "maps_link": "https://maps.app.goo.gl/YOUR_MAPS_LINK",
+      "website": "https://www.chateaudepire.com"
+    }
+  ],
+  "instructions": {
+    "how_to_add_photos": "Pour ajouter des photos, remplacez les URL_PHOTO_XXX par de vraies URLs d'images. Vous pouvez :",
+    "photo_sources": [
+      "Utiliser Google Photos en partageant le lien",
+      "Uploader sur un service comme Imgur",
+      "Utiliser les photos des sites web des établissements",
+      "Prendre vos propres photos et les héberger"
+    ],
+    "photo_requirements": {
+      "format": "JPG ou PNG recommandé",
+      "taille": "Minimum 800x600 pixels",
+      "ratio": "16:9 ou 4:3 pour un meilleur affichage"
+    }
+  }
+}

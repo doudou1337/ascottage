@@ -1,0 +1,1116 @@
+/* Guide Page Specific Styles */
+
+/* Guide Hero Section */
+.guide-hero {
+    background: linear-gradient(135deg, #06466A 0%, #054159 100%);
+    color: white;
+    padding: 80px 0 60px;
+    text-align: center;
+}
+
+.guide-hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.guide-subtitle {
+    font-size: 20px;
+    margin-bottom: 24px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guide-address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.guide-address i {
+    color: #FF385C;
+    font-size: 18px;
+}
+
+/* Guide Navigation */
+.guide-nav {
+    background: white;
+    padding: 16px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 76px; /* Adjust based on header height */
+    z-index: 90;
+    transition: all 0.3s ease;
+}
+
+.guide-nav.scrolled {
+    padding: 12px 0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.guide-nav-grid {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #f8f9fa;
+    border-radius: 25px;
+    padding: 4px;
+    border: 1px solid #e0e0e0;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.guide-nav-grid::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+.guide-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: transparent;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #484848;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 13px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.guide-nav-item:hover {
+    background: rgba(255, 56, 92, 0.1);
+    color: #FF385C;
+}
+
+.guide-nav-item.active {
+    background: #FF385C;
+    color: white;
+    box-shadow: 0 2px 8px rgba(255, 56, 92, 0.3);
+}
+
+.guide-nav-item i {
+    font-size: 14px;
+    color: #FF385C;
+    transition: color 0.3s ease;
+}
+
+.guide-nav-item:hover i,
+.guide-nav-item.active i {
+    color: currentColor;
+}
+
+.guide-nav-item span {
+    font-weight: 500;
+}
+
+/* Guide Sections */
+.guide-section {
+    padding: 80px 0;
+}
+
+.guide-section.alt-bg {
+    background: #f8f9fa;
+}
+
+.guide-section h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.guide-section h2 i {
+    color: #FF385C;
+    font-size: 32px;
+}
+
+.section-intro {
+    font-size: 18px;
+    color: #484848;
+    margin-bottom: 48px;
+    font-style: italic;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Info Cards */
+.info-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+    border-left: 6px solid #FF385C;
+}
+
+.checkout-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    color: #222;
+    font-size: 24px;
+}
+
+.checkout-card h3 i {
+    color: #FF385C;
+}
+
+.highlight {
+    background: linear-gradient(135deg, #FF385C, #E31C5F);
+    color: white;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.checkout-list {
+    list-style: none;
+    padding: 0;
+}
+
+.checkout-list li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 16px;
+}
+
+.checkout-list li:last-child {
+    border-bottom: none;
+}
+
+.checkout-list li i {
+    color: #FF385C;
+    font-size: 18px;
+    width: 20px;
+}
+
+/* Rules Section */
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.rule-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.rule-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+.rule-icon {
+    font-size: 48px;
+    color: #FF385C;
+    margin-bottom: 16px;
+}
+
+.rule-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.rule-card p {
+    color: #484848;
+    line-height: 1.6;
+}
+
+/* Restaurant Cards */
+.location-group {
+    margin-bottom: 64px;
+}
+
+.location-group h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: #06466A;
+    border-bottom: 3px solid #FF385C;
+    padding-bottom: 12px;
+}
+
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 24px;
+}
+
+.restaurant-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.restaurant-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #FF385C, #E31C5F);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+.restaurant-card:hover::before {
+    transform: scaleX(1);
+}
+
+.restaurant-card.featured {
+    border: 2px solid #FF385C;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+}
+
+.restaurant-card.michelin {
+    border: 2px solid #D4AF37;
+    background: linear-gradient(135deg, #fffdf7 0%, #ffffff 100%);
+}
+
+.restaurant-card.scenic {
+    border: 2px solid #06466A;
+    background: linear-gradient(135deg, #f0f8ff 0%, #ffffff 100%);
+}
+
+.restaurant-image {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.restaurant-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover .restaurant-image img {
+    transform: scale(1.05);
+}
+
+.restaurant-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.1) 100%);
+    pointer-events: none;
+}
+
+.restaurant-card h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.rating {
+    color: #FFD700;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.restaurant-details {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #f0f8ff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #06466A;
+}
+
+.detail-item i {
+    color: #FF385C;
+}
+
+.distance-badge {
+    background: linear-gradient(135deg, #06466A, #054159);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.michelin-badge {
+    background: linear-gradient(135deg, #D4AF37, #B8860B);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.michelin-badge.starred {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #333;
+}
+
+.price-badge {
+    background: linear-gradient(135deg, #FF385C, #E31C5F);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.restaurant-card p {
+    color: #484848;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.restaurant-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.btn-maps {
+    background: linear-gradient(135deg, #4285F4, #1976D2);
+    color: white;
+}
+
+.btn-maps:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(66, 133, 244, 0.4);
+}
+
+.btn-website {
+    background: linear-gradient(135deg, #06466A, #054159);
+    color: white;
+}
+
+.btn-website:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(6, 70, 106, 0.4);
+}
+
+.btn-small {
+    padding: 8px 16px;
+    font-size: 12px;
+}
+
+/* Bar Cards */
+.bar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.bar-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.bar-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #722F37, #A0522D);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.bar-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+.bar-card:hover::before {
+    transform: scaleX(1);
+}
+
+.bar-card.featured {
+    border: 2px solid #722F37;
+    background: linear-gradient(135deg, #f9f5f5 0%, #ffffff 100%);
+}
+
+.bar-card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.bar-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+/* Shop Categories */
+.shop-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.shop-category h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #06466A;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 2px solid #FF385C;
+    padding-bottom: 8px;
+}
+
+.shop-category h3 i {
+    color: #FF385C;
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.shop-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.shop-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+.shop-card.featured {
+    border: 2px solid #FF385C;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+}
+
+.shop-card.eco {
+    border: 2px solid #4CAF50;
+    background: linear-gradient(135deg, #f1f8e9 0%, #ffffff 100%);
+}
+
+.eco-badge {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.shop-card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.shop-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+/* Guinguettes Section */
+.guinguette-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.guinguette-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.guinguette-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4ECDC4, #44A08D);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.guinguette-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+.guinguette-card:hover::before {
+    transform: scaleX(1);
+}
+
+.guinguette-card.featured {
+    border: 2px solid #4ECDC4;
+    background: linear-gradient(135deg, #f0fdfc 0%, #ffffff 100%);
+}
+
+.guinguette-card.scenic {
+    border: 2px solid #06466A;
+    background: linear-gradient(135deg, #f0f8ff 0%, #ffffff 100%);
+}
+
+.guinguette-card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.special-badge {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.guinguette-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.feature-tag {
+    background: #e8f5e8;
+    color: #2d5a2d;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #c3e6c3;
+}
+
+.guinguette-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.guinguette-info {
+    background: linear-gradient(135deg, #4ECDC4, #44A08D);
+    color: white;
+    padding: 32px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.guinguette-info h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.guinguette-info p {
+    font-size: 16px;
+    margin-bottom: 24px;
+    opacity: 0.9;
+}
+
+.guinguette-tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.tip-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255,255,255,0.2);
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.tip-item i {
+    color: #FFD700;
+    font-size: 16px;
+}
+
+/* Activities Section */
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+}
+
+.activity-season {
+    background: white;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.activity-season.spring {
+    border-top: 6px solid #4CAF50;
+    background: linear-gradient(135deg, #f1f8e9 0%, #ffffff 100%);
+}
+
+.activity-season.summer {
+    border-top: 6px solid #FFD700;
+    background: linear-gradient(135deg, #fffef7 0%, #ffffff 100%);
+}
+
+.activity-season.autumn {
+    border-top: 6px solid #FF8C00;
+    background: linear-gradient(135deg, #fff8f0 0%, #ffffff 100%);
+}
+
+.activity-season.winter {
+    border-top: 6px solid #87CEEB;
+    background: linear-gradient(135deg, #f0f8ff 0%, #ffffff 100%);
+}
+
+.activity-season h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.activity-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.activity-card {
+    background: rgba(255,255,255,0.7);
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.activity-card:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.activity-card.featured {
+    background: white;
+    border: 2px solid #FF385C;
+}
+
+.activity-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.season-badge {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.guinguette-list {
+    margin-top: 16px;
+}
+
+.guinguette-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.guinguette-item strong {
+    color: #222;
+}
+
+.activity-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* Vineyard Section */
+.vineyard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.vineyard-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.vineyard-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #722F37, #A0522D);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.vineyard-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+.vineyard-card:hover::before {
+    transform: scaleX(1);
+}
+
+.vineyard-card.featured {
+    border: 2px solid #722F37;
+    background: linear-gradient(135deg, #f9f5f5 0%, #ffffff 100%);
+}
+
+.vineyard-card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.wine-types {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.wine-type {
+    background: linear-gradient(135deg, #722F37, #A0522D);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.vineyard-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+/* Wine Info */
+.wine-info {
+    background: linear-gradient(135deg, #722F37, #A0522D);
+    color: white;
+    padding: 32px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.wine-info h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.wine-info p {
+    font-size: 16px;
+    margin-bottom: 24px;
+    opacity: 0.9;
+}
+
+.wine-appellations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.wine-appellation {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* Navigation Active State */
+.nav a.active {
+    background-color: #FF385C;
+    color: white;
+}
+
+/* Footer Enhancements */
+.footer-links {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #CCCCCC;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #FF385C;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .guide-hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .guide-subtitle {
+        font-size: 18px;
+    }
+    
+    .guide-nav-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .guide-nav-item {
+        padding: 20px 16px;
+    }
+    
+    .guide-nav-item i {
+        font-size: 24px;
+    }
+    
+    .guide-section {
+        padding: 60px 0;
+    }
+    
+    .guide-section h2 {
+        font-size: 28px;
+    }
+    
+    .restaurant-grid,
+    .bar-grid,
+    .shop-grid,
+    .vineyard-grid,
+    .guinguette-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .rules-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .restaurant-actions,
+    .bar-actions,
+    .shop-actions,
+    .vineyard-actions,
+    .activity-actions,
+    .guinguette-actions {
+        flex-direction: column;
+    }
+    
+    .guinguette-tips {
+        grid-template-columns: 1fr;
+    }
+    
+    .btn {
+        justify-content: center;
+    }
+    
+    .guide-address {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .guide-hero {
+        padding: 60px 0 40px;
+    }
+    
+    .guide-hero-content h1 {
+        font-size: 28px;
+    }
+    
+    .guide-nav {
+        padding: 12px 0;
+    }
+    
+    .guide-nav-grid {
+        padding: 3px;
+        border-radius: 20px;
+    }
+    
+    .guide-nav-item {
+        padding: 6px 12px;
+        font-size: 12px;
+        gap: 4px;
+    }
+    
+    .guide-nav-item i {
+        font-size: 12px;
+    }
+    
+    .guide-nav.scrolled {
+        padding: 8px 0;
+    }
+    
+    .guide-section {
+        padding: 40px 0;
+    }
+    
+    .restaurant-card,
+    .bar-card,
+    .shop-card,
+    .vineyard-card,
+    .activity-card {
+        padding: 20px;
+    }
+    
+    .rule-card {
+        padding: 20px;
+    }
+    
+    .info-card {
+        padding: 24px;
+    }
+}

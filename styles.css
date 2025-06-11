@@ -60,6 +60,20 @@ body {
     color: #06466A;
 }
 
+.nav-guide-highlight {
+    background: linear-gradient(135deg, #FF385C, #E31C5F) !important;
+    color: white !important;
+    box-shadow: 0 2px 8px rgba(255, 56, 92, 0.3);
+    font-weight: 600;
+}
+
+.nav-guide-highlight:hover {
+    background: linear-gradient(135deg, #E31C5F, #D01656) !important;
+    color: white !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 56, 92, 0.4);
+}
+
 /* Language Switcher */
 .language-switcher {
     display: flex;

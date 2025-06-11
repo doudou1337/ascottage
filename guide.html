@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Local - A.S. Cottage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="guide-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Circular:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>A.S. Cottage</h1></a>
+            </div>
+            <nav class="nav">
+                <a href="index.html#overview">Aperçu</a>
+                <a href="index.html#amenities">Équipements</a>
+                <a href="index.html#location">Localisation</a>
+                <a href="index.html#reviews">Avis</a>
+                <a href="guide.html" class="active">Guide Local</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+            <div class="language-switcher">
+                <button class="lang-btn" onclick="toggleLanguage()">
+                    <i class="fas fa-globe"></i>
+                    <span id="currentLang">FR</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="guide-hero">
+        <div class="container">
+            <div class="guide-hero-content">
+                <h1>Guide Local & Recommandations</h1>
+                <p class="guide-subtitle">Découvrez nos recommandations personnelles pour profiter au mieux de votre séjour dans la Loire-Authion</p>
+                <div class="guide-address">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>3 route de la crétaudière, 49630 Loire Authion</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="guide-nav">
+        <div class="container">
+            <div class="guide-nav-grid">
+                <a href="#guinguettes" class="guide-nav-item">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <span>Guinguettes</span>
+                </a>
+                <a href="#restaurants" class="guide-nav-item">
+                    <i class="fas fa-utensils"></i>
+                    <span>Restaurants</span>
+                </a>
+                <a href="#bars" class="guide-nav-item">
+                    <i class="fas fa-wine-glass"></i>
+                    <span>Bars</span>
+                </a>
+                <a href="#shops" class="guide-nav-item">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>Boutiques</span>
+                </a>
+                <a href="#activities" class="guide-nav-item">
+                    <i class="fas fa-hiking"></i>
+                    <span>Activités</span>
+                </a>
+                <a href="#vineyards" class="guide-nav-item">
+                    <i class="fas fa-wine-bottle"></i>
+                    <span>Vignobles</span>
+                </a>
+                <a href="#checkin" class="guide-nav-item">
+                    <i class="fas fa-key"></i>
+                    <span>Check In/Out</span>
+                </a>
+                <a href="#rules" class="guide-nav-item">
+                    <i class="fas fa-clipboard-list"></i>
+                    <span>Règles</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guinguettes Section -->
+    <section id="guinguettes" class="guide-section">
+        <div class="container">
+            <h2><i class="fas fa-umbrella-beach"></i> Guinguettes (Restaurants d'Été)</h2>
+            <p class="section-intro">Les 'guinguettes' sont des restaurants au bord de Loire ouverts uniquement en été. Cuisine simple et boissons dans un cadre très relaxant. Parfait pour profiter de la nature et de la vue sur la Loire.</p>
+            
+            <div class="guinguette-grid">
+                <div class="guinguette-card featured">
+                    <div class="restaurant-image">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e8/c7/20200717-133907-largejpg.jpg" alt="Guinguette de l'Île Béhuard" onerror="this.style.display='none'">
+                    </div>
+                    <h4>Guinguette de l'Île Béhuard</h4>
+                    <div class="distance-badge">25 min en voiture</div>
+                    <div class="season-badge">Avril à Octobre</div>
+                    <div class="special-badge">🏆 Notre Préférée</div>
+                    <p>La meilleure ! Située sur une petite île, vous vous garez près de la petite rivière et un joli bateau vous y emmène. Vous pouvez vous promener dans la nature autour de l'île et même apporter votre propre nourriture pour un pique-nique.</p>
+                    <div class="guinguette-features">
+                        <span class="feature-tag">🚤 Navette bateau</span>
+                        <span class="feature-tag">🌳 Promenades nature</span>
+                        <span class="feature-tag">🧺 Pique-nique autorisé</span>
+                    </div>
+                    <div class="guinguette-actions">
+                        <a href="https://maps.app.goo.gl/ofcdePS5iJu2tsxw5" target="_blank" class="btn btn-maps">
+                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                        </a>
+                    </div>
+                </div>
+
+                <div class="guinguette-card">
+                    <div class="restaurant-image">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipPK_7ZdN8YHQ_KcwBjyH4dEGrYx8g2R5vWnxzMO=s1360-w1360-h1020" alt="Guinguette des Banchais" onerror="this.style.display='none'">
+                    </div>
+                    <h4>Guinguette des Banchais</h4>
+                    <div class="distance-badge">Loire-Authion, 12 min en voiture</div>
+                    <div class="season-badge">Mai à Septembre</div>
+                    <div class="special-badge">📍 La Plus Proche</div>
+                    <p>La plus proche de chez nous ! Au bord de Loire, seulement 12 minutes en voiture. Nous y allons souvent. Cuisine simple et boissons, bonne ambiance. Parfait pour une soirée décontractée.</p>
+                    <div class="guinguette-features">
+                        <span class="feature-tag">🍷 Vins locaux</span>
+                        <span class="feature-tag">🎵 Ambiance conviviale</span>
+                        <span class="feature-tag">🌅 Vue sur Loire</span>
+                    </div>
+                    <div class="guinguette-actions">
+                        <a href="https://maps.app.goo.gl/TjUJptXTbEP2CfxG6" target="_blank" class="btn btn-maps">
+                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                        </a>
+                    </div>
+                </div>
+
+                <div class="guinguette-card scenic">
+                    <div class="restaurant-image">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipNr8D6mU7JKlYwVGfXYkPZH_Jx9L2R4VgMwS8KF=s1360-w1360-h1020" alt="Guinguette Port Thibault" onerror="this.style.display='none'">
+                    </div>
+                    <h4>Guinguette Port Thibault</h4>
+                    <div class="distance-badge">Angers, 25 min en voiture</div>
+                    <div class="season-badge">Avril à Octobre</div>
+                    <p>Près du centre-ville d'Angers avec une vue magnifique et un joli parc pour se promener au bord de la rivière. Cadre idéal pour un déjeuner ou un apéritif.</p>
+                    <div class="guinguette-features">
+                        <span class="feature-tag">🏞️ Parc de promenade</span>
+                        <span class="feature-tag">🌊 Vue sur Maine</span>
+                        <span class="feature-tag">🚗 Parking facile</span>
+                    </div>
+                    <div class="guinguette-actions">
+                        <a href="https://maps.app.goo.gl/xN4WbEaefzDWeSjt9" target="_blank" class="btn btn-maps">
+                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                        </a>
+                    </div>
+                </div>
+
+                <div class="guinguette-card">
+                    <div class="restaurant-image">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipOw5L8_KXxRHGjQwfKJmYXBP7_c4r3F2gH9VwN8=s1360-w1360-h1020" alt="Guinguette de Chalonnes" onerror="this.style.display='none'">
+                    </div>
+                    <h4>Guinguette de Chalonnes</h4>
+                    <div class="distance-badge">30 min en voiture</div>
+                    <div class="season-badge">Mai à Septembre</div>
+                    <p>Guinguette traditionnelle dans un cadre bucolique au bord de Loire. Spécialités locales et ambiance familiale.</p>
+                    <div class="guinguette-features">
+                        <span class="feature-tag">👨‍👩‍👧‍👦 Familial</span>
+                        <span class="feature-tag">🎣 Pêche possible</span>
+                        <span class="feature-tag">🌻 Cadre bucolique</span>
+                    </div>
+                    <div class="guinguette-actions">
+                        <a href="https://maps.app.goo.gl/CjRXQ9p26ghitEqU7" target="_blank" class="btn btn-maps">
+                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                        </a>
+                    </div>
+                </div>
+
+                <div class="guinguette-card">
+                    <div class="restaurant-image">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipM7vQ8N5RkfTYwHUzXjL9K4BP6cF2dH1VgMwT8J=s1360-w1360-h1020" alt="Guinguette de Rochefort" onerror="this.style.display='none'">
+                    </div>
+                    <h4>Guinguette de Rochefort</h4>
+                    <div class="distance-badge">35 min en voiture</div>
+                    <div class="season-badge">Juin à Septembre</div>
+                    <p>Guinguette authentique avec terrasse ombragée et spécialités régionales. Parfait pour découvrir l'art de vivre ligérien.</p>
+                    <div class="guinguette-features">
+                        <span class="feature-tag">🌳 Terrasse ombragée</span>
+                        <span class="feature-tag">🍽️ Spécialités locales</span>
+                        <span class="feature-tag">🚲 Accessible à vélo</span>
+                    </div>
+                    <div class="guinguette-actions">
+                        <a href="https://maps.app.goo.gl/1e6RTA6HKWJudiiG6" target="_blank" class="btn btn-maps">
+                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guinguette-info">
+                <h3>🌞 Saison des Guinguettes</h3>
+                <p>La plupart des guinguettes sont ouvertes d'avril/mai à septembre/octobre, selon la météo. Nous recommandons de vérifier les horaires avant votre visite, car ils peuvent varier selon les conditions météorologiques et la saison.</p>
+                <div class="guinguette-tips">
+                    <div class="tip-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Meilleur moment : fin d'après-midi pour l'apéritif au coucher du soleil</span>
+                    </div>
+                    <div class="tip-item">
+                        <i class="fas fa-umbrella"></i>
+                        <span>Apportez un parasol ou une casquette en été</span>
+                    </div>
+                    <div class="tip-item">
+                        <i class="fas fa-car"></i>
+                        <span>Parking généralement gratuit mais peut être limité en été</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurants Section -->
+    <section id="restaurants" class="guide-section alt-bg">
+        <div class="container">
+            <h2><i class="fas fa-utensils"></i> Restaurants</h2>
+            <p class="section-intro">Nous avons vécu 4 ans au centre-ville d'Angers et testé de nombreux restaurants. Voici nos endroits préférés. N'oubliez pas de réserver le plus tôt possible !</p>
+            
+            <div class="location-group">
+                <h3>Restaurants à Angers (20 minutes en voiture)</h3>
+                
+                <div class="restaurant-grid">
+                    <div class="restaurant-card featured">
+                        <div class="restaurant-image">
+                            <img src="https://lh3.googleusercontent.com/p/AF1QipNXm8Z1K4fYZfQ8cBhNx5wJ8Y3K6v1A4dFcTqXI=s1360-w1360-h1020" alt="Bistrot des Ducs" onerror="this.style.display='none'">
+                        </div>
+                        <h4>Bistrot des Ducs</h4>
+                        <div class="rating">★★★★★</div>
+                        <p>Après avoir testé de nombreux restaurants dans de grandes villes du monde entier, "Des Duc" reste mon bistrot français préféré, pour la qualité, le service professionnel et le prix raisonnable.</p>
+                        <div class="restaurant-actions">
+                            <a href="https://www.google.com/maps/search/Bistrot+des+Ducs+Angers" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card">
+                        <div class="restaurant-image">
+                            <img src="https://lh3.googleusercontent.com/p/AF1QipNQX3qX4vr_8QKWU8yOhYBfVs5F1R2yTcKjG7xT=s1360-w1360-h1020" alt="KAZUMI restaurant" onerror="this.style.display='none'">
+                        </div>
+                        <h4>KAZUMI</h4>
+                        <div class="restaurant-details">
+                            <span class="detail-item"><i class="fas fa-chair"></i> 12 places</span>
+                            <span class="detail-item"><i class="fas fa-chef-hat"></i> 1 chef</span>
+                        </div>
+                        <p>Peu de restaurants japonais à Angers, celui-ci est le meilleur. Menu quotidien décidé par le chef, teppanyaki japonais avec une touche française.</p>
+                        <div class="restaurant-actions">
+                            <a href="https://www.google.com/maps/search/KAZUMI+restaurant+Angers" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card">
+                        <div class="restaurant-image">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-s/04/32/d2/fb/la-cantina-cafe.jpg" alt="La Cantina Café" onerror="this.style.display='none'">
+                        </div>
+                        <h4>La Cantina Café</h4>
+                        <p>Petit bistrot mignon, toujours plein. Cuisine bistrot classique, bon prix. Parfait pour une soirée cosy ou un déjeuner savoureux.</p>
+                        <div class="restaurant-actions">
+                            <a href="https://www.google.com/maps/search/La+Cantina+Café+Angers" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card">
+                        <h4>Affamés</h4>
+                        <p>Bistrot français avec une petite touche moderne, situé dans une jolie place de style parisien près de la gare. Un de nos endroits préférés pour déjeuner.</p>
+                        <div class="restaurant-actions">
+                            <a href="https://www.google.com/maps/search/Affamés+restaurant+Angers" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card">
+                        <h4>Autour d'un Cep</h4>
+                        <p>Cuisine française traditionnelle, savoureuse et généreuse, décor sans chichis, juste un endroit pour la nourriture et le vin. Bon choix pour le dîner.</p>
+                        <div class="restaurant-actions">
+                            <a href="https://www.google.com/maps/search/Autour+d'un+Cep+Angers" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card">
+                        <h4>Crêperie Marie mil'goules</h4>
+                        <p>Il y a beaucoup de crêperies dans cette région, c'est notre préférée. Située dans une petite ruelle face au Château. Déco mignonne, menu classique sans chichis, bon cidre.</p>
+                        <div class="restaurant-actions">
+                            <a href="https://www.google.com/maps/search/Crêperie+Marie+mil'goules+Angers" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card michelin">
+                        <h4>Restaurant Sens</h4>
+                        <div class="michelin-badge">Vise la 2ème étoile</div>
+                        <p>Excellent établissement, cuisine raffinée, nous pensons qu'ils visent la seconde étoile Michelin à Angers. Mieux vaut essayer avant qu'ils n'obtiennent l'étoile et augmentent les prix !</p>
+                        <div class="restaurant-actions">
+                            <a href="https://www.google.com/maps/search/Restaurant+Sens+Angers" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card michelin featured">
+                        <h4>LAIT THYM SEL</h4>
+                        <div class="michelin-badge starred">⭐ 1 étoile Michelin</div>
+                        <div class="price-badge">€100+</div>
+                        <p>Cuisine raffinée avec une étoile Michelin, nous l'aimons depuis leurs débuts, cuisine créative toujours, mais peut être un peu cher maintenant. Si vous cherchez quelque chose de spécial, réservez tôt.</p>
+                        <div class="restaurant-actions">
+                            <a href="https://www.google.com/maps/search/LAIT+THYM+SEL+Angers" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            </a>
+                            <a href="https://laitthymsel.com" target="_blank" class="btn btn-website">
+                                <i class="fas fa-globe"></i> Site Web
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card">
+                        <h4>L'Atelier Gourmand</h4>
+                        <div class="distance-badge">Angers, 20 min en voiture</div>
+                        <p>Excellent bistrot mais nécessite de réserver. Cuisine raffinée dans un cadre chaleureux.</p>
+                        <div class="restaurant-actions">
+                            <a href="https://maps.app.goo.gl/RxGbDpKVJZhLzrFw9" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card">
+                        <h4>Food Court Les Halles</h4>
+                        <div class="distance-badge">Angers, 20 min en voiture</div>
+                        <p>Court alimentaire moderne avec plusieurs options de restauration dans un seul endroit.</p>
+                        <div class="restaurant-actions">
+                            <a href="https://maps.app.goo.gl/biSppbqTA8fyYfv5A" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card scenic">
+                        <h4>Restaurant du Port</h4>
+                        <div class="distance-badge">Angers, 20 min en voiture</div>
+                        <p>Restaurant situé près du port avec une belle vue sur la Maine. Parfait pour un repas au bord de l'eau.</p>
+                        <div class="restaurant-actions">
+                            <a href="https://maps.app.goo.gl/WYYTAKsaHCteNY4FA" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card">
+                        <h4>Bistrot Tardif</h4>
+                        <div class="distance-badge">Angers, 20 min en voiture</div>
+                        <p>Bistrot typique avec cuisine traditionnelle, ouvert jusqu'à minuit. Bon rapport qualité-prix mais il vaut mieux réserver.</p>
+                        <div class="restaurant-actions">
+                            <a href="https://maps.app.goo.gl/J39fnN7feCAFiJ6F6" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card">
+                        <h4>Crêperie du Château</h4>
+                        <div class="distance-badge">Angers, 20 min en voiture</div>
+                        <p>Notre crêperie préférée, simple et originale, située juste en face du château. Ambiance authentique et crêpes délicieuses.</p>
+                        <div class="restaurant-actions">
+                            <a href="https://maps.app.goo.gl/FiboCwM5N35W5Ppr7" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-group">
+                <h3>Restaurants Loire-Authion</h3>
+                
+                <div class="restaurant-grid">
+                    <div class="restaurant-card scenic">
+                        <div class="restaurant-image">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-s/1d/63/c2/16/la-bafouille.jpg" alt="La Bafouille" onerror="this.style.display='none'">
+                        </div>
+                        <h4>La Bafouille</h4>
+                        <div class="distance-badge">30 min en voiture</div>
+                        <p>Vous ne pouvez pas trouver meilleure vue que celle-ci. Profitez simplement d'un verre de rosé et de la plus belle vue de Loire devant vous. Même se garer dans cette petite ville 'La Pointe' est amusant et beau.</p>
+                        <div class="restaurant-actions">
+                            <a href="https://www.google.com/maps/search/La+Bafouille+La+Pointe+Loire" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card scenic">
+                        <div class="restaurant-image">
+                            <img src="https://lh3.googleusercontent.com/p/AF1QipOaBM8vD9QK5FvLz6H2M8sP3cN1X4wY7eR2K9sL=s1360-w1360-h1020" alt="La Route du Sel" onerror="this.style.display='none'">
+                        </div>
+                        <h4>La Route du Sel</h4>
+                        <div class="distance-badge">20 min en voiture</div>
+                        <p>Un endroit incontournable surtout pour l'été. Vue imprenable sur la Loire, environnement convivial. Pas de menu sophistiqué, je recommande de commander une belle bouteille de vin et un plat simple.</p>
+                        <div class="restaurant-actions">
+                            <a href="https://www.google.com/maps/search/La+Route+du+Sel+Loire+Authion" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card">
+                        <h4>Les Douceurs du Pilessis</h4>
+                        <div class="distance-badge">10 min en voiture</div>
+                        <p>Un restaurant de quartier typique tenu par un couple français. Bon rapport qualité-prix pour le menu déjeuner, et le mari essaiera de parler anglais ce qui est mignon.</p>
+                        <div class="restaurant-actions">
+                            <a href="https://www.google.com/maps/search/Les+Douceurs+du+Pilessis+Loire+Authion" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card">
+                        <h4>Bellus Fortis</h4>
+                        <div class="distance-badge">15 min en voiture</div>
+                        <p>Autre restaurant de quartier, si vous ne voulez pas cuisiner dans notre petite cuisine, c'est un choix correct pour un en-cas, comme un bistrot typique de campagne française.</p>
+                        <div class="restaurant-actions">
+                            <a href="https://www.google.com/maps/search/Bellus+Fortis+restaurant+Loire+Authion" target="_blank" class="btn btn-maps">
+                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bars Section -->
+    <section id="bars" class="guide-section alt-bg">
+        <div class="container">
+            <h2><i class="fas fa-wine-glass"></i> Bars</h2>
+            
+            <div class="bar-grid">
+                <div class="bar-card featured">
+                    <div class="restaurant-image">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/b3/8b/9c/le-cercle-rouge.jpg" alt="Le Cercle Rouge" onerror="this.style.display='none'">
+                    </div>
+                    <h4>Le Cercle Rouge</h4>
+                    <div class="distance-badge">Angers, 20 min en voiture</div>
+                    <p>À côté de notre bistrot préféré 'Des Duc', notre bar à vin préféré. Excellents vins locaux, dans une petite maison angevine en pierre, avec l'ambiance d'un décor de film français typique.</p>
+                    <div class="bar-actions">
+                        <a href="https://www.google.com/maps/search/Le+Cercle+Rouge+Angers" target="_blank" class="btn btn-maps">
+                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bar-card">
+                    <h4>Les Trois Pinardiers</h4>
+                    <div class="distance-badge">Angers, 20 min en voiture</div>
+                    <p>Bar à vin spécialisé dans les vins locaux avec une excellente sélection et une ambiance conviviale.</p>
+                    <div class="bar-actions">
+                        <a href="https://www.google.com/maps/search/Les+Trois+Pinardiers+Angers" target="_blank" class="btn btn-maps">
+                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bar-card">
+                    <h4>Le 17:45 Angers</h4>
+                    <div class="distance-badge">20 min en voiture</div>
+                    <p>Situé dans une petite place du centre-ville d'Angers. Vous pouvez choisir votre propre plateau de charcuterie et fromage. Nous aimons le concept du bar. Parfait pour un 'apéro dînatoire'.</p>
+                    <div class="bar-actions">
+                        <a href="https://www.google.com/maps/search/Le+17:45+Angers" target="_blank" class="btn btn-maps">
+                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bar-card">
+                    <h4>Barco Vino</h4>
+                    <div class="distance-badge">Angers, 20 min en voiture</div>
+                    <p>Bar à vin avec une belle sélection de vins naturels et une ambiance décontractée.</p>
+                    <div class="bar-actions">
+                        <a href="https://www.google.com/maps/search/Barco+Vino+Angers" target="_blank" class="btn btn-maps">
+                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shops Section -->
+    <section id="shops" class="guide-section">
+        <div class="container">
+            <h2><i class="fas fa-shopping-bag"></i> Boutiques & Commerces</h2>
+            
+            <div class="shop-categories">
+                <div class="shop-category">
+                    <h3><i class="fas fa-cheese"></i> Épiceries Gourmandes</h3>
+                    <div class="shop-grid">
+                        <div class="shop-card featured">
+                            <div class="restaurant-image">
+                                <img src="https://lh3.googleusercontent.com/p/AF1QipP3X4vR8Y2sK7HxbV9QzWt5L1mFg6dN8eJ2A3Tw=s1360-w1360-h1020" alt="Le Luluberlu" onerror="this.style.display='none'">
+                            </div>
+                            <h4>Le Luluberlu</h4>
+                            <div class="distance-badge">Angers, 20 min en voiture</div>
+                            <p>Nous adorons cet endroit depuis le premier jour de son ouverture. Si vous cherchez les meilleurs fromages et charcuteries locaux, vins et un propriétaire adorable, allez-y !</p>
+                            <div class="shop-actions">
+                                <a href="https://www.google.com/maps/search/Le+Luluberlu+Angers" target="_blank" class="btn btn-maps">
+                                    <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="shop-card">
+                            <h4>DES HALLES</h4>
+                            <div class="distance-badge">23 min en voiture</div>
+                            <p>Paris a 'Bon Marché', nous avons cette épicerie fine classique à Angers. Excellents produits locaux, prix bien meilleurs.</p>
+                            <div class="shop-actions">
+                                <a href="https://www.google.com/maps/search/DES+HALLES+épicerie+Angers" target="_blank" class="btn btn-maps">
+                                    <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="shop-card">
+                            <h4>Biltoki</h4>
+                            <div class="distance-badge">Angers, 20 min en voiture</div>
+                            <p>Le marché tendance d'Angers. Ambiance animée avec nourriture et boissons gourmandes. Vous trouverez toujours quelque chose qui vous plaît, face au Château.</p>
+                            <div class="shop-actions">
+                                <a href="https://www.google.com/maps/search/Biltoki+Angers" target="_blank" class="btn btn-maps">
+                                    <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="shop-card featured">
+                            <h4>Épicerie Fine Premium</h4>
+                            <div class="distance-badge">Angers, 20 min en voiture</div>
+                            <p>La meilleure épicerie gourmande pour trouver les meilleures spécialités locales. Sélection exceptionnelle de produits régionaux et artisanaux.</p>
+                            <div class="shop-actions">
+                                <a href="https://maps.app.goo.gl/xqyjY971GY7jKJZe6" target="_blank" class="btn btn-maps">
+                                    <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-category">
+                    <h3><i class="fas fa-bread-slice"></i> Boulangeries Locales</h3>
+                    <div class="shop-grid">
+                        <div class="shop-card">
+                            <div class="restaurant-image">
+                                <img src="https://maisonbecam.com/cdn/shop/files/ambiance_5_resultat_6b371fda-482e-4432-b7d6-ac9fa77f6c77_960x.jpg" alt="Maison Bécam - Corné" onerror="this.style.display='none'">
+                            </div>
+                            <h4>Maison Bécam - Corné</h4>
+                            <p>Boulangerie artisanale reconnue pour la qualité de ses pains et pâtisseries.</p>
+                            <div class="shop-actions">
+                                <a href="https://www.google.com/maps/search/Maison+Bécam+Corné+boulangerie" target="_blank" class="btn btn-maps">
+                                    <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="shop-card">
+                            <h4>Au P'tit Moulin</h4>
+                            <p>Boulangerie traditionnelle avec des produits frais quotidiens.</p>
+                            <div class="shop-actions">
+                                <a href="https://www.google.com/maps/search/Au+P'tit+Moulin+boulangerie+Loire+Authion" target="_blank" class="btn btn-maps">
+                                    <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-category">
+                    <h3><i class="fas fa-shopping-cart"></i> Supermarchés</h3>
+                    <div class="shop-grid">
+                        <div class="shop-card">
+                            <h4>Super U Mazé</h4>
+                            <p>Le plus grand supermarché à proximité, vous pouvez y trouver tout ce dont vous avez besoin.</p>
+                            <div class="shop-actions">
+                                <a href="https://www.google.com/maps/search/Super+U+Mazé" target="_blank" class="btn btn-maps">
+                                    <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="shop-card">
+                            <h4>Carrefour Contact</h4>
+                            <p>Plusieurs emplacements dans la région pour vos courses de proximité.</p>
+                            <div class="shop-actions">
+                                <a href="https://www.google.com/maps/search/Carrefour+Contact+Loire+Authion" target="_blank" class="btn btn-maps">
+                                    <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-category">
+                    <h3><i class="fas fa-leaf"></i> Boutiques Spécialisées</h3>
+                    <div class="shop-grid">
+                        <div class="shop-card eco">
+                            <h4>La Ferme de Sainte Marthe</h4>
+                            <div class="eco-badge">Bio & Graines</div>
+                            <p>Fournisseur de graines et magasin bio. Excellente sélection de produits bio avec pain, légumes de saison et biologiques, produits frais essentiels, cave à vin et bière, nombreux produits de bien-être.</p>
+                            <div class="shop-actions">
+                                <a href="https://www.google.com/maps/search/La+Ferme+de+Sainte+Marthe+bio" target="_blank" class="btn btn-maps">
+                                    <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                                </a>
+                                <a href="https://www.fermedesaintemarthe.com" target="_blank" class="btn btn-website">
+                                    <i class="fas fa-globe"></i> Site Web
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="shop-card">
+                            <h4>SAS Boucherie Royale</h4>
+                            <p>Boucherie locale proposant viandes de qualité et spécialités régionales.</p>
+                            <div class="shop-actions">
+                                <a href="https://www.google.com/maps/search/SAS+Boucherie+Royale+Loire+Authion" target="_blank" class="btn btn-maps">
+                                    <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="guide-section alt-bg">
+        <div class="container">
+            <h2><i class="fas fa-hiking"></i> Activités Saisonnières</h2>
+            
+            <div class="activities-grid">
+                <div class="activity-season spring">
+                    <h3><i class="fas fa-seedling"></i> Printemps</h3>
+                    <div class="activity-cards">
+                        <div class="activity-card">
+                            <h4>Terra Botanica</h4>
+                            <div class="distance-badge">30 min en voiture</div>
+                            <p>Le premier parc européen consacré au monde végétal.</p>
+                            <div class="activity-actions">
+                                <a href="https://www.google.com/maps/search/Terra+Botanica+Angers" target="_blank" class="btn btn-maps">
+                                    <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                                </a>
+                                <a href="https://www.terrabotanica.fr" target="_blank" class="btn btn-website">
+                                    <i class="fas fa-globe"></i> Site Web
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="activity-card">
+                            <h4>Vélo autour d'Angers</h4>
+                            <p>Profitez des pistes cyclables et de la Loire à Vélo qui passe près de chez nous.</p>
+                        </div>
+                        
+                        <div class="activity-card">
+                            <h4>Villages en Fleurs</h4>
+                            <p>Découvrez les villages fleuris de la région au printemps.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-season summer">
+                    <h3><i class="fas fa-sun"></i> Été</h3>
+                    <div class="activity-cards">
+                        <div class="activity-card featured">
+                            <h4>Guinguettes (Cafés au bord de l'eau)</h4>
+                            <div class="season-badge">Avril à Octobre</div>
+                            <p>De fin avril à octobre, les guinguettes sont le meilleur endroit pour déguster un verre de rosé au bord de Loire.</p>
+                            
+                            <div class="guinguette-list">
+                                <div class="guinguette-item">
+                                    <strong>Guinguette de Port-Thibault</strong>
+                                    <div class="activity-actions">
+                                        <a href="https://www.google.com/maps/search/Guinguette+Port-Thibault" target="_blank" class="btn btn-maps btn-small">
+                                            <i class="fas fa-map-marker-alt"></i> Maps
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="guinguette-item">
+                                    <strong>La Cabane du Chat-qui-Pêche</strong>
+                                    <div class="activity-actions">
+                                        <a href="https://www.google.com/maps/search/La+Cabane+du+Chat-qui-Pêche" target="_blank" class="btn btn-maps btn-small">
+                                            <i class="fas fa-map-marker-alt"></i> Maps
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="guinguette-item">
+                                    <strong>Le Port de L'Ile</strong>
+                                    <div class="activity-actions">
+                                        <a href="https://www.google.com/maps/search/Le+Port+de+L'Ile+guinguette" target="_blank" class="btn btn-maps btn-small">
+                                            <i class="fas fa-map-marker-alt"></i> Maps
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="activity-card">
+                            <h4>Activités Nautiques</h4>
+                            <p>Kayak, sports nautiques et zones de baignade. Naviguez sur les rivières de la région.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-season autumn">
+                    <h3><i class="fas fa-leaf"></i> Automne</h3>
+                    <div class="activity-cards">
+                        <div class="activity-card">
+                            <h4>Vendanges</h4>
+                            <p>Participez aux vendanges dans les vignobles de la Loire.</p>
+                        </div>
+                        
+                        <div class="activity-card">
+                            <h4>Randonnées en Forêt</h4>
+                            <p>Profitez des couleurs automnales lors de randonnées en forêt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-season winter">
+                    <h3><i class="fas fa-snowflake"></i> Hiver</h3>
+                    <div class="activity-cards">
+                        <div class="activity-card">
+                            <h4>Marchés de Noël</h4>
+                            <p>Découvrez les marchés de Noël d'Angers et des environs.</p>
+                        </div>
+                        
+                        <div class="activity-card">
+                            <h4>Dégustations de Vin</h4>
+                            <p>Saison idéale pour visiter les caves et déguster les vins de Loire.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vineyards Section -->
+    <section id="vineyards" class="guide-section">
+        <div class="container">
+            <h2><i class="fas fa-wine-bottle"></i> Vignobles & Caves à Vin</h2>
+            
+            <div class="vineyard-grid">
+                <div class="vineyard-card featured">
+                    <div class="restaurant-image">
+                        <img src="https://www.chateau-epire.com/wp-content/uploads/2023/01/chteau-depir-le-hu-boyau.jpg" alt="Château d'Epiré - Savennières" onerror="this.style.display='none'">
+                    </div>
+                    <h4>CHÂTEAU D'EPIRÉ - SAVENNIÈRES</h4>
+                    <div class="distance-badge">30 min en voiture</div>
+                    <div class="wine-types">
+                        <span class="wine-type">Savennières</span>
+                        <span class="wine-type">Loire</span>
+                    </div>
+                    <p>Domaine réputé pour ses vins blancs secs de Savennières, dans un cadre historique exceptionnel.</p>
+                    <div class="vineyard-actions">
+                        <a href="https://www.google.com/maps/search/Château+d'Epiré+Savennières" target="_blank" class="btn btn-maps">
+                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                        </a>
+                        <a href="https://www.chateaudepire.com" target="_blank" class="btn btn-website">
+                            <i class="fas fa-globe"></i> Site Web
+                        </a>
+                    </div>
+                </div>
+
+                <div class="vineyard-card">
+                    <h4>Cave Robert et Marcel</h4>
+                    <div class="distance-badge">Saumur, 45 min en voiture</div>
+                    <div class="wine-types">
+                        <span class="wine-type">Saumur</span>
+                        <span class="wine-type">Effervescent</span>
+                    </div>
+                    <p>Cave traditionnelle spécialisée dans les vins effervescents de Saumur, creusée dans le tuffeau.</p>
+                    <div class="vineyard-actions">
+                        <a href="https://www.google.com/maps/search/Cave+Robert+et+Marcel+Saumur" target="_blank" class="btn btn-maps">
+                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                        </a>
+                    </div>
+                </div>
+
+                <div class="vineyard-card">
+                    <h4>Les Caves de Marson</h4>
+                    <div class="distance-badge">Saumur, 40 min en voiture</div>
+                    <div class="wine-types">
+                        <span class="wine-type">Saumur</span>
+                        <span class="wine-type">Visite</span>
+                    </div>
+                    <p>Caves troglodytiques offrant des visites guidées et dégustations dans un cadre unique.</p>
+                    <div class="vineyard-actions">
+                        <a href="https://www.google.com/maps/search/Les+Caves+de+Marson+Saumur" target="_blank" class="btn btn-maps">
+                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                        </a>
+                    </div>
+                </div>
+
+                <div class="vineyard-card">
+                    <h4>Domaine Des Giraudieres</h4>
+                    <div class="distance-badge">30 min en voiture</div>
+                    <div class="wine-types">
+                        <span class="wine-type">Anjou</span>
+                        <span class="wine-type">Bio</span>
+                    </div>
+                    <p>Domaine viticole familial proposant des vins biologiques et des dégustations dans un cadre convivial.</p>
+                    <div class="vineyard-actions">
+                        <a href="https://www.google.com/maps/search/Domaine+Des+Giraudieres+Loire" target="_blank" class="btn btn-maps">
+                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wine-info">
+                <h3>Vins Célèbres de la Vallée de la Loire</h3>
+                <p>La région autour d'Angers est renommée pour ses vins d'exception. Voici les appellations que nous vous recommandons :</p>
+                <div class="wine-appellations">
+                    <span class="wine-appellation">Savennières</span>
+                    <span class="wine-appellation">Coteaux du Layon</span>
+                    <span class="wine-appellation">Quarts de Chaume Grand Cru</span>
+                    <span class="wine-appellation">Anjou-Villages</span>
+                    <span class="wine-appellation">Rosé de Loire</span>
+                    <span class="wine-appellation">Cabernet d'Anjou</span>
+                    <span class="wine-appellation">Bonnezeaux</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Check-in/Check-out Section -->
+    <section id="checkin" class="guide-section alt-bg">
+        <div class="container">
+            <h2><i class="fas fa-key"></i> Check-in / Check-out</h2>
+            
+            <div class="checkin-grid">
+                <div class="checkin-card">
+                    <div class="checkin-icon">
+                        <i class="fas fa-sign-in-alt"></i>
+                    </div>
+                    <h3>Arrivée (Check-in)</h3>
+                    <div class="checkin-time">À partir de 16h00</div>
+                    <div class="checkin-details">
+                        <p><strong>Procédure :</strong></p>
+                        <ul>
+                            <li>Récupération des clés dans la boîte à clés sécurisée</li>
+                            <li>Code d'accès envoyé par message avant votre arrivée</li>
+                            <li>Visite libre du logement</li>
+                            <li>Guide d'accueil disponible sur place</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="checkin-card">
+                    <div class="checkin-icon">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                    <h3>Départ (Check-out)</h3>
+                    <div class="checkin-time">Avant 11h00</div>
+                    <div class="checkin-details">
+                        <p><strong>Procédure :</strong></p>
+                        <ul>
+                            <li>Laisser les clés dans la boîte à clés</li>
+                            <li>Fermer toutes les fenêtres</li>
+                            <li>Éteindre les lumières et appareils</li>
+                            <li>Déposer les serviettes dans la salle de bain</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkin-info">
+                <h3><i class="fas fa-info-circle"></i> Informations Importantes</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-wifi"></i>
+                        <div>
+                            <strong>WiFi</strong>
+                            <p>Nom du réseau et mot de passe disponibles dans le guide d'accueil</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-thermometer-half"></i>
+                        <div>
+                            <strong>Chauffage</strong>
+                            <p>Radiateurs électriques - Thermostat dans chaque pièce</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-car"></i>
+                        <div>
+                            <strong>Parking</strong>
+                            <p>Stationnement gratuit dans la rue devant la maison</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Contact d'urgence</strong>
+                            <p>Disponible 24h/24 au : +33 6 XX XX XX XX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- House Rules Section -->
+    <section id="rules" class="guide-section">
+        <div class="container">
+            <h2><i class="fas fa-clipboard-list"></i> Règles de la Maison</h2>
+            
+            <div class="rules-grid">
+                <div class="rules-category">
+                    <h3><i class="fas fa-home"></i> Respect du Logement</h3>
+                    <ul class="rules-list">
+                        <li>Traiter le logement avec soin comme si c'était le vôtre</li>
+                        <li>Ne pas fumer à l'intérieur</li>
+                        <li>Pas d'animaux de compagnie</li>
+                        <li>Signaler immédiatement tout dommage ou problème</li>
+                        <li>Utiliser les équipements selon les instructions</li>
+                    </ul>
+                </div>
+
+                <div class="rules-category">
+                    <h3><i class="fas fa-users"></i> Nombre d'Invités</h3>
+                    <ul class="rules-list">
+                        <li>Maximum 2 personnes</li>
+                        <li>Pas de fêtes ou d'événements</li>
+                        <li>Visites d'invités avec accord préalable</li>
+                        <li>Respecter la tranquillité des voisins</li>
+                    </ul>
+                </div>
+
+                <div class="rules-category">
+                    <h3><i class="fas fa-volume-down"></i> Nuisances Sonores</h3>
+                    <ul class="rules-list">
+                        <li>Calme respecté après 22h00</li>
+                        <li>Pas de musique forte</li>
+                        <li>Conversations téléphoniques discrètes</li>
+                        <li>Respect du voisinage en toutes circonstances</li>
+                    </ul>
+                </div>
+
+                <div class="rules-category">
+                    <h3><i class="fas fa-broom"></i> Propreté</h3>
+                    <ul class="rules-list">
+                        <li>Maintenir la propreté générale</li>
+                        <li>Faire la vaisselle après utilisation</li>
+                        <li>Sortir les poubelles si nécessaire</li>
+                        <li>Laisser le logement dans l'état de votre arrivée</li>
+                    </ul>
+                </div>
+
+                <div class="rules-category">
+                    <h3><i class="fas fa-shield-alt"></i> Sécurité</h3>
+                    <ul class="rules-list">
+                        <li>Verrouiller portes et fenêtres en partant</li>
+                        <li>Ne pas laisser les clés à l'extérieur</li>
+                        <li>Signaler toute personne suspecte</li>
+                        <li>Respecter les consignes de sécurité incendie</li>
+                    </ul>
+                </div>
+
+                <div class="rules-category">
+                    <h3><i class="fas fa-recycle"></i> Tri Sélectif</h3>
+                    <ul class="rules-list">
+                        <li>Respecter le tri des déchets</li>
+                        <li>Poubelle jaune : recyclables</li>
+                        <li>Poubelle verte : déchets ménagers</li>
+                        <li>Compost disponible pour les déchets organiques</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rules-footer">
+                <div class="rules-contact">
+                    <h3><i class="fas fa-question-circle"></i> Questions ou Problèmes ?</h3>
+                    <p>N'hésitez pas à nous contacter à tout moment. Nous sommes là pour vous aider à passer un excellent séjour !</p>
+                    <div class="contact-methods">
+                        <a href="mailto:hello@ascottage.fr" class="contact-btn">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                        <a href="tel:+33600000000" class="contact-btn">
+                            <i class="fas fa-phone"></i> Téléphone
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 A.S. Cottage - Alexis & Sylvia. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="index.html">Retour à l'accueil</a>
+                    <a href="https://www.airbnb.fr/rooms/1150517326023370688" target="_blank">Réserver sur Airbnb</a>
+                    <a href="mailto:hello@ascottage.fr">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="guide-script.js"></script>
+</body>
+</html>
