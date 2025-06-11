@@ -1903,7 +1903,25 @@ body {
     }
     
     .nav {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .nav a {
         display: none;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+    
+    .nav a.nav-guide-highlight {
+        display: flex;
+        align-items: center;
+        padding: 10px 16px;
+        font-size: 14px;
+        white-space: nowrap;
     }
     
     .language-switcher {
