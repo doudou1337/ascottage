@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Règles & Instructions - A.S. Cottage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="guide-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Circular:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><h1>A.S. Cottage</h1></a>
+            </div>
+            <nav class="nav">
+                <a href="guide.html" class="nav-guide-highlight" data-key="nav-guide">Guide Local</a>
+                <a href="index.html#overview" data-key="nav-overview">Aperçu</a>
+                <a href="index.html#amenities" data-key="nav-amenities">Équipements</a>
+                <a href="index.html#location" data-key="nav-location">Localisation</a>
+                <a href="index.html#reviews" data-key="nav-reviews">Avis</a>
+                <a href="rules.html" class="active" data-key="nav-instructions">Instructions</a>
+                <a href="mailto:hello@ascottage.fr" data-key="nav-contact">Contact</a>
+            </nav>
+            <div class="language-switcher">
+                <button class="lang-btn" onclick="toggleLanguage()">
+                    <i class="fas fa-globe"></i>
+                    <span id="currentLang">FR</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="guide-hero">
+        <div class="container">
+            <div class="guide-hero-content">
+                <h1>Règles & Instructions du Gîte</h1>
+                <p class="guide-subtitle">Informations importantes pour un séjour réussi et agréable</p>
+                <div class="guide-address">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>3 route de la crétaudière, 49630 Loire Authion</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="guide-nav">
+        <div class="container">
+            <div class="guide-nav-grid">
+                <a href="#checkin" class="guide-nav-item">
+                    <i class="fas fa-key"></i>
+                    <span>Check In/Out</span>
+                </a>
+                <a href="#rules" class="guide-nav-item">
+                    <i class="fas fa-clipboard-list"></i>
+                    <span>Règles de la Maison</span>
+                </a>
+                <a href="#emergency" class="guide-nav-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Urgences</span>
+                </a>
+                <a href="#wifi" class="guide-nav-item">
+                    <i class="fas fa-wifi"></i>
+                    <span>WiFi & Services</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Check-in/Check-out Section -->
+    <section id="checkin" class="guide-section">
+        <div class="container">
+            <h2><i class="fas fa-key"></i> Check-in / Check-out</h2>
+            
+            <div class="checkin-grid">
+                <div class="checkin-card">
+                    <div class="checkin-icon">
+                        <i class="fas fa-sign-in-alt"></i>
+                    </div>
+                    <h3>Arrivée (Check-in)</h3>
+                    <div class="checkin-time">À partir de 16h00</div>
+                    <div class="checkin-details">
+                        <p><strong>Procédure :</strong></p>
+                        <ul>
+                            <li>Récupération des clés dans la boîte à clés sécurisée</li>
+                            <li>Code d'accès envoyé par message avant votre arrivée</li>
+                            <li>Visite libre du logement</li>
+                            <li>Guide d'accueil disponible sur place</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="checkin-card">
+                    <div class="checkin-icon">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                    <h3>Départ (Check-out)</h3>
+                    <div class="checkin-time">Avant 11h00</div>
+                    <div class="checkin-details">
+                        <p><strong>Procédure :</strong></p>
+                        <ul>
+                            <li>Laisser les clés dans la boîte à clés</li>
+                            <li>Fermer toutes les fenêtres</li>
+                            <li>Éteindre les lumières et appareils</li>
+                            <li>Déposer les serviettes dans la salle de bain</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkin-info">
+                <h3><i class="fas fa-info-circle"></i> Informations Importantes</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-wifi"></i>
+                        <div>
+                            <strong>WiFi</strong>
+                            <p>Nom du réseau et mot de passe disponibles dans le guide d'accueil</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-thermometer-half"></i>
+                        <div>
+                            <strong>Chauffage</strong>
+                            <p>Radiateurs électriques - Thermostat dans chaque pièce</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-car"></i>
+                        <div>
+                            <strong>Parking</strong>
+                            <p>Stationnement gratuit dans la rue devant la maison</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Contact d'urgence</strong>
+                            <p>Disponible 24h/24 au : +33 6 XX XX XX XX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- House Rules Section -->
+    <section id="rules" class="guide-section alt-bg">
+        <div class="container">
+            <h2><i class="fas fa-clipboard-list"></i> Règles de la Maison</h2>
+            
+            <div class="rules-grid">
+                <div class="rules-category">
+                    <h3><i class="fas fa-home"></i> Respect du Logement</h3>
+                    <ul class="rules-list">
+                        <li>Traiter le logement avec soin comme si c'était le vôtre</li>
+                        <li>Ne pas fumer à l'intérieur</li>
+                        <li>Pas d'animaux de compagnie</li>
+                        <li>Signaler immédiatement tout dommage ou problème</li>
+                        <li>Utiliser les équipements selon les instructions</li>
+                    </ul>
+                </div>
+
+                <div class="rules-category">
+                    <h3><i class="fas fa-users"></i> Nombre d'Invités</h3>
+                    <ul class="rules-list">
+                        <li>Maximum 2 personnes</li>
+                        <li>Pas de fêtes ou d'événements</li>
+                        <li>Visites d'invités avec accord préalable</li>
+                        <li>Respecter la tranquillité des voisins</li>
+                    </ul>
+                </div>
+
+                <div class="rules-category">
+                    <h3><i class="fas fa-volume-down"></i> Nuisances Sonores</h3>
+                    <ul class="rules-list">
+                        <li>Calme respecté après 22h00</li>
+                        <li>Pas de musique forte</li>
+                        <li>Conversations téléphoniques discrètes</li>
+                        <li>Respect du voisinage en toutes circonstances</li>
+                    </ul>
+                </div>
+
+                <div class="rules-category">
+                    <h3><i class="fas fa-broom"></i> Propreté</h3>
+                    <ul class="rules-list">
+                        <li>Maintenir la propreté générale</li>
+                        <li>Faire la vaisselle après utilisation</li>
+                        <li>Sortir les poubelles si nécessaire</li>
+                        <li>Laisser le logement dans l'état de votre arrivée</li>
+                    </ul>
+                </div>
+
+                <div class="rules-category">
+                    <h3><i class="fas fa-shield-alt"></i> Sécurité</h3>
+                    <ul class="rules-list">
+                        <li>Verrouiller portes et fenêtres en partant</li>
+                        <li>Ne pas laisser les clés à l'extérieur</li>
+                        <li>Signaler toute personne suspecte</li>
+                        <li>Respecter les consignes de sécurité incendie</li>
+                    </ul>
+                </div>
+
+                <div class="rules-category">
+                    <h3><i class="fas fa-recycle"></i> Tri Sélectif</h3>
+                    <ul class="rules-list">
+                        <li>Respecter le tri des déchets</li>
+                        <li>Poubelle jaune : recyclables</li>
+                        <li>Poubelle verte : déchets ménagers</li>
+                        <li>Compost disponible pour les déchets organiques</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Section -->
+    <section id="emergency" class="guide-section">
+        <div class="container">
+            <h2><i class="fas fa-phone-alt"></i> Contacts d'Urgence</h2>
+            
+            <div class="emergency-grid">
+                <div class="emergency-card urgent">
+                    <div class="emergency-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3>Urgences Médicales</h3>
+                    <div class="emergency-number">15</div>
+                    <p>SAMU - Urgences médicales</p>
+                </div>
+
+                <div class="emergency-card urgent">
+                    <div class="emergency-icon">
+                        <i class="fas fa-fire-extinguisher"></i>
+                    </div>
+                    <h3>Pompiers</h3>
+                    <div class="emergency-number">18</div>
+                    <p>Service d'incendie et de secours</p>
+                </div>
+
+                <div class="emergency-card urgent">
+                    <div class="emergency-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Police</h3>
+                    <div class="emergency-number">17</div>
+                    <p>Police nationale ou gendarmerie</p>
+                </div>
+
+                <div class="emergency-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Médecin de Garde</h3>
+                    <div class="emergency-number">02 41 XX XX XX</div>
+                    <p>Service médical local</p>
+                </div>
+
+                <div class="emergency-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Plombier d'Urgence</h3>
+                    <div class="emergency-number">02 41 XX XX XX</div>
+                    <p>Intervention plomberie</p>
+                </div>
+
+                <div class="emergency-card host">
+                    <div class="emergency-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Alexis & Sylvia</h3>
+                    <div class="emergency-number">+33 6 XX XX XX XX</div>
+                    <p>Vos hôtes - Disponibles 24h/24</p>
+                </div>
+            </div>
+
+            <div class="emergency-info">
+                <h3><i class="fas fa-info-circle"></i> En Cas d'Urgence</h3>
+                <div class="emergency-steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <p>Composez le numéro d'urgence approprié</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <p>Indiquez l'adresse : 3 route de la crétaudière, 49630 Loire Authion</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <p>Contactez vos hôtes pour les informer de la situation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WiFi & Services Section -->
+    <section id="wifi" class="guide-section alt-bg">
+        <div class="container">
+            <h2><i class="fas fa-wifi"></i> WiFi & Services Pratiques</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Accès Internet</h3>
+                    <div class="service-details">
+                        <p><strong>Réseau WiFi :</strong> AS-Cottage-Guest</p>
+                        <p><strong>Mot de passe :</strong> Disponible dans le guide d'accueil</p>
+                        <p><strong>Débit :</strong> Fibre optique haut débit</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3>Services TV</h3>
+                    <div class="service-details">
+                        <p><strong>Netflix :</strong> Compte disponible</p>
+                        <p><strong>Chaînes :</strong> TNT française</p>
+                        <p><strong>Streaming :</strong> WiFi compatible</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-washing-machine"></i>
+                    </div>
+                    <h3>Lave-linge</h3>
+                    <div class="service-details">
+                        <p><strong>Utilisation :</strong> Gratuite</p>
+                        <p><strong>Instructions :</strong> Sur l'appareil</p>
+                        <p><strong>Lessive :</strong> Fournie</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Cheminée</h3>
+                    <div class="service-details">
+                        <p><strong>Bois :</strong> Fourni gratuitement</p>
+                        <p><strong>Allumage :</strong> Instructions disponibles</p>
+                        <p><strong>Sécurité :</strong> Pare-feu obligatoire</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="guide-section">
+        <div class="container">
+            <div class="rules-footer">
+                <div class="rules-contact">
+                    <h3><i class="fas fa-question-circle"></i> Questions ou Problèmes ?</h3>
+                    <p>N'hésitez pas à nous contacter à tout moment. Nous sommes là pour vous aider à passer un excellent séjour !</p>
+                    <div class="contact-methods">
+                        <a href="mailto:hello@ascottage.fr" class="contact-btn">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                        <a href="tel:+33600000000" class="contact-btn">
+                            <i class="fas fa-phone"></i> Téléphone
+                        </a>
+                        <a href="guide.html" class="contact-btn">
+                            <i class="fas fa-map-marked-alt"></i> Guide Local
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 A.S. Cottage - Alexis & Sylvia. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="index.html">Retour à l'accueil</a>
+                    <a href="guide.html">Guide Local</a>
+                    <a href="https://www.airbnb.fr/rooms/1150517326023370688" target="_blank">Réserver sur Airbnb</a>
+                    <a href="mailto:hello@ascottage.fr">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="guide-script.js"></script>
+</body>
+</html>

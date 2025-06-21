@@ -413,6 +413,7 @@ const translations = {
         'nav-location': 'Localisation',
         'nav-reviews': 'Avis',
         'nav-guide': 'Guide Local',
+        'nav-instructions': 'Instructions',
         'nav-contact': 'Contact',
         'hero-title': 'Gîte cosy style château avec vue sur étang',
         'hero-subtitle': 'Bienvenue dans notre gîte du XVIIIe, classé 4 étoiles Meublé de Tourisme',
@@ -451,6 +452,7 @@ const translations = {
         'nav-location': 'Location',
         'nav-reviews': 'Reviews',
         'nav-guide': 'Local Guide',
+        'nav-instructions': 'Instructions',
         'nav-contact': 'Contact',
         'hero-title': 'Cozy château-style cottage with pond view',
         'hero-subtitle': 'Welcome to our 18th century cottage, classified 4-star Furnished Tourism',
@@ -496,17 +498,20 @@ function detectBrowserLanguage() {
     return 'fr';
 }
 
-// Initialize language based on browser preference
+// Initialize language based on stored preference or browser preference
 function initializeLanguage() {
-    const preferredLang = detectBrowserLanguage();
-    if (preferredLang !== currentLanguage) {
-        currentLanguage = preferredLang;
-        updateLanguage();
+    const storedLang = localStorage.getItem('ascottage-language');
+    if (storedLang && (storedLang === 'fr' || storedLang === 'en')) {
+        currentLanguage = storedLang;
+    } else {
+        currentLanguage = detectBrowserLanguage();
     }
+    updateLanguage();
 }
 
 function toggleLanguage() {
     currentLanguage = currentLanguage === 'fr' ? 'en' : 'fr';
+    localStorage.setItem('ascottage-language', currentLanguage);
     updateLanguage();
 }
 

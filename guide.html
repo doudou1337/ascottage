@@ -17,12 +17,13 @@
                 <a href="index.html"><h1>A.S. Cottage</h1></a>
             </div>
             <nav class="nav">
-                <a href="index.html#overview">Aperçu</a>
-                <a href="index.html#amenities">Équipements</a>
-                <a href="index.html#location">Localisation</a>
-                <a href="index.html#reviews">Avis</a>
-                <a href="guide.html" class="active">Guide Local</a>
-                <a href="index.html#contact">Contact</a>
+                <a href="guide.html" class="nav-guide-highlight active" data-key="nav-guide">Guide Local</a>
+                <a href="index.html#overview" data-key="nav-overview">Aperçu</a>
+                <a href="index.html#amenities" data-key="nav-amenities">Équipements</a>
+                <a href="index.html#location" data-key="nav-location">Localisation</a>
+                <a href="index.html#reviews" data-key="nav-reviews">Avis</a>
+                <a href="rules.html" data-key="nav-instructions">Instructions</a>
+                <a href="mailto:hello@ascottage.fr" data-key="nav-contact">Contact</a>
             </nav>
             <div class="language-switcher">
                 <button class="lang-btn" onclick="toggleLanguage()">
@@ -75,14 +76,6 @@
                     <i class="fas fa-wine-bottle"></i>
                     <span>Vignobles</span>
                 </a>
-                <a href="#checkin" class="guide-nav-item">
-                    <i class="fas fa-key"></i>
-                    <span>Check In/Out</span>
-                </a>
-                <a href="#rules" class="guide-nav-item">
-                    <i class="fas fa-clipboard-list"></i>
-                    <span>Règles</span>
-                </a>
             </div>
         </div>
     </section>
@@ -90,8 +83,37 @@
     <!-- Guinguettes Section -->
     <section id="guinguettes" class="guide-section">
         <div class="container">
-            <h2><i class="fas fa-umbrella-beach"></i> Guinguettes (Restaurants d'Été)</h2>
-            <p class="section-intro">Les 'guinguettes' sont des restaurants au bord de Loire ouverts uniquement en été. Cuisine simple et boissons dans un cadre très relaxant. Parfait pour profiter de la nature et de la vue sur la Loire.</p>
+            <h2><i class="fas fa-umbrella-beach"></i> Guinguettes - Notre Recommandation Estivale ☀️</h2>
+            
+            <div class="seasonal-highlight">
+                <div class="season-banner">
+                    <h3>🌞 L'Expérience Estivale Incontournable de la Loire</h3>
+                    <p class="season-description">Les <strong>guinguettes</strong> sont des restaurants au bord de Loire ouverts uniquement pendant la belle saison (avril à octobre). Ces établissements offrent une cuisine simple et des boissons dans un cadre enchanteur et très relaxant - parfait pour profiter de la nature et de la vue sur la Loire.</p>
+                </div>
+                
+                <div class="guinguette-experience">
+                    <div class="experience-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-sun"></i>
+                            <span><strong>Saison :</strong> Avril à Octobre selon la météo</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-clock"></i>
+                            <span><strong>Meilleur moment :</strong> Fin d'après-midi pour l'apéritif au coucher du soleil</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-wine-glass"></i>
+                            <span><strong>Ambiance :</strong> Rosé au bord de l'eau, cuisine décontractée</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-umbrella"></i>
+                            <span><strong>Conseil :</strong> Apportez parasol/casquette en été</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="section-intro">Nous recommandons de vérifier les horaires avant votre visite, car ils peuvent varier selon les conditions météorologiques. Voici nos guinguettes préférées :</p>
             
             <div class="guinguette-grid">
                 <div class="guinguette-card featured">
@@ -197,22 +219,14 @@
                 </div>
             </div>
 
-            <div class="guinguette-info">
-                <h3>🌞 Saison des Guinguettes</h3>
-                <p>La plupart des guinguettes sont ouvertes d'avril/mai à septembre/octobre, selon la météo. Nous recommandons de vérifier les horaires avant votre visite, car ils peuvent varier selon les conditions météorologiques et la saison.</p>
-                <div class="guinguette-tips">
-                    <div class="tip-item">
-                        <i class="fas fa-lightbulb"></i>
-                        <span>Meilleur moment : fin d'après-midi pour l'apéritif au coucher du soleil</span>
-                    </div>
-                    <div class="tip-item">
-                        <i class="fas fa-umbrella"></i>
-                        <span>Apportez un parasol ou une casquette en été</span>
-                    </div>
-                    <div class="tip-item">
-                        <i class="fas fa-car"></i>
-                        <span>Parking généralement gratuit mais peut être limité en été</span>
-                    </div>
+            <div class="guinguette-tips">
+                <div class="tip-item">
+                    <i class="fas fa-car"></i>
+                    <span><strong>Bon à savoir :</strong> Parking généralement gratuit mais peut être limité en été</span>
+                </div>
+                <div class="tip-item">
+                    <i class="fas fa-phone"></i>
+                    <span><strong>Conseil :</strong> Appelez avant de vous déplacer pour confirmer les horaires</span>
                 </div>
             </div>
         </div>
@@ -645,7 +659,15 @@
     <!-- Activities Section -->
     <section id="activities" class="guide-section alt-bg">
         <div class="container">
-            <h2><i class="fas fa-hiking"></i> Activités Saisonnières</h2>
+            <h2><i class="fas fa-sun"></i> Activités Selon les Saisons</h2>
+            <p class="section-intro">La Loire-Authion offre des expériences différentes selon les saisons. Découvrez nos recommandations actuelles et planifiez selon la période de votre séjour !</p>
+            
+            <div class="current-season-highlight">
+                <div class="season-now">
+                    <h3>🌞 Actuellement - Saison Estivale (Juin - Septembre)</h3>
+                    <p>C'est la meilleure période pour profiter des <strong>guinguettes</strong>, des activités nautiques et des longues soirées au bord de Loire. Les températures sont parfaites pour les activités extérieures !</p>
+                </div>
+            </div>
             
             <div class="activities-grid">
                 <div class="activity-season spring">
@@ -677,45 +699,53 @@
                     </div>
                 </div>
 
-                <div class="activity-season summer">
-                    <h3><i class="fas fa-sun"></i> Été</h3>
+                <div class="activity-season summer featured-season">
+                    <h3><i class="fas fa-sun"></i> Été - LA Saison à Ne Pas Manquer ! 🌞</h3>
+                    <div class="season-description">
+                        <p><strong>C'est maintenant !</strong> L'été est la période magique où la Loire s'anime. Profitez des longues journées ensoleillées et de l'art de vivre ligérien.</p>
+                    </div>
                     <div class="activity-cards">
-                        <div class="activity-card featured">
-                            <h4>Guinguettes (Cafés au bord de l'eau)</h4>
-                            <div class="season-badge">Avril à Octobre</div>
-                            <p>De fin avril à octobre, les guinguettes sont le meilleur endroit pour déguster un verre de rosé au bord de Loire.</p>
-                            
-                            <div class="guinguette-list">
-                                <div class="guinguette-item">
-                                    <strong>Guinguette de Port-Thibault</strong>
-                                    <div class="activity-actions">
-                                        <a href="https://www.google.com/maps/search/Guinguette+Port-Thibault" target="_blank" class="btn btn-maps btn-small">
-                                            <i class="fas fa-map-marker-alt"></i> Maps
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="guinguette-item">
-                                    <strong>La Cabane du Chat-qui-Pêche</strong>
-                                    <div class="activity-actions">
-                                        <a href="https://www.google.com/maps/search/La+Cabane+du+Chat-qui-Pêche" target="_blank" class="btn btn-maps btn-small">
-                                            <i class="fas fa-map-marker-alt"></i> Maps
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="guinguette-item">
-                                    <strong>Le Port de L'Ile</strong>
-                                    <div class="activity-actions">
-                                        <a href="https://www.google.com/maps/search/Le+Port+de+L'Ile+guinguette" target="_blank" class="btn btn-maps btn-small">
-                                            <i class="fas fa-map-marker-alt"></i> Maps
-                                        </a>
-                                    </div>
-                                </div>
+                        <div class="activity-card featured summer-highlight">
+                            <h4>🍷 Guinguettes - L'Expérience Incontournable</h4>
+                            <div class="season-badge">Ouvertes maintenant !</div>
+                            <p><strong>Notre recommandation #1</strong> : Les guinguettes sont ouvertes et offrent la quintessence de l'été ligérien. Rosé au coucher du soleil, vue sur Loire, ambiance décontractée.</p>
+                            <div class="summer-tip">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Conseil : Réservez en fin d'après-midi pour l'apéritif au coucher du soleil</span>
+                            </div>
+                            <div class="activity-actions">
+                                <a href="#guinguettes" class="btn btn-primary btn-small">
+                                    <i class="fas fa-arrow-up"></i> Voir nos guinguettes préférées
+                                </a>
                             </div>
                         </div>
                         
+                        <div class="activity-card summer-highlight">
+                            <h4>🚣 Activités Nautiques sur Loire</h4>
+                            <div class="season-badge">Parfait en été</div>
+                            <p>Kayak, canoë, stand-up paddle... Explorez la Loire depuis l'eau ! Plusieurs bases nautiques à proximité.</p>
+                            <div class="activity-features">
+                                <span class="feature-tag">🛶 Location kayak</span>
+                                <span class="feature-tag">🏊 Zones de baignade</span>
+                                <span class="feature-tag">🌊 Balades fluviales</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-card summer-highlight">
+                            <h4>🚴 Loire à Vélo</h4>
+                            <div class="season-badge">Idéal en été</div>
+                            <p>Parcourez les 900 km de pistes cyclables le long de la Loire. Itinéraires adaptés à tous les niveaux, avec de nombreux arrêts patrimoniaux.</p>
+                            <div class="activity-features">
+                                <span class="feature-tag">🏰 Châteaux</span>
+                                <span class="feature-tag">🍇 Vignobles</span>
+                                <span class="feature-tag">🌳 Nature</span>
+                            </div>
+                        </div>
+
                         <div class="activity-card">
-                            <h4>Activités Nautiques</h4>
-                            <p>Kayak, sports nautiques et zones de baignade. Naviguez sur les rivières de la région.</p>
+                            <h4>🎪 Festivals & Événements</h4>
+                            <div class="season-badge">Juillet - Août</div>
+                            <p>L'été est riche en festivals : musique, théâtre, gastronomie. Consultez l'agenda culturel d'Angers et de la région.</p>
                         </div>
                     </div>
                 </div>
@@ -842,167 +872,6 @@
         </div>
     </section>
 
-    <!-- Check-in/Check-out Section -->
-    <section id="checkin" class="guide-section alt-bg">
-        <div class="container">
-            <h2><i class="fas fa-key"></i> Check-in / Check-out</h2>
-            
-            <div class="checkin-grid">
-                <div class="checkin-card">
-                    <div class="checkin-icon">
-                        <i class="fas fa-sign-in-alt"></i>
-                    </div>
-                    <h3>Arrivée (Check-in)</h3>
-                    <div class="checkin-time">À partir de 16h00</div>
-                    <div class="checkin-details">
-                        <p><strong>Procédure :</strong></p>
-                        <ul>
-                            <li>Récupération des clés dans la boîte à clés sécurisée</li>
-                            <li>Code d'accès envoyé par message avant votre arrivée</li>
-                            <li>Visite libre du logement</li>
-                            <li>Guide d'accueil disponible sur place</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="checkin-card">
-                    <div class="checkin-icon">
-                        <i class="fas fa-sign-out-alt"></i>
-                    </div>
-                    <h3>Départ (Check-out)</h3>
-                    <div class="checkin-time">Avant 11h00</div>
-                    <div class="checkin-details">
-                        <p><strong>Procédure :</strong></p>
-                        <ul>
-                            <li>Laisser les clés dans la boîte à clés</li>
-                            <li>Fermer toutes les fenêtres</li>
-                            <li>Éteindre les lumières et appareils</li>
-                            <li>Déposer les serviettes dans la salle de bain</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="checkin-info">
-                <h3><i class="fas fa-info-circle"></i> Informations Importantes</h3>
-                <div class="info-grid">
-                    <div class="info-item">
-                        <i class="fas fa-wifi"></i>
-                        <div>
-                            <strong>WiFi</strong>
-                            <p>Nom du réseau et mot de passe disponibles dans le guide d'accueil</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-thermometer-half"></i>
-                        <div>
-                            <strong>Chauffage</strong>
-                            <p>Radiateurs électriques - Thermostat dans chaque pièce</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-car"></i>
-                        <div>
-                            <strong>Parking</strong>
-                            <p>Stationnement gratuit dans la rue devant la maison</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <strong>Contact d'urgence</strong>
-                            <p>Disponible 24h/24 au : +33 6 XX XX XX XX</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- House Rules Section -->
-    <section id="rules" class="guide-section">
-        <div class="container">
-            <h2><i class="fas fa-clipboard-list"></i> Règles de la Maison</h2>
-            
-            <div class="rules-grid">
-                <div class="rules-category">
-                    <h3><i class="fas fa-home"></i> Respect du Logement</h3>
-                    <ul class="rules-list">
-                        <li>Traiter le logement avec soin comme si c'était le vôtre</li>
-                        <li>Ne pas fumer à l'intérieur</li>
-                        <li>Pas d'animaux de compagnie</li>
-                        <li>Signaler immédiatement tout dommage ou problème</li>
-                        <li>Utiliser les équipements selon les instructions</li>
-                    </ul>
-                </div>
-
-                <div class="rules-category">
-                    <h3><i class="fas fa-users"></i> Nombre d'Invités</h3>
-                    <ul class="rules-list">
-                        <li>Maximum 2 personnes</li>
-                        <li>Pas de fêtes ou d'événements</li>
-                        <li>Visites d'invités avec accord préalable</li>
-                        <li>Respecter la tranquillité des voisins</li>
-                    </ul>
-                </div>
-
-                <div class="rules-category">
-                    <h3><i class="fas fa-volume-down"></i> Nuisances Sonores</h3>
-                    <ul class="rules-list">
-                        <li>Calme respecté après 22h00</li>
-                        <li>Pas de musique forte</li>
-                        <li>Conversations téléphoniques discrètes</li>
-                        <li>Respect du voisinage en toutes circonstances</li>
-                    </ul>
-                </div>
-
-                <div class="rules-category">
-                    <h3><i class="fas fa-broom"></i> Propreté</h3>
-                    <ul class="rules-list">
-                        <li>Maintenir la propreté générale</li>
-                        <li>Faire la vaisselle après utilisation</li>
-                        <li>Sortir les poubelles si nécessaire</li>
-                        <li>Laisser le logement dans l'état de votre arrivée</li>
-                    </ul>
-                </div>
-
-                <div class="rules-category">
-                    <h3><i class="fas fa-shield-alt"></i> Sécurité</h3>
-                    <ul class="rules-list">
-                        <li>Verrouiller portes et fenêtres en partant</li>
-                        <li>Ne pas laisser les clés à l'extérieur</li>
-                        <li>Signaler toute personne suspecte</li>
-                        <li>Respecter les consignes de sécurité incendie</li>
-                    </ul>
-                </div>
-
-                <div class="rules-category">
-                    <h3><i class="fas fa-recycle"></i> Tri Sélectif</h3>
-                    <ul class="rules-list">
-                        <li>Respecter le tri des déchets</li>
-                        <li>Poubelle jaune : recyclables</li>
-                        <li>Poubelle verte : déchets ménagers</li>
-                        <li>Compost disponible pour les déchets organiques</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="rules-footer">
-                <div class="rules-contact">
-                    <h3><i class="fas fa-question-circle"></i> Questions ou Problèmes ?</h3>
-                    <p>N'hésitez pas à nous contacter à tout moment. Nous sommes là pour vous aider à passer un excellent séjour !</p>
-                    <div class="contact-methods">
-                        <a href="mailto:hello@ascottage.fr" class="contact-btn">
-                            <i class="fas fa-envelope"></i> Email
-                        </a>
-                        <a href="tel:+33600000000" class="contact-btn">
-                            <i class="fas fa-phone"></i> Téléphone
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">
