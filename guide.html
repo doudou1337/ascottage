@@ -9,6 +9,16 @@
     })(window,document,'script','dataLayer','GTM-MX2W77HQ');</script>
     <!-- End Google Tag Manager -->
     
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1DVJFXPHD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-X1DVJFXPHD');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guide Local - A.S. Cottage</title>
@@ -50,11 +60,14 @@
     <section class="guide-hero">
         <div class="container">
             <div class="guide-hero-content">
-                <h1 data-key="hero.title">Guide Local & Recommandations</h1>
-                <p class="guide-subtitle" data-key="hero.subtitle">Découvrez nos recommandations personnelles pour profiter au mieux de votre séjour dans la Loire-Authion</p>
-                <div class="guide-address">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>3 route de la crétaudière, 49630 Loire Authion</span>
+                <div class="guide-hosts">
+                    <div class="hosts-photo">
+                        <img src="img/profil.jpg" alt="Alexis & Sylvia, vos hôtes" onerror="this.style.display='none'">
+                    </div>
+                    <div class="hosts-intro">
+                        <h1 data-key="hero.title">Guide Local & Recommandations</h1>
+                        <p class="guide-subtitle" data-key="hero.subtitle">👋 Bonjour ! Nous avons soigneusement sélectionné tous ces endroits que nous fréquentons régulièrement. Ce guide reflète nos véritables coups de cœur après 8 ans à vivre dans la région. Nous espérons que vous trouverez de bonnes recommandations, et si jamais vous en découvrez d'autres, n'hésitez pas à nous les partager ! </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -96,6 +109,9 @@
     <section id="guinguettes" class="guide-section">
         <div class="container">
             <h2><i class="fas fa-umbrella-beach"></i> <span data-key="guinguettes.title">Guinguettes - Notre Recommandation Estivale ☀️</span></h2>
+            <div class="booking-cta">
+                <a href="index.html" class="cta-link">🏡 Séjournez chez nous pour découvrir ces trésors au bord de Loire à quelques minutes seulement</a>
+            </div>
                 <div class="guinguette-banner">
                     <img src="img/guinguette-banner.jpg" alt="Ambiance guinguette au bord de Loire" style="width: 100%; height: 200px; object-fit: cover;">
                 </div>
@@ -135,6 +151,7 @@
                 </div>
 
                 <div class="guinguette-card">
+                    <div class="favorite-badge special-guinguette">📍 Notre quotidien - La plus proche</div>
                     <div class="restaurant-image">
                         <img src="img/barbe-a-maman.jpg" alt="La Barbe À Maman" onerror="this.style.display='none'">
                     </div>
@@ -149,7 +166,6 @@
                     <div class="guinguette-features">
                         <span class="feature-tag">🍷 Vins locaux</span>
                         <span class="feature-tag">🌅 Vue sur Loire</span>
-                        <span class="special-badge">📍 Notre quotidien - La plus proche</span>
                     </div>
                     <div class="guinguette-actions">
                         <a href="https://www.google.com/maps/search/La+Barbe+À+Maman+Port+Maillard" target="_blank" class="btn btn-maps">
@@ -186,6 +202,7 @@
                 </div>
 
                 <div class="guinguette-card">
+                    <div class="favorite-badge special-guinguette">🎉 Le plus animé du centre-ville d'Angers</div>
                     <div class="restaurant-image">
                         <img src="img/heron-carre.webp" alt="Le Héron carré" onerror="this.style.display='none'">
                     </div>
@@ -201,7 +218,6 @@
                         <span class="feature-tag">🍺 Bières pression</span>
                         <span class="feature-tag">🏙️ Centre-ville</span>
                         <span class="feature-tag">🌊 Vue sur Maine</span>
-                        <span class="special-badge">🎉 Le plus animé du centre-ville d'Angers</span>
                     </div>
                     <div class="guinguette-actions">
                         <a href="https://www.google.com/maps/search/Le+Héron+carré+Angers" target="_blank" class="btn btn-maps">
@@ -214,6 +230,7 @@
                 </div>
 
                 <div class="guinguette-card">
+                    <div class="favorite-badge special-guinguette">🍺 Spécialiste bières locales</div>
                     <div class="restaurant-image">
                         <img src="img/la-derive.jpg" alt="Guinguette La Dérive" onerror="this.style.display='none'">
                     </div>
@@ -229,7 +246,6 @@
                         <span class="feature-tag">🍺 Bières artisanales</span>
                         <span class="feature-tag">🥘 Produits locaux</span>
                         <span class="feature-tag">🌿 Ambiance nature</span>
-                        <span class="special-badge">🍺 Spécialiste bières locales</span>
                     </div>
                     <div class="guinguette-actions">
                         <a href="https://www.google.com/maps/search/Guinguette+La+Dérive+Port+Saint-Maur" target="_blank" class="btn btn-maps">
@@ -242,6 +258,7 @@
                 </div>
 
                 <div class="guinguette-card">
+                    <div class="favorite-badge special-guinguette">🏰 La plus ancienne et célèbre d'Anjou</div>
                     <div class="restaurant-image">
                         <img src="img/guinguette-jojo.jpg" alt="La Guinguette à Jojo" onerror="this.style.display='none'">
                     </div>
@@ -258,7 +275,6 @@
                         <span class="feature-tag">🌅 Vue panoramique</span>
                         <span class="feature-tag">🏛️ Patrimoine UNESCO</span>
                         <span class="feature-tag">👨‍👩‍👧‍👦 Aires de jeux</span>
-                        <span class="special-badge">🏰 La plus ancienne et célèbre d'Anjou</span>
                     </div>
                     <div class="guinguette-actions">
                         <a href="https://www.google.com/maps/search/La+Guinguette+à+Jojo+Saint-Saturnin-sur-Loire" target="_blank" class="btn btn-maps">
@@ -277,6 +293,9 @@
     <section id="restaurants" class="guide-section alt-bg">
         <div class="container">
             <h2><i class="fas fa-utensils"></i> <span data-key="restaurants.title">Restaurants</span></h2>
+            <div class="booking-cta">
+                <a href="index.html" class="cta-link">🍽️ Réservez votre séjour et savourez la gastronomie locale sans souci de transport</a>
+            </div>
             <p class="section-intro" data-key="restaurants.intro">Nous avons vécu 4 ans au centre-ville d'Angers et testé de nombreux restaurants. Voici nos endroits préférés. N'oubliez pas de réserver le plus tôt possible !</p>
             
             <div class="location-group">
@@ -339,7 +358,7 @@
                         <div class="restaurant-header">
                             <div class="restaurant-info">
                                 <h4>Bouillon Saint-Laud</h4>
-                                <div class="distance-badge">Angers, 22 min en voiture</div>
+                                <div class="distance-badge">21 min en voiture (16.7 km)</div>
                                 <div class="restaurant-badges">
                                     <span class="cuisine-badge brasserie">🍺 Brasserie</span>
                                     <span class="price-badge moderate">€€</span>
@@ -396,73 +415,428 @@
                                 <a href="http://www.bouillon-angers.com/" target="_blank" class="btn btn-website enhanced">
                                     <i class="fas fa-globe"></i> <span data-key="common.website">Site Web</span>
                                 </a>
-                                <button class="btn btn-call enhanced">
-                                    <i class="fas fa-phone"></i> <span data-key="common.call">Appeler</span>
-                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="restaurant-card featured">
+                    <!-- Bistrot des Ducs - Enhanced Card -->
+                    <div class="restaurant-card enhanced-card featured" data-cuisine="francaise" data-price="moderate">
+                        <div class="favorite-badge">💎 Notre favori #1</div>
                         <div class="restaurant-image">
-                            <img src="https://lh3.googleusercontent.com/p/AF1QipNXm8Z1K4fYZfQ8cBhNx5wJ8Y3K6v1A4dFcTqXI=s1360-w1360-h1020" alt="Bistrot des Ducs" onerror="this.style.display='none'">
+                            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=250&fit=crop&crop=faces" alt="Bistrot des Ducs - Bistrot français élégant" onerror="this.style.display='none'">
                         </div>
-                        <h4>Bistrot des Ducs</h4>
-                        <div class="rating">★★★★★</div>
-                        <p>Après avoir testé de nombreux restaurants dans de grandes villes du monde entier, "Des Duc" reste mon bistrot français préféré, pour la qualité, le service professionnel et le prix raisonnable.</p>
-                        <div class="restaurant-actions">
-                            <a href="https://www.google.com/maps/search/Bistrot+des+Ducs+Angers" target="_blank" class="btn btn-maps">
-                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
-                            </a>
+                        
+                        <div class="restaurant-header">
+                            <div class="restaurant-info">
+                                <h4>Bistrot des Ducs</h4>
+                                <div class="distance-badge">21 min en voiture (16.7 km)</div>
+                                <div class="restaurant-badges">
+                                    <span class="cuisine-badge francaise">🇫🇷 Français</span>
+                                    <span class="price-badge moderate">€€</span>
+                                    <span class="rating-badge">⭐ 4.8</span>
+                                </div>
+                            </div>
+                            <div class="restaurant-status open">
+                                <span class="status-dot"></span>
+                                Ouvert aujourd'hui
+                            </div>
+                        </div>
+                        
+                        <div class="restaurant-details">                            
+                            <div class="restaurant-description">
+                                <p>Après avoir testé de nombreux restaurants dans de grandes villes du monde entier, "Des Duc" reste mon bistrot français préféré, pour la qualité, le service professionnel et le prix raisonnable.</p>
+                            </div>
+                            
+                            <div class="restaurant-features">
+                                <div class="feature-row">
+                                    <div class="feature">
+                                        <i class="fas fa-utensils"></i>
+                                        <span>Cuisine traditionnelle</span>
+                                    </div>
+                                    <div class="feature">
+                                        <i class="fas fa-wine-glass"></i>
+                                        <span>Carte des vins</span>
+                                    </div>
+                                </div>
+                                <div class="feature-row">
+                                    <div class="feature">
+                                        <i class="fas fa-parking"></i>
+                                        <span>Parking proche</span>
+                                    </div>
+                                    <div class="feature">
+                                        <i class="fas fa-heart"></i>
+                                        <span>Notre favori #1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="restaurant-specialties">
+                                <h5 data-key="common.our_recommendation">Notre recommandation :</h5>
+                                <div class="specialty-tags">
+                                    <span class="specialty-tag">🥩 Plats traditionnels</span>
+                                    <span class="specialty-tag">🍷 Vins de Loire</span>
+                                    <span class="specialty-tag">🧀 Fromages régionaux</span>
+                                </div>
+                            </div>
+                            
+                            <div class="restaurant-actions">
+                                <a href="https://www.google.com/maps/place/Bistrot+des+Ducs/@47.47172519999999,-0.5530299000000001,17z" target="_blank" class="btn btn-maps enhanced">
+                                    <i class="fas fa-map-marker-alt"></i> <span data-key="common.view_on_maps">Voir sur Maps</span>
+                                </a>
+                                <a href="http://www.bistrotdesducs-angers.com/" target="_blank" class="btn btn-website enhanced">
+                                    <i class="fas fa-globe"></i> <span data-key="common.website">Site Web</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="restaurant-card">
+                    <!-- KAZUMI - Enhanced Card -->
+                    <div class="restaurant-card enhanced-card" data-cuisine="japonaise" data-price="expensive">
                         <div class="restaurant-image">
-                            <img src="https://lh3.googleusercontent.com/p/AF1QipNQX3qX4vr_8QKWU8yOhYBfVs5F1R2yTcKjG7xT=s1360-w1360-h1020" alt="KAZUMI restaurant" onerror="this.style.display='none'">
+                            <img src="https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=400&h=250&fit=crop&crop=faces" alt="KAZUMI - Restaurant japonais traditionnel" onerror="this.style.display='none'">
                         </div>
-                        <h4>KAZUMI</h4>
-                        <div class="restaurant-details">
-                            <span class="detail-item"><i class="fas fa-chair"></i> 12 places</span>
-                            <span class="detail-item"><i class="fas fa-chef-hat"></i> 1 chef</span>
+                        
+                        <div class="restaurant-header">
+                            <div class="restaurant-info">
+                                <h4>KAZUMI</h4>
+                                <div class="distance-badge">22 min en voiture (17.7 km)</div>
+                                <div class="restaurant-badges">
+                                    <span class="cuisine-badge japonaise">🍣 Japonais</span>
+                                    <span class="price-badge expensive">€€€</span>
+                                    <span class="rating-badge">⭐ 4.8</span>
+                                </div>
+                            </div>
+                            <div class="restaurant-status open">
+                                <span class="status-dot"></span>
+                                Sur réservation
+                            </div>
                         </div>
-                        <p>Peu de restaurants japonais à Angers, celui-ci est le meilleur. Menu quotidien décidé par le chef, teppanyaki japonais avec une touche française.</p>
-                        <div class="restaurant-actions">
-                            <a href="https://www.google.com/maps/search/KAZUMI+restaurant+Angers" target="_blank" class="btn btn-maps">
-                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
-                            </a>
+                        
+                        <div class="restaurant-details">                            
+                            <div class="restaurant-description">
+                                <p>Peu de restaurants japonais à Angers, celui-ci est le meilleur. Seulement 12 places et 1 chef. Menu quotidien décidé par le chef, teppanyaki japonais avec une touche française.</p>
+                            </div>
+                            
+                            <div class="restaurant-features">
+                                <div class="feature-row">
+                                    <div class="feature">
+                                        <i class="fas fa-chair"></i>
+                                        <span>12 places seulement</span>
+                                    </div>
+                                    <div class="feature">
+                                        <i class="fas fa-chef-hat"></i>
+                                        <span>1 chef unique</span>
+                                    </div>
+                                </div>
+                                <div class="feature-row">
+                                    <div class="feature">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <span>Menu quotidien</span>
+                                    </div>
+                                    <div class="feature">
+                                        <i class="fas fa-fire"></i>
+                                        <span>Teppanyaki</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="restaurant-specialties">
+                                <h5 data-key="common.our_recommendation">Notre recommandation :</h5>
+                                <div class="specialty-tags">
+                                    <span class="specialty-tag">🍱 Menu dégustation</span>
+                                    <span class="specialty-tag">🔥 Teppanyaki</span>
+                                    <span class="specialty-tag">🇫🇷 Fusion franco-japonaise</span>
+                                </div>
+                            </div>
+                            
+                            <div class="restaurant-actions">
+                                <a href="https://www.google.com/maps/place/KAZUMI/@47.4662808,-0.5566882,17z" target="_blank" class="btn btn-maps enhanced">
+                                    <i class="fas fa-map-marker-alt"></i> <span data-key="common.view_on_maps">Voir sur Maps</span>
+                                </a>
+                                <a href="#" target="_blank" class="btn btn-website enhanced">
+                                    <i class="fas fa-globe"></i> <span data-key="common.website">Site Web</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="restaurant-card">
+                    <!-- La Cantina Café - Enhanced Card -->
+                    <div class="restaurant-card enhanced-card" data-cuisine="brasserie" data-price="budget">
                         <div class="restaurant-image">
-                            <img src="https://media-cdn.tripadvisor.com/media/photo-s/04/32/d2/fb/la-cantina-cafe.jpg" alt="La Cantina Café" onerror="this.style.display='none'">
+                            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=250&fit=crop&crop=faces" alt="La Cantina Café - Bistrot convivial" onerror="this.style.display='none'">
                         </div>
-                        <h4>La Cantina Café</h4>
-                        <p>Petit bistrot mignon, toujours plein. Cuisine bistrot classique, bon prix. Parfait pour une soirée cosy ou un déjeuner savoureux.</p>
-                        <div class="restaurant-actions">
-                            <a href="https://www.google.com/maps/search/La+Cantina+Café+Angers" target="_blank" class="btn btn-maps">
-                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
-                            </a>
+                        
+                        <div class="restaurant-header">
+                            <div class="restaurant-info">
+                                <h4>La Cantina Café</h4>
+                                <div class="distance-badge">22 min en voiture (23.1 km)</div>
+                                <div class="restaurant-badges">
+                                    <span class="cuisine-badge brasserie">🍺 Bistrot</span>
+                                    <span class="price-badge budget">€</span>
+                                    <span class="rating-badge">⭐ 4.7</span>
+                                </div>
+                            </div>
+                            <div class="restaurant-status busy">
+                                <span class="status-dot"></span>
+                                Toujours plein
+                            </div>
+                        </div>
+                        
+                        <div class="restaurant-details">                            
+                            <div class="restaurant-description">
+                                <p>Petit bistrot mignon, toujours plein. Cuisine bistrot classique, bon prix. Parfait pour une soirée cosy ou un déjeuner savoureux.</p>
+                            </div>
+                            
+                            <div class="restaurant-features">
+                                <div class="feature-row">
+                                    <div class="feature">
+                                        <i class="fas fa-heart"></i>
+                                        <span>Ambiance chaleureuse</span>
+                                    </div>
+                                    <div class="feature">
+                                        <i class="fas fa-euro-sign"></i>
+                                        <span>Prix abordables</span>
+                                    </div>
+                                </div>
+                                <div class="feature-row">
+                                    <div class="feature">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Service rapide</span>
+                                    </div>
+                                    <div class="feature">
+                                        <i class="fas fa-users"></i>
+                                        <span>Bistrot populaire</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="restaurant-specialties">
+                                <h5 data-key="common.our_recommendation">Notre recommandation :</h5>
+                                <div class="specialty-tags">
+                                    <span class="specialty-tag">🥗 Salades composées</span>
+                                    <span class="specialty-tag">🍖 Plats du jour</span>
+                                    <span class="specialty-tag">☕ Café excellent</span>
+                                </div>
+                            </div>
+                            
+                            <div class="restaurant-actions">
+                                <a href="https://www.google.com/maps/place/La+Cantina+Café/@47.4711326,-0.5539757,17z" target="_blank" class="btn btn-maps enhanced">
+                                    <i class="fas fa-map-marker-alt"></i> <span data-key="common.view_on_maps">Voir sur Maps</span>
+                                </a>
+                                <a href="#" target="_blank" class="btn btn-website enhanced">
+                                    <i class="fas fa-globe"></i> <span data-key="common.website">Site Web</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="restaurant-card">
-                        <h4>Autour d'un Cep</h4>
-                        <p>Cuisine française traditionnelle, savoureuse et généreuse, décor sans chichis, juste un endroit pour la nourriture et le vin. Bon choix pour le dîner.</p>
-                        <div class="restaurant-actions">
-                            <a href="https://www.google.com/maps/search/Autour+d'un+Cep+Angers" target="_blank" class="btn btn-maps">
-                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
-                            </a>
+                    <!-- Affamés - Enhanced Card (Added from guide.md) -->
+                    <div class="restaurant-card enhanced-card" data-cuisine="francaise" data-price="moderate">
+                        <div class="restaurant-image">
+                            <img src="https://images.unsplash.com/photo-1552566756-dae4f4b41024?w=400&h=250&fit=crop&crop=faces" alt="Affamés - Bistrot français moderne" onerror="this.style.display='none'">
+                        </div>
+                        
+                        <div class="restaurant-header">
+                            <div class="restaurant-info">
+                                <h4>Affamés</h4>
+                                <div class="distance-badge">22 min en voiture (17.8 km)</div>
+                                <div class="restaurant-badges">
+                                    <span class="cuisine-badge francaise">🇫🇷 Français Moderne</span>
+                                    <span class="price-badge moderate">€€</span>
+                                    <span class="rating-badge">⭐ 4.7</span>
+                                </div>
+                            </div>
+                            <div class="restaurant-status open">
+                                <span class="status-dot"></span>
+                                Ouvert aujourd'hui
+                            </div>
+                        </div>
+                        
+                        <div class="restaurant-details">                            
+                            <div class="restaurant-description">
+                                <p>Bistrot français avec une touche moderne, situé dans une jolie place parisienne près de la gare. Un de nos endroits préférés pour le déjeuner.</p>
+                            </div>
+                            
+                            <div class="restaurant-features">
+                                <div class="feature-row">
+                                    <div class="feature">
+                                        <i class="fas fa-train"></i>
+                                        <span>Près de la gare</span>
+                                    </div>
+                                    <div class="feature">
+                                        <i class="fas fa-utensils"></i>
+                                        <span>Cuisine moderne</span>
+                                    </div>
+                                </div>
+                                <div class="feature-row">
+                                    <div class="feature">
+                                        <i class="fas fa-building"></i>
+                                        <span>Style parisien</span>
+                                    </div>
+                                    <div class="feature">
+                                        <i class="fas fa-sun"></i>
+                                        <span>Parfait pour déjeuner</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="restaurant-specialties">
+                                <h5 data-key="common.our_recommendation">Notre recommandation :</h5>
+                                <div class="specialty-tags">
+                                    <span class="specialty-tag">🥘 Cuisine moderne</span>
+                                    <span class="specialty-tag">🍷 Vins sélectionnés</span>
+                                    <span class="specialty-tag">🌟 Touche contemporaine</span>
+                                </div>
+                            </div>
+                            
+                            <div class="restaurant-actions">
+                                <a href="https://www.google.com/maps/place/Affamés/@47.4670488,-0.5565677,17z" target="_blank" class="btn btn-maps enhanced">
+                                    <i class="fas fa-map-marker-alt"></i> <span data-key="common.view_on_maps">Voir sur Maps</span>
+                                </a>
+                                <a href="#" target="_blank" class="btn btn-website enhanced">
+                                    <i class="fas fa-globe"></i> <span data-key="common.website">Site Web</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="restaurant-card">
-                        <h4>Crêperie Marie mil'goules</h4>
-                        <p>Il y a beaucoup de crêperies dans cette région, c'est notre préférée. Située dans une petite ruelle face au Château. Déco mignonne, menu classique sans chichis, bon cidre.</p>
-                        <div class="restaurant-actions">
-                            <a href="https://www.google.com/maps/search/Crêperie+Marie+mil'goules+Angers" target="_blank" class="btn btn-maps">
-                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
-                            </a>
+                    <!-- Autour d'un Cep - Enhanced Card -->
+                    <div class="restaurant-card enhanced-card" data-cuisine="francaise" data-price="moderate">
+                        <div class="restaurant-image">
+                            <img src="https://images.unsplash.com/photo-1559329007-40df8ae9676b?w=400&h=250&fit=crop&crop=faces" alt="Autour d'un Cep - Restaurant traditionnel" onerror="this.style.display='none'">
+                        </div>
+                        
+                        <div class="restaurant-header">
+                            <div class="restaurant-info">
+                                <h4>Autour d'un Cep</h4>
+                                <div class="distance-badge">21 min en voiture (22.9 km)</div>
+                                <div class="restaurant-badges">
+                                    <span class="cuisine-badge francaise">🍷 Traditionnel</span>
+                                    <span class="price-badge moderate">€€</span>
+                                    <span class="rating-badge">⭐ 4.8</span>
+                                </div>
+                            </div>
+                            <div class="restaurant-status open">
+                                <span class="status-dot"></span>
+                                Excellent pour dîner
+                            </div>
+                        </div>
+                        
+                        <div class="restaurant-details">                            
+                            <div class="restaurant-description">
+                                <p>Cuisine française traditionnelle, savoureuse et généreuse, décor sans chichis, juste un endroit pour la nourriture et le vin. Bon choix pour le dîner.</p>
+                            </div>
+                            
+                            <div class="restaurant-features">
+                                <div class="feature-row">
+                                    <div class="feature">
+                                        <i class="fas fa-wine-bottle"></i>
+                                        <span>Cave à vins</span>
+                                    </div>
+                                    <div class="feature">
+                                        <i class="fas fa-drumstick-bite"></i>
+                                        <span>Portions généreuses</span>
+                                    </div>
+                                </div>
+                                <div class="feature-row">
+                                    <div class="feature">
+                                        <i class="fas fa-home"></i>
+                                        <span>Ambiance familiale</span>
+                                    </div>
+                                    <div class="feature">
+                                        <i class="fas fa-moon"></i>
+                                        <span>Idéal pour dîner</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="restaurant-specialties">
+                                <h5 data-key="common.our_recommendation">Notre recommandation :</h5>
+                                <div class="specialty-tags">
+                                    <span class="specialty-tag">🍖 Viandes grillées</span>
+                                    <span class="specialty-tag">🍷 Vins de Loire</span>
+                                    <span class="specialty-tag">🧀 Fromages locaux</span>
+                                </div>
+                            </div>
+                            
+                            <div class="restaurant-actions">
+                                <a href="https://www.google.com/maps/place/Autour+d'un+Cep/@47.4722644,-0.5568059,17z" target="_blank" class="btn btn-maps enhanced">
+                                    <i class="fas fa-map-marker-alt"></i> <span data-key="common.view_on_maps">Voir sur Maps</span>
+                                </a>
+                                <a href="#" target="_blank" class="btn btn-website enhanced">
+                                    <i class="fas fa-globe"></i> <span data-key="common.website">Site Web</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Crêperie Marie mil'goules - Enhanced Card -->
+                    <div class="restaurant-card enhanced-card" data-cuisine="creperie" data-price="budget">
+                        <div class="favorite-badge special-guinguette">🥞 Notre crêperie préférée</div>
+                        <div class="restaurant-image">
+                            <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=400&h=250&fit=crop&crop=faces" alt="Crêperie Marie mil'goules - Crêperie traditionnelle" onerror="this.style.display='none'">
+                        </div>
+                        
+                        <div class="restaurant-header">
+                            <div class="restaurant-info">
+                                <h4>Crêperie Marie mil'goules</h4>
+                                <div class="distance-badge">22 min en voiture (22.8 km)</div>
+                                <div class="restaurant-badges">
+                                    <span class="cuisine-badge creperie">🥞 Crêperie</span>
+                                    <span class="price-badge budget">€</span>
+                                    <span class="rating-badge">⭐ 4.7</span>
+                                </div>
+                            </div>
+                            <div class="restaurant-status favorite">
+                                <span class="status-dot"></span>
+                                Notre crêperie préférée
+                            </div>
+                        </div>
+                        
+                        <div class="restaurant-details">                            
+                            <div class="restaurant-description">
+                                <p>Il y a beaucoup de crêperies dans cette région, c'est notre préférée. Située dans une petite ruelle face au Château. Déco mignonne, menu classique sans chichis, bon cidre.</p>
+                            </div>
+                            
+                            <div class="restaurant-features">
+                                <div class="feature-row">
+                                    <div class="feature">
+                                        <i class="fas fa-castle"></i>
+                                        <span>Face au Château</span>
+                                    </div>
+                                    <div class="feature">
+                                        <i class="fas fa-glass-cheers"></i>
+                                        <span>Excellent cidre</span>
+                                    </div>
+                                </div>
+                                <div class="feature-row">
+                                    <div class="feature">
+                                        <i class="fas fa-heart"></i>
+                                        <span>Déco authentique</span>
+                                    </div>
+                                    <div class="feature">
+                                        <i class="fas fa-leaf"></i>
+                                        <span>Produits frais</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="restaurant-specialties">
+                                <h5 data-key="common.our_recommendation">Notre recommandation :</h5>
+                                <div class="specialty-tags">
+                                    <span class="specialty-tag">🥞 Crêpes complètes</span>
+                                    <span class="specialty-tag">🍯 Crêpes sucrées</span>
+                                    <span class="specialty-tag">🍺 Cidre breton</span>
+                                </div>
+                            </div>
+                            
+                            <div class="restaurant-actions">
+                                <a href="https://www.google.com/maps/place/Crêperie+Marie+mil'goules/@47.46878330000001,-0.5574669999999999,17z" target="_blank" class="btn btn-maps enhanced">
+                                    <i class="fas fa-map-marker-alt"></i> <span data-key="common.view_on_maps">Voir sur Maps</span>
+                                </a>
+                                <a href="#" target="_blank" class="btn btn-website enhanced">
+                                    <i class="fas fa-globe"></i> <span data-key="common.website">Site Web</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -478,8 +852,8 @@
                     </div>
 
                     <div class="restaurant-card michelin featured">
+                        <div class="favorite-badge michelin-special">⭐ 1 étoile Michelin</div>
                         <h4>LAIT THYM SEL</h4>
-                        <div class="michelin-badge starred">⭐ 1 étoile Michelin</div>
                         <div class="price-badge">€100+</div>
                         <p>Cuisine raffinée avec une étoile Michelin, nous l'aimons depuis leurs débuts, cuisine créative toujours, mais peut être un peu cher maintenant. Si vous cherchez quelque chose de spécial, réservez tôt.</p>
                         <div class="restaurant-actions">
@@ -589,6 +963,9 @@
     <section id="bars" class="guide-section alt-bg">
         <div class="container">
             <h2><i class="fas fa-wine-glass"></i> <span data-key="bars.title">Bars</span></h2>
+            <div class="booking-cta">
+                <a href="index.html" class="cta-link">🍻 Profitez des soirées locales en toute sérénité depuis votre cottage</a>
+            </div>
             
             <div class="bar-grid">
                 <div class="bar-card featured">
@@ -645,6 +1022,9 @@
     <section id="shops" class="guide-section">
         <div class="container">
             <h2><i class="fas fa-shopping-bag"></i> <span data-key="shops.title">Boutiques & Commerces</span></h2>
+            <div class="booking-cta">
+                <a href="index.html" class="cta-link">🛍️ Faites du shopping local et rapportez vos trouvailles au cottage</a>
+            </div>
             
             <div class="shop-categories">
                 <div class="shop-category">
@@ -788,6 +1168,9 @@
     <section id="activities" class="guide-section alt-bg">
         <div class="container">
             <h2><i class="fas fa-sun"></i> <span data-key="activities.title">Activités Selon les Saisons</span></h2>
+            <div class="booking-cta">
+                <a href="index.html" class="cta-link">🚴 Vivez ces aventures depuis votre base confortable au cottage</a>
+            </div>
             <p class="section-intro" data-key="activities.intro">La Loire-Authion offre des expériences différentes selon les saisons. Découvrez nos recommandations actuelles et planifiez selon la période de votre séjour !</p>
             
             <div class="current-season-highlight">
@@ -915,6 +1298,9 @@
     <section id="vineyards" class="guide-section">
         <div class="container">
             <h2><i class="fas fa-wine-bottle"></i> <span data-key="vineyards.title">Vignobles & Caves à Vin</span></h2>
+            <div class="booking-cta">
+                <a href="index.html" class="cta-link">🍷 Séjournez au cœur des vignobles et dégustez les meilleurs crus de la région</a>
+            </div>
             
             <div class="vineyard-grid">
                 <div class="vineyard-card featured">
