@@ -10,7 +10,7 @@
   },
   "hero": {
     "title": "Guide Local & Recommandations",
-    "subtitle": "Découvrez nos recommandations personnelles pour profiter au mieux de votre séjour dans la Loire-Authion",
+    "subtitle": "👋 Bonjour ! Nous avons soigneusement sélectionné tous ces endroits que nous fréquentons régulièrement. Ce guide reflète nos véritables coups de cœur après 8 ans à vivre dans la région. Nous espérons que vous trouverez de bonnes recommandations, et si jamais vous en découvrez d'autres, n'hésitez pas à nous les partager !",
     "address": "3 route de la crétaudière, 49630 Loire Authion"
   },
   "navigation": {
@@ -56,6 +56,14 @@
     "title": "Vignobles & Caves à Vin",
     "famous_wines_title": "Vins Célèbres de la Vallée de la Loire",
     "famous_wines_description": "La région autour d'Angers est renommée pour ses vins d'exception. Voici les appellations que nous vous recommandons :"
+  },
+  "booking_cta": {
+    "guinguettes": "🏡 Séjournez chez nous pour découvrir ces trésors au bord de Loire à quelques minutes seulement",
+    "restaurants": "🍽️ Réservez votre séjour et savourez la gastronomie locale sans souci de transport",
+    "bars": "🍻 Profitez des soirées locales en toute sérénité depuis votre cottage",
+    "shops": "🛍️ Faites du shopping local et rapportez vos trouvailles au cottage",
+    "activities": "🚴 Vivez ces aventures depuis votre base confortable au cottage",
+    "vineyards": "🍷 Séjournez au cœur des vignobles et dégustez les meilleurs crus de la région"
   },
   "common": {
     "view_on_maps": "Voir sur Maps",
