@@ -574,4 +574,151 @@ function initializeWineFilter() {
 // Initialize wine filter
 document.addEventListener('DOMContentLoaded', function() {
     initializeWineFilter();
+    initializeRestaurantFilter();
 });
+
+// Restaurant Filter Functionality
+function initializeRestaurantFilter() {
+    const filterButtons = document.querySelectorAll('.restaurant-filter-section .filter-btn');
+    const restaurantCards = document.querySelectorAll('.restaurant-card');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filterType = this.getAttribute('data-filter-type');
+            
+            // Remove active class from buttons of the same type
+            const sameTypeButtons = document.querySelectorAll(`.restaurant-filter-section .filter-btn[data-filter-type="${filterType}"]`);
+            sameTypeButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Get current active filters
+            const activeFilters = {
+                cuisine: document.querySelector('.restaurant-filter-section .filter-btn[data-filter-type="cuisine"].active')?.getAttribute('data-filter') || 'all',
+                price: document.querySelector('.restaurant-filter-section .filter-btn[data-filter-type="price"].active')?.getAttribute('data-filter') || 'all'
+            };
+            
+            // Filter restaurant cards
+            filterRestaurantCards(activeFilters);
+            
+            // Add animation effect
+            setTimeout(() => {
+                restaurantCards.forEach(card => {
+                    if (!card.classList.contains('hidden')) {
+                        card.style.animation = 'fadeInUp 0.5s ease-out';
+                    }
+                });
+            }, 100);
+        });
+    });
+}
+
+// Filter restaurant cards based on active filters
+function filterRestaurantCards(activeFilters) {
+    const restaurantCards = document.querySelectorAll('.restaurant-card');
+    
+    restaurantCards.forEach(card => {
+        const cardCuisine = card.getAttribute('data-cuisine');
+        const cardPrice = card.getAttribute('data-price');
+        
+        let showCard = true;
+        
+        // Check cuisine filter
+        if (activeFilters.cuisine !== 'all' && cardCuisine !== activeFilters.cuisine) {
+            showCard = false;
+        }
+        
+        // Check price filter
+        if (activeFilters.price !== 'all' && cardPrice !== activeFilters.price) {
+            showCard = false;
+        }
+        
+        // Show or hide the card
+        if (showCard) {
+            card.classList.remove('hidden');
+            card.style.display = 'block';
+        } else {
+            card.classList.add('hidden');
+            card.style.display = 'none';
+        }
+    });
+    
+    // Update results count
+    updateFilterResultsCount();
+}
+
+// Update filter results count
+function updateFilterResultsCount() {
+    const visibleCards = document.querySelectorAll('.restaurant-card:not(.hidden)');
+    const totalCards = document.querySelectorAll('.restaurant-card').length;
+    
+    // Create or update results counter
+    let resultsCounter = document.querySelector('.filter-results-count');
+    if (!resultsCounter) {
+        resultsCounter = document.createElement('div');
+        resultsCounter.className = 'filter-results-count';
+        resultsCounter.style.cssText = `
+            text-align: center;
+            margin: 16px 0;
+            font-size: 14px;
+            color: #666;
+            font-weight: 500;
+        `;
+        
+        const filterSection = document.querySelector('.restaurant-filter-section');
+        if (filterSection) {
+            filterSection.appendChild(resultsCounter);
+        }
+    }
+    
+    const count = visibleCards.length;
+    if (count === totalCards) {
+        resultsCounter.textContent = `Affichage de tous les restaurants (${count})`;
+    } else {
+        resultsCounter.textContent = `${count} restaurant${count > 1 ? 's' : ''} trouvé${count > 1 ? 's' : ''} sur ${totalCards}`;
+    }
+    
+    // Change color based on results
+    if (count === 0) {
+        resultsCounter.style.color = '#FF385C';
+        resultsCounter.textContent = 'Aucun restaurant ne correspond à vos critères';
+    } else {
+        resultsCounter.style.color = '#06466A';
+    }
+}
+
+// Add CSS for hidden restaurant cards
+const restaurantFilterStyle = document.createElement('style');
+restaurantFilterStyle.textContent = `
+    .restaurant-card.hidden {
+        display: none !important;
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    
+    .restaurant-card:not(.hidden) {
+        animation: fadeInUp 0.5s ease-out;
+    }
+    
+    .filter-results-count {
+        padding: 8px 16px;
+        background: linear-gradient(135deg, #f8f9fa, #ffffff);
+        border-radius: 16px;
+        border: 1px solid #e0e0e0;
+        display: inline-block;
+        margin: 16px auto;
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+`;
+document.head.appendChild(restaurantFilterStyle);

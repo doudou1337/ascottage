@@ -1377,18 +1377,47 @@
     font-size: 16px;
 }
 
+/* Wine Content Layout */
+.wine-content {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    align-items: flex-start;
+}
+
+.wine-details {
+    flex: 1;
+}
+
+.wine-color {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.wine-color strong {
+    color: #2C1810;
+}
+
+.wine-color .wine-type-badge {
+    margin-left: 4px;
+}
+
 /* Wine Card Images */
 .wine-image {
-    width: 100%;
-    height: 200px;
+    width: 120px;
+    height: 150px;
     background: linear-gradient(135deg, #f8f9fa, #e9ecef);
     border-radius: 12px;
-    margin-bottom: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     position: relative;
+    flex-shrink: 0;
 }
 
 .wine-image img {
@@ -1408,14 +1437,19 @@
     transform: translate(-50%, -50%);
 }
 
-.wine-image img + ::after {
+.wine-image:has(img) ::after {
     display: none;
 }
 
-/* Wine Icon Styling */
-.wine-icon {
-    font-size: 64px;
-    animation: float 3s ease-in-out infinite;
+/* When image loads successfully, hide the fallback wine emoji */
+.wine-image img {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.wine-card:hover .wine-image img {
+    transform: scale(1.05);
 }
 
 @keyframes float {
@@ -1520,6 +1554,438 @@
     font-size: 18px;
 }
 
+/* Restaurant Filter System */
+.restaurant-filter-section {
+    margin: 32px 0;
+    padding: 24px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+.filter-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.filter-group label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-group label i {
+    color: #FF385C;
+    font-size: 18px;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    color: #495057;
+    border: 2px solid #dee2e6;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.filter-btn:hover {
+    background: linear-gradient(135deg, #e9ecef, #ced4da);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, #FF385C, #E31C5F);
+    color: white;
+    border-color: #FF385C;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 56, 92, 0.3);
+}
+
+.filter-btn i {
+    font-size: 14px;
+}
+
+/* Enhanced Restaurant Card */
+.restaurant-card.enhanced-card {
+    background: white;
+    border-radius: 20px;
+    padding: 0;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.restaurant-card.enhanced-card .restaurant-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.restaurant-card.enhanced-card .restaurant-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.restaurant-card.enhanced-card:hover .restaurant-image img {
+    transform: scale(1.05);
+}
+
+.restaurant-card.enhanced-card .restaurant-header,
+.restaurant-card.enhanced-card .restaurant-details {
+    padding: 24px 28px 0 28px;
+}
+
+.restaurant-card.enhanced-card .restaurant-actions {
+    padding: 0 28px 28px 28px;
+}
+
+.restaurant-card.enhanced-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #FF385C, #E31C5F);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.restaurant-card.enhanced-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+    border-color: #FF385C;
+}
+
+.restaurant-card.enhanced-card:hover::before {
+    transform: scaleX(1);
+}
+
+.restaurant-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 16px;
+}
+
+.restaurant-info h4 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    color: #222;
+}
+
+.restaurant-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.cuisine-badge {
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 28px;
+    line-height: 1;
+}
+
+.cuisine-badge.brasserie {
+    background: linear-gradient(135deg, #8B4513, #A0522D);
+    color: white;
+}
+
+.cuisine-badge.traditional {
+    background: linear-gradient(135deg, #2E8B57, #228B22);
+    color: white;
+}
+
+.cuisine-badge.gastronomique {
+    background: linear-gradient(135deg, #8B0000, #DC143C);
+    color: white;
+}
+
+.cuisine-badge.bistrot {
+    background: linear-gradient(135deg, #4682B4, #1E90FF);
+    color: white;
+}
+
+.price-badge {
+    background: linear-gradient(135deg, #FF385C, #E31C5F);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    height: 28px;
+    line-height: 1;
+}
+
+.price-badge.budget {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+}
+
+.price-badge.moderate {
+    background: linear-gradient(135deg, #FF9800, #F57C00);
+}
+
+.price-badge.expensive {
+    background: linear-gradient(135deg, #E91E63, #C2185B);
+}
+
+.rating-badge {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #8B4513;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #DAA520;
+    display: flex;
+    align-items: center;
+    height: 28px;
+    line-height: 1;
+}
+
+.restaurant-status {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.restaurant-status.closed {
+    background: linear-gradient(135deg, #f44336, #d32f2f);
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.restaurant-location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    color: #666;
+    font-size: 14px;
+}
+
+.restaurant-location i {
+    color: #FF385C;
+    font-size: 16px;
+}
+
+.restaurant-location strong {
+    color: #333;
+}
+
+.restaurant-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.detail-section h5 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.detail-section h5 i {
+    color: #FF385C;
+    font-size: 14px;
+}
+
+.detail-section p {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.restaurant-specialties {
+    margin-bottom: 20px;
+}
+
+.restaurant-specialties h5 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.restaurant-specialties h5 i {
+    color: #FF385C;
+}
+
+.specialty-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.specialty-tag {
+    background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
+    color: #06466A;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    border: 1px solid #b3d9ff;
+}
+
+.restaurant-actions.enhanced {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding-top: 16px;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Responsive Restaurant Filter */
+@media (max-width: 768px) {
+    .restaurant-filter-section {
+        padding: 20px;
+        margin: 24px 0;
+    }
+    
+    .filter-row {
+        gap: 16px;
+    }
+    
+    .filter-buttons {
+        gap: 6px;
+    }
+    
+    .filter-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    .restaurant-header {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+    
+    .restaurant-status {
+        align-self: flex-start;
+    }
+    
+    .restaurant-details-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .restaurant-card.enhanced-card {
+        padding: 24px;
+    }
+    
+    .restaurant-info h4 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-group {
+        gap: 8px;
+    }
+    
+    .filter-group label {
+        font-size: 14px;
+    }
+    
+    .filter-btn {
+        padding: 6px 10px;
+        font-size: 11px;
+        gap: 4px;
+    }
+    
+    .restaurant-badges {
+        gap: 6px;
+    }
+    
+    .cuisine-badge,
+    .price-badge,
+    .rating-badge {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+    
+    .restaurant-card.enhanced-card {
+        padding: 20px;
+    }
+    
+    .restaurant-info h4 {
+        font-size: 20px;
+    }
+}
+
 /* Responsive Wine Cards */
 @media (max-width: 768px) {
     .wine-cards-grid {
@@ -1539,6 +2005,17 @@
     .wine-type-badge {
         align-self: flex-start;
         margin-left: 0;
+    }
+    
+    .wine-content {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .wine-image {
+        width: 100%;
+        height: 120px;
+        align-self: center;
     }
     
     .wine-details > div {

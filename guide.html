@@ -282,7 +282,126 @@
             <div class="location-group">
                 <h3 data-key="restaurants.angers_title">Restaurants à Angers (20 minutes en voiture)</h3>
                 
+                <!-- Restaurant Filter Buttons -->
+                <div class="restaurant-filter-section">
+                    <div class="filter-row">
+                        <div class="filter-group">
+                            <label>Cuisine:</label>
+                            <div class="filter-buttons">
+                                <button class="filter-btn active" data-filter-type="cuisine" data-filter="all">
+                                    <i class="fas fa-utensils"></i> <span data-key="common.all_cuisines">Toutes</span>
+                                </button>
+                                <button class="filter-btn" data-filter-type="cuisine" data-filter="francaise">
+                                    <i class="fas fa-baguette-bread"></i> <span data-key="common.french_cuisine">Française</span>
+                                </button>
+                                <button class="filter-btn" data-filter-type="cuisine" data-filter="japonaise">
+                                    <i class="fas fa-fish"></i> <span data-key="common.japanese_cuisine">Japonaise</span>
+                                </button>
+                                <button class="filter-btn" data-filter-type="cuisine" data-filter="brasserie">
+                                    <i class="fas fa-beer"></i> <span data-key="common.brasserie_cuisine">Brasserie</span>
+                                </button>
+                                <button class="filter-btn" data-filter-type="cuisine" data-filter="creperie">
+                                    <i class="fas fa-circle"></i> <span data-key="common.creperie_cuisine">Crêperie</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <label>Prix:</label>
+                            <div class="filter-buttons">
+                                <button class="filter-btn active" data-filter-type="price" data-filter="all">
+                                    <i class="fas fa-euro-sign"></i> <span data-key="common.all_prices">Tous</span>
+                                </button>
+                                <button class="filter-btn" data-filter-type="price" data-filter="budget">
+                                    <i class="fas fa-euro-sign"></i> <span data-key="common.budget_price">€</span>
+                                </button>
+                                <button class="filter-btn" data-filter-type="price" data-filter="moderate">
+                                    <i class="fas fa-euro-sign"></i> <span data-key="common.moderate_price">€€</span>
+                                </button>
+                                <button class="filter-btn" data-filter-type="price" data-filter="expensive">
+                                    <i class="fas fa-euro-sign"></i> <span data-key="common.expensive_price">€€€</span>
+                                </button>
+                                <button class="filter-btn" data-filter-type="price" data-filter="luxury">
+                                    <i class="fas fa-euro-sign"></i> <span data-key="common.luxury_price">€€€€</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="restaurant-grid">
+                    
+                    <!-- Bouillon Saint-Laud - New Enhanced Card -->
+                    <div class="restaurant-card enhanced-card" data-cuisine="brasserie" data-price="moderate">
+                        <div class="restaurant-image">
+                            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=250&fit=crop&crop=faces" alt="Bouillon Saint-Laud - Brasserie parisienne traditionnelle" onerror="this.style.display='none'">
+                        </div>
+                        
+                        <div class="restaurant-header">
+                            <div class="restaurant-info">
+                                <h4>Bouillon Saint-Laud</h4>
+                                <div class="distance-badge">Angers, 22 min en voiture</div>
+                                <div class="restaurant-badges">
+                                    <span class="cuisine-badge brasserie">🍺 Brasserie</span>
+                                    <span class="price-badge moderate">€€</span>
+                                    <span class="rating-badge">⭐ 4.7</span>
+                                </div>
+                            </div>
+                            <div class="restaurant-status open">
+                                <span class="status-dot"></span>
+                                Ouvert 7j/7
+                            </div>
+                        </div>
+                        
+                        <div class="restaurant-details">                            
+                            <div class="restaurant-description">
+                                <p>Brasserie accueillante avec un menu varié à prix très raisonnables et un service efficace et amical. Ambiance chaleureuse en face de la gare Saint-Laud.</p>
+                            </div>
+                            
+                            <div class="restaurant-features">
+                                <div class="feature-row">
+                                    <div class="feature">
+                                        <i class="fas fa-clock"></i>
+                                        <span>7h-24h tous les jours</span>
+                                    </div>
+                                    <div class="feature">
+                                        <i class="fas fa-wifi"></i>
+                                        <span>WiFi gratuit</span>
+                                    </div>
+                                </div>
+                                <div class="feature-row">
+                                    <div class="feature">
+                                        <i class="fas fa-train"></i>
+                                        <span>Face à la gare</span>
+                                    </div>
+                                    <div class="feature">
+                                        <i class="fas fa-cocktail"></i>
+                                        <span>Bar & Cocktails</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="restaurant-specialties">
+                                <h5 data-key="common.our_recommendation">Notre recommandation :</h5>
+                                <div class="specialty-tags">
+                                    <span class="specialty-tag" data-key="common.egg_mayonnaise">🥚 oeuf mayonnaise classique</span>
+                                    <span class="specialty-tag">🥟 Profiteroles</span>
+                                    <span class="specialty-tag">🍖 Plats traditionnels</span>
+                                </div>
+                            </div>
+                            
+                            <div class="restaurant-actions">
+                                <a href="https://www.google.com/maps/place/Bouillon+Saint-Laud/@47.4653048,-0.5573928,17z" target="_blank" class="btn btn-maps enhanced">
+                                    <i class="fas fa-map-marker-alt"></i> <span data-key="common.view_on_maps">Voir sur Maps</span>
+                                </a>
+                                <a href="http://www.bouillon-angers.com/" target="_blank" class="btn btn-website enhanced">
+                                    <i class="fas fa-globe"></i> <span data-key="common.website">Site Web</span>
+                                </a>
+                                <button class="btn btn-call enhanced">
+                                    <i class="fas fa-phone"></i> <span data-key="common.call">Appeler</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="restaurant-card featured">
                         <div class="restaurant-image">
                             <img src="https://lh3.googleusercontent.com/p/AF1QipNXm8Z1K4fYZfQ8cBhNx5wJ8Y3K6v1A4dFcTqXI=s1360-w1360-h1020" alt="Bistrot des Ducs" onerror="this.style.display='none'">
@@ -322,16 +441,6 @@
                         <p>Petit bistrot mignon, toujours plein. Cuisine bistrot classique, bon prix. Parfait pour une soirée cosy ou un déjeuner savoureux.</p>
                         <div class="restaurant-actions">
                             <a href="https://www.google.com/maps/search/La+Cantina+Café+Angers" target="_blank" class="btn btn-maps">
-                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="restaurant-card">
-                        <h4>Affamés</h4>
-                        <p>Bistrot français avec une petite touche moderne, situé dans une jolie place de style parisien près de la gare. Un de nos endroits préférés pour déjeuner.</p>
-                        <div class="restaurant-actions">
-                            <a href="https://www.google.com/maps/search/Affamés+restaurant+Angers" target="_blank" class="btn btn-maps">
                                 <i class="fas fa-map-marker-alt"></i> Voir sur Maps
                             </a>
                         </div>
@@ -384,17 +493,6 @@
                     </div>
 
                     <div class="restaurant-card">
-                        <h4>L'Atelier Gourmand</h4>
-                        <div class="distance-badge">Angers, 20 min en voiture</div>
-                        <p>Excellent bistrot mais nécessite de réserver. Cuisine raffinée dans un cadre chaleureux.</p>
-                        <div class="restaurant-actions">
-                            <a href="https://maps.app.goo.gl/RxGbDpKVJZhLzrFw9" target="_blank" class="btn btn-maps">
-                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="restaurant-card">
                         <h4>Food Court Les Halles</h4>
                         <div class="distance-badge">Angers, 20 min en voiture</div>
                         <p>Court alimentaire moderne avec plusieurs options de restauration dans un seul endroit.</p>
@@ -411,17 +509,6 @@
                         <p>Restaurant situé près du port avec une belle vue sur la Maine. Parfait pour un repas au bord de l'eau.</p>
                         <div class="restaurant-actions">
                             <a href="https://maps.app.goo.gl/WYYTAKsaHCteNY4FA" target="_blank" class="btn btn-maps">
-                                <i class="fas fa-map-marker-alt"></i> Voir sur Maps
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="restaurant-card">
-                        <h4>Bistrot Tardif</h4>
-                        <div class="distance-badge">Angers, 20 min en voiture</div>
-                        <p>Bistrot typique avec cuisine traditionnelle, ouvert jusqu'à minuit. Bon rapport qualité-prix mais il vaut mieux réserver.</p>
-                        <div class="restaurant-actions">
-                            <a href="https://maps.app.goo.gl/J39fnN7feCAFiJ6F6" target="_blank" class="btn btn-maps">
                                 <i class="fas fa-map-marker-alt"></i> Voir sur Maps
                             </a>
                         </div>
@@ -926,17 +1013,19 @@
                     <!-- Savennières - FAVORITE -->
                     <div class="wine-card white-wine featured favorite-wine" data-wine-type="white">
                         <div class="favorite-badge">💎 Notre Coup de Cœur</div>
-                        <div class="wine-image white-wine-img">
-                            <div class="wine-icon">🥂</div>
-                        </div>
                         <div class="wine-header">
                             <h4>Savennières</h4>
-                            <div class="wine-type-badge white">Vin Blanc Sec</div>
                         </div>
-                        <div class="wine-details">
-                            <div class="wine-grape">🍇 <strong>Cépage:</strong> Chenin Blanc</div>
-                            <div class="wine-terroir">🏔️ <strong>Terroir:</strong> Schistes face à la Loire</div>
-                            <div class="wine-area">📍 <strong>Superficie:</strong> 350 hectares</div>
+                        <div class="wine-content">
+                            <div class="wine-details">
+                                <div class="wine-grape">🍇 <strong>Cépage:</strong> Chenin Blanc</div>
+                                <div class="wine-terroir">🏔️ <strong>Terroir:</strong> Schistes face à la Loire</div>
+                                <div class="wine-area">📍 <strong>Superficie:</strong> 350 hectares</div>
+                                <div class="wine-color">🎨 <strong>Couleur:</strong> <span class="wine-type-badge white">Vin Blanc Sec</span></div>
+                            </div>
+                            <div class="wine-image white-wine-img">
+                                <img src="img/wine-savennieres.webp" alt="Savennières" onerror="this.style.display='none'">
+                            </div>
                         </div>
                         <p class="wine-description">Aromatique, élégant et minéral. Vin blanc intemporel et raffiné à conserver minimum 5 ans. Trois appellations : AOC Savennières, Roche aux Moines, Coulée de Serrant.</p>
                         <div class="wine-tags">
@@ -954,17 +1043,19 @@
 
                     <!-- Coteaux du Layon -->
                     <div class="wine-card sweet-wine" data-wine-type="white">
-                        <div class="wine-image sweet-wine-img">
-                            <div class="wine-icon">🍯</div>
-                        </div>
                         <div class="wine-header">
                             <h4>Coteaux du Layon</h4>
-                            <div class="wine-type-badge sweet">Vin Blanc Moelleux</div>
                         </div>
-                        <div class="wine-details">
-                            <div class="wine-grape">🍇 <strong>Cépage:</strong> Chenin Blanc</div>
-                            <div class="wine-terroir">🏔️ <strong>Terroir:</strong> Schistes et argiles</div>
-                            <div class="wine-area">📍 <strong>Superficie:</strong> 1 700 hectares (27 communes)</div>
+                        <div class="wine-content">
+                            <div class="wine-details">
+                                <div class="wine-grape">🍇 <strong>Cépage:</strong> Chenin Blanc</div>
+                                <div class="wine-terroir">🏔️ <strong>Terroir:</strong> Schistes et argiles</div>
+                                <div class="wine-area">📍 <strong>Superficie:</strong> 1 700 hectares (27 communes)</div>
+                                <div class="wine-color">🎨 <strong>Couleur:</strong> <span class="wine-type-badge sweet">Vin Blanc Moelleux</span></div>
+                            </div>
+                            <div class="wine-image sweet-wine-img">
+                                <img src="img/wine-coteaux-du-layon.webp" alt="Coteaux du Layon" onerror="this.style.display='none'">
+                            </div>
                         </div>
                         <p class="wine-description">Plus grande appellation de vins doux de la Loire. Vendanges tardives avec noble pourriture, développant des arômes de fruits secs, exotiques et agrumes. Six villages peuvent ajouter leur nom.</p>
                         <div class="wine-tags">
@@ -982,17 +1073,19 @@
 
                     <!-- Quarts de Chaume Grand Cru -->
                     <div class="wine-card sweet-wine premium" data-wine-type="white">
-                        <div class="wine-image grand-cru-img">
-                            <div class="wine-icon">👑</div>
-                        </div>
                         <div class="wine-header">
                             <h4>Quarts de Chaume Grand Cru</h4>
-                            <div class="wine-type-badge grand-cru">Grand Cru</div>
                         </div>
-                        <div class="wine-details">
-                            <div class="wine-grape">🍇 <strong>Cépage:</strong> Chenin Blanc</div>
-                            <div class="wine-terroir">🏔️ <strong>Terroir:</strong> Schistes briovériens</div>
-                            <div class="wine-area">📍 <strong>Superficie:</strong> 30 hectares (le plus rare)</div>
+                        <div class="wine-content">
+                            <div class="wine-details">
+                                <div class="wine-grape">🍇 <strong>Cépage:</strong> Chenin Blanc</div>
+                                <div class="wine-terroir">🏔️ <strong>Terroir:</strong> Schistes briovériens</div>
+                                <div class="wine-area">📍 <strong>Superficie:</strong> 30 hectares (le plus rare)</div>
+                                <div class="wine-color">🎨 <strong>Couleur:</strong> <span class="wine-type-badge grand-cru">Grand Cru</span></div>
+                            </div>
+                            <div class="wine-image grand-cru-img">
+                                <img src="img/wine-quarts-de-chaume.webp" alt="Quarts de Chaume Grand Cru" onerror="this.style.display='none'">
+                            </div>
                         </div>
                         <p class="wine-description">Seul Grand Cru de la Loire (2011). Vins dorés et complexes aux notes de fruits confits et miel. Microterroirexceptionnel avec pourriture noble, vieillissement 20-25 ans minimum.</p>
                         <div class="wine-tags">
@@ -1010,17 +1103,19 @@
 
                     <!-- Saumur-Champigny -->
                     <div class="wine-card red-wine" data-wine-type="red">
-                        <div class="wine-image red-wine-img">
-                            <div class="wine-icon">🍷</div>
-                        </div>
                         <div class="wine-header">
                             <h4>Saumur-Champigny</h4>
-                            <div class="wine-type-badge red">Vin Rouge</div>
                         </div>
-                        <div class="wine-details">
-                            <div class="wine-grape">🍇 <strong>Cépage:</strong> Cabernet Franc (85%+)</div>
-                            <div class="wine-terroir">🏔️ <strong>Terroir:</strong> Tuffeau calcaire</div>
-                            <div class="wine-area">📍 <strong>Superficie:</strong> 1 500 hectares (9 communes)</div>
+                        <div class="wine-content">
+                            <div class="wine-details">
+                                <div class="wine-grape">🍇 <strong>Cépage:</strong> Cabernet Franc (85%+)</div>
+                                <div class="wine-terroir">🏔️ <strong>Terroir:</strong> Tuffeau calcaire</div>
+                                <div class="wine-area">📍 <strong>Superficie:</strong> 1 500 hectares (9 communes)</div>
+                                <div class="wine-color">🎨 <strong>Couleur:</strong> <span class="wine-type-badge red">Vin Rouge</span></div>
+                            </div>
+                            <div class="wine-image red-wine-img">
+                                <img src="img/wine-saumur-champigny.webp" alt="Saumur-Champigny" onerror="this.style.display='none'">
+                            </div>
                         </div>
                         <p class="wine-description">Vin rouge de référence de la Loire. Couleur grenat brillante, arômes de fruits rouges (framboise, cassis), notes florales de violette. Corps léger à moyen, acidité vive.</p>
                         <div class="wine-tags">
@@ -1038,17 +1133,19 @@
 
                     <!-- Anjou Villages -->
                     <div class="wine-card red-wine" data-wine-type="red">
-                        <div class="wine-image red-wine-img">
-                            <div class="wine-icon">🍇</div>
-                        </div>
                         <div class="wine-header">
                             <h4>Anjou Villages</h4>
-                            <div class="wine-type-badge red">Vin Rouge</div>
                         </div>
-                        <div class="wine-details">
-                            <div class="wine-grape">🍇 <strong>Cépages:</strong> Cabernet Franc & Sauvignon</div>
-                            <div class="wine-terroir">🏔️ <strong>Terroir:</strong> Schistes du Massif Armoricain</div>
-                            <div class="wine-area">📍 <strong>Superficie:</strong> 200 hectares (46 communes)</div>
+                        <div class="wine-content">
+                            <div class="wine-details">
+                                <div class="wine-grape">🍇 <strong>Cépages:</strong> Cabernet Franc & Sauvignon</div>
+                                <div class="wine-terroir">🏔️ <strong>Terroir:</strong> Schistes du Massif Armoricain</div>
+                                <div class="wine-area">📍 <strong>Superficie:</strong> 200 hectares (46 communes)</div>
+                                <div class="wine-color">🎨 <strong>Couleur:</strong> <span class="wine-type-badge red">Vin Rouge</span></div>
+                            </div>
+                            <div class="wine-image red-wine-img">
+                                <img src="img/wine-anjou-villages.webp" alt="Anjou Villages" onerror="this.style.display='none'">
+                            </div>
                         </div>
                         <p class="wine-description">AOC créée en 1991 pour les rouges d'exception. Couleur rouge profonde, arômes de fruits noirs. Tanins marqués, garde 5-6 ans. Parfait avec viandes grillées servies à 16°C.</p>
                         <div class="wine-tags">
@@ -1066,17 +1163,19 @@
 
                     <!-- Bonnezeaux -->
                     <div class="wine-card sweet-wine" data-wine-type="white">
-                        <div class="wine-image sweet-wine-img">
-                            <div class="wine-icon">🏛️</div>
-                        </div>
                         <div class="wine-header">
                             <h4>Bonnezeaux</h4>
-                            <div class="wine-type-badge sweet">Vin Blanc Moelleux</div>
                         </div>
-                        <div class="wine-details">
-                            <div class="wine-grape">🍇 <strong>Cépage:</strong> Chenin Blanc</div>
-                            <div class="wine-terroir">🏔️ <strong>Terroir:</strong> Bords du Layon</div>
-                            <div class="wine-area">📍 <strong>Superficie:</strong> 120 hectares (Thouarcé)</div>
+                        <div class="wine-content">
+                            <div class="wine-details">
+                                <div class="wine-grape">🍇 <strong>Cépage:</strong> Chenin Blanc</div>
+                                <div class="wine-terroir">🏔️ <strong>Terroir:</strong> Bords du Layon</div>
+                                <div class="wine-area">📍 <strong>Superficie:</strong> 120 hectares (Thouarcé)</div>
+                                <div class="wine-color">🎨 <strong>Couleur:</strong> <span class="wine-type-badge sweet">Vin Blanc Moelleux</span></div>
+                            </div>
+                            <div class="wine-image sweet-wine-img">
+                                <img src="img/wine-bonnezeaux.webp" alt="Bonnezeaux" onerror="this.style.display='none'">
+                            </div>
                         </div>
                         <p class="wine-description">Vin moelleux historique (1055), le plus léger des vins doux. Couleur dorée aux reflets orangés, arômes de fruits secs et blancs, notes florales. Vieillissement indéfini.</p>
                         <div class="wine-tags">
@@ -1094,17 +1193,19 @@
 
                     <!-- Crémant de Loire -->
                     <div class="wine-card sparkling-wine" data-wine-type="sparkling">
-                        <div class="wine-image sparkling-wine-img">
-                            <div class="wine-icon">🍾</div>
-                        </div>
                         <div class="wine-header">
                             <h4>Crémant de Loire</h4>
-                            <div class="wine-type-badge sparkling">Vin Effervescent</div>
                         </div>
-                        <div class="wine-details">
-                            <div class="wine-grape">🍇 <strong>Cépages:</strong> Chenin, Chardonnay, Cabernet</div>
-                            <div class="wine-terroir">🏔️ <strong>Terroir:</strong> Anjou-Saumur & Touraine</div>
-                            <div class="wine-area">📍 <strong>Pression:</strong> 4 atmosphères (vs 3 Anjou Mousseux)</div>
+                        <div class="wine-content">
+                            <div class="wine-details">
+                                <div class="wine-grape">🍇 <strong>Cépages:</strong> Chenin, Chardonnay, Cabernet</div>
+                                <div class="wine-terroir">🏔️ <strong>Terroir:</strong> Anjou-Saumur & Touraine</div>
+                                <div class="wine-area">📍 <strong>Pression:</strong> 4 atmosphères (vs 3 Anjou Mousseux)</div>
+                                <div class="wine-color">🎨 <strong>Couleur:</strong> <span class="wine-type-badge sparkling">Vin Effervescent</span></div>
+                            </div>
+                            <div class="wine-image sparkling-wine-img">
+                                <img src="img/wine-cremant-de-loire.webp" alt="Crémant de Loire" onerror="this.style.display='none'">
+                            </div>
                         </div>
                         <p class="wine-description">Méthode traditionnelle, investissement des grandes maisons champenoises, avenir prometteur. Blanc ou rosé, parfait pour apéritif ou toast festif. Qualité supérieure garantie.</p>
                         <div class="wine-tags">
@@ -1123,17 +1224,19 @@
                     <!-- Rosé d'Anjou - FAVORITE -->
                     <div class="wine-card rose-wine favorite-wine" data-wine-type="rose">
                         <div class="favorite-badge">💎 Notre Coup de Cœur</div>
-                        <div class="wine-image rose-wine-img">
-                            <div class="wine-icon">🌹</div>
-                        </div>
                         <div class="wine-header">
                             <h4>Rosé d'Anjou</h4>
-                            <div class="wine-type-badge rose">Vin Rosé</div>
                         </div>
-                        <div class="wine-details">
-                            <div class="wine-grape">🍇 <strong>Cépages:</strong> Cabernet Franc & d'Anjou</div>
-                            <div class="wine-terroir">🏔️ <strong>Terroir:</strong> Vallée de la Loire</div>
-                            <div class="wine-area">📍 <strong>Style:</strong> Frais et léger</div>
+                        <div class="wine-content">
+                            <div class="wine-details">
+                                <div class="wine-grape">🍇 <strong>Cépages:</strong> Cabernet Franc & d'Anjou</div>
+                                <div class="wine-terroir">🏔️ <strong>Terroir:</strong> Vallée de la Loire</div>
+                                <div class="wine-area">📍 <strong>Style:</strong> Frais et léger</div>
+                                <div class="wine-color">🎨 <strong>Couleur:</strong> <span class="wine-type-badge rose">Vin Rosé</span></div>
+                            </div>
+                            <div class="wine-image rose-wine-img">
+                                <img src="img/wine-rose-d-anjou.webp" alt="Rosé d'Anjou" onerror="this.style.display='none'">
+                            </div>
                         </div>
                         <p class="wine-description">Vins rosés légers à déguster frais sous la tonnelle. Parfait accompagnement pour charcuteries et salades composées. Fraîcheur et convivialité estivale.</p>
                         <div class="wine-tags">

@@ -70,7 +70,19 @@
     "sparkling_wines": "Effervescents",
     "driving_time": "en voiture",
     "minutes": "min",
-    "google": "Google"
+    "google": "Google",
+    "all_cuisines": "Toutes",
+    "all_prices": "Tous Prix",
+    "budget": "€",
+    "moderate": "€€",
+    "expensive": "€€€",
+    "brasserie": "Brasserie",
+    "traditional": "Traditionnel",
+    "gastronomique": "Gastronomique",
+    "bistrot": "Bistrot",
+    "filter_by": "Filtrer par",
+    "our_recommendation": "Notre recommandation :",
+    "egg_mayonnaise": "oeuf mayonnaise classique"
   },
   "footer": {
     "copyright": "© 2025 A.S. Cottage - Alexis & Sylvia. Tous droits réservés.",
