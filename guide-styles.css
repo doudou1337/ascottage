@@ -1047,9 +1047,290 @@
     .guinguette-actions {
         flex-direction: column;
     }
-    
-    .guinguette-tips {
+}
+
+/* Famous Wines Section */
+.famous-wines-section {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 2px solid #722F37;
+}
+
+.famous-wines-section h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #722F37;
+    text-align: center;
+}
+
+.famous-wines-section > p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 32px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Wine Cards Grid */
+.wine-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+}
+
+/* Wine Card Base Styles */
+.wine-card {
+    background: white;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.wine-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+}
+
+.wine-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+}
+
+.wine-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Wine Card Type Variants */
+.wine-card.white-wine::before {
+    background: linear-gradient(90deg, #F9E79F, #F4D03F);
+}
+
+.wine-card.red-wine::before {
+    background: linear-gradient(90deg, #B03A2E, #DC143C);
+}
+
+.wine-card.sweet-wine::before {
+    background: linear-gradient(90deg, #D4AF37, #FFD700);
+}
+
+.wine-card.sparkling-wine::before {
+    background: linear-gradient(90deg, #E8F8F5, #48C9B0);
+}
+
+.wine-card.rose-wine::before {
+    background: linear-gradient(90deg, #FDB3C4, #FF69B4);
+}
+
+.wine-card.featured {
+    border: 2px solid #722F37;
+    background: linear-gradient(135deg, #faf8f8 0%, #ffffff 100%);
+}
+
+.wine-card.premium {
+    border: 3px solid #D4AF37;
+    background: linear-gradient(135deg, #fffdf0 0%, #ffffff 100%);
+    position: relative;
+}
+
+.wine-card.premium::after {
+    content: '★';
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    color: #D4AF37;
+}
+
+/* Wine Header */
+.wine-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.wine-header h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    color: #2C1810;
+    flex: 1;
+}
+
+.wine-type-badge {
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-left: 12px;
+}
+
+.wine-type-badge.white {
+    background: linear-gradient(135deg, #F9E79F, #F4D03F);
+    color: #8B4513;
+}
+
+.wine-type-badge.red {
+    background: linear-gradient(135deg, #B03A2E, #DC143C);
+    color: white;
+}
+
+.wine-type-badge.sweet {
+    background: linear-gradient(135deg, #D4AF37, #FFD700);
+    color: #8B4513;
+}
+
+.wine-type-badge.sparkling {
+    background: linear-gradient(135deg, #E8F8F5, #48C9B0);
+    color: #0E6B5C;
+}
+
+.wine-type-badge.rose {
+    background: linear-gradient(135deg, #FDB3C4, #FF69B4);
+    color: white;
+}
+
+.wine-type-badge.grand-cru {
+    background: linear-gradient(135deg, #D4AF37, #FFD700);
+    color: #8B4513;
+    font-weight: 700;
+    border: 1px solid #DAA520;
+}
+
+/* Wine Details */
+.wine-details {
+    margin-bottom: 16px;
+}
+
+.wine-details > div {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.wine-details strong {
+    color: #2C1810;
+}
+
+/* Wine Description */
+.wine-description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 16px;
+}
+
+/* Wine Tags */
+.wine-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.wine-tag {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    color: #495057;
+    padding: 6px 12px;
+    border-radius: 14px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #dee2e6;
+    transition: all 0.2s ease;
+}
+
+.wine-tag:hover {
+    background: linear-gradient(135deg, #e9ecef, #ced4da);
+    transform: translateY(-1px);
+}
+
+/* Wine Actions */
+.wine-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn-wine-info {
+    background: linear-gradient(135deg, #722F37, #A0522D);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-wine-info:hover {
+    background: linear-gradient(135deg, #5D252A, #8B4513);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(114, 47, 55, 0.3);
+}
+
+/* Responsive Wine Cards */
+@media (max-width: 768px) {
+    .wine-cards-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .wine-card {
+        padding: 20px;
+    }
+    
+    .wine-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .wine-type-badge {
+        align-self: flex-start;
+        margin-left: 0;
+    }
+    
+    .wine-details > div {
+        font-size: 13px;
+    }
+    
+    .wine-description {
+        font-size: 14px;
+    }
+    
+    .wine-tags {
+        gap: 6px;
+    }
+    
+    .wine-tag {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+    
+    .wine-actions {
+        flex-direction: column;
     }
     
     .btn {
