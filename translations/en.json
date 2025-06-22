@@ -62,12 +62,18 @@
     "website": "Website",
     "facebook": "Facebook",
     "wine_info": "Learn more",
+    "vineyard_map": "Download 2025 Vineyard Map",
+    "all_wines": "All Wines",
+    "white_wines": "White Wines",
+    "red_wines": "Red Wines",
+    "rose_wines": "Rosé Wines",
+    "sparkling_wines": "Sparkling",
     "driving_time": "by car",
     "minutes": "min",
     "google": "Google"
   },
   "footer": {
-    "copyright": "© 2024 A.S. Cottage - Alexis & Sylvia. All rights reserved.",
+    "copyright": "© 2025 A.S. Cottage - Alexis & Sylvia. All rights reserved.",
     "back_home": "Back to home",
     "book_airbnb": "Book on Airbnb",
     "contact_us": "Contact us"

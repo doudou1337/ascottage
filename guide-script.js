@@ -528,3 +528,50 @@ document.addEventListener('DOMContentLoaded', function() {
     
     document.body.appendChild(backToTopBtn);
 });
+
+// Wine Filter Functionality
+function initializeWineFilter() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const wineCards = document.querySelectorAll('.wine-card');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Get filter type
+            const filterType = this.getAttribute('data-filter');
+            
+            // Filter wine cards
+            wineCards.forEach(card => {
+                if (filterType === 'all') {
+                    card.classList.remove('hidden');
+                } else {
+                    const wineType = card.getAttribute('data-wine-type');
+                    if (wineType === filterType) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                }
+            });
+            
+            // Add animation effect
+            setTimeout(() => {
+                wineCards.forEach(card => {
+                    if (!card.classList.contains('hidden')) {
+                        card.style.animation = 'fadeInUp 0.5s ease-out';
+                    }
+                });
+            }, 100);
+        });
+    });
+}
+
+// Initialize wine filter
+document.addEventListener('DOMContentLoaded', function() {
+    initializeWineFilter();
+});

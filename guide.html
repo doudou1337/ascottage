@@ -901,9 +901,34 @@
                 <h3 data-key="vineyards.famous_wines_title">Vins Célèbres de la Vallée de la Loire</h3>
                 <p data-key="vineyards.famous_wines_desc">La région autour d'Angers est renommée pour ses vins d'exception. Voici les appellations que nous vous recommandons :</p>
                 
+                <!-- Wine Filter Buttons -->
+                <div class="wine-filter-section">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">
+                            <i class="fas fa-wine-glass"></i> <span data-key="common.all_wines">Tous les Vins</span>
+                        </button>
+                        <button class="filter-btn" data-filter="white">
+                            <i class="fas fa-wine-glass"></i> <span data-key="common.white_wines">Vins Blancs</span>
+                        </button>
+                        <button class="filter-btn" data-filter="red">
+                            <i class="fas fa-wine-glass"></i> <span data-key="common.red_wines">Vins Rouges</span>
+                        </button>
+                        <button class="filter-btn" data-filter="rose">
+                            <i class="fas fa-wine-glass"></i> <span data-key="common.rose_wines">Vins Rosés</span>
+                        </button>
+                        <button class="filter-btn" data-filter="sparkling">
+                            <i class="fas fa-champagne-glasses"></i> <span data-key="common.sparkling_wines">Effervescents</span>
+                        </button>
+                    </div>
+                </div>
+                
                 <div class="wine-cards-grid">
-                    <!-- Savennières -->
-                    <div class="wine-card white-wine featured">
+                    <!-- Savennières - FAVORITE -->
+                    <div class="wine-card white-wine featured favorite-wine" data-wine-type="white">
+                        <div class="favorite-badge">💎 Notre Coup de Cœur</div>
+                        <div class="wine-image white-wine-img">
+                            <div class="wine-icon">🥂</div>
+                        </div>
                         <div class="wine-header">
                             <h4>Savennières</h4>
                             <div class="wine-type-badge white">Vin Blanc Sec</div>
@@ -921,14 +946,17 @@
                             <span class="wine-tag">🥂 Grandes occasions</span>
                         </div>
                         <div class="wine-actions">
-                            <a href="https://www.anjou-tourisme.com/fr/decouvrir-lanjou/pratiques/en-vins-et-recettes/appellations-anjou-saumur/savennieres" target="_blank" class="btn btn-wine-info">
+                            <a href="https://www.vinsdeloire.fr/fr/vins-loire/savennieres" target="_blank" class="btn btn-wine-info">
                                 <i class="fas fa-info-circle"></i> <span data-key="common.wine_info">En savoir plus</span>
                             </a>
                         </div>
                     </div>
 
                     <!-- Coteaux du Layon -->
-                    <div class="wine-card sweet-wine">
+                    <div class="wine-card sweet-wine" data-wine-type="white">
+                        <div class="wine-image sweet-wine-img">
+                            <div class="wine-icon">🍯</div>
+                        </div>
                         <div class="wine-header">
                             <h4>Coteaux du Layon</h4>
                             <div class="wine-type-badge sweet">Vin Blanc Moelleux</div>
@@ -946,14 +974,17 @@
                             <span class="wine-tag">🧀 Foie gras</span>
                         </div>
                         <div class="wine-actions">
-                            <a href="https://www.vinsdeloire.fr/en/loire-wines/coteaux-du-layon" target="_blank" class="btn btn-wine-info">
+                            <a href="https://www.vinsdeloire.fr/fr/vins-loire/coteaux-du-layon" target="_blank" class="btn btn-wine-info">
                                 <i class="fas fa-info-circle"></i> <span data-key="common.wine_info">En savoir plus</span>
                             </a>
                         </div>
                     </div>
 
                     <!-- Quarts de Chaume Grand Cru -->
-                    <div class="wine-card sweet-wine premium">
+                    <div class="wine-card sweet-wine premium" data-wine-type="white">
+                        <div class="wine-image grand-cru-img">
+                            <div class="wine-icon">👑</div>
+                        </div>
                         <div class="wine-header">
                             <h4>Quarts de Chaume Grand Cru</h4>
                             <div class="wine-type-badge grand-cru">Grand Cru</div>
@@ -978,7 +1009,10 @@
                     </div>
 
                     <!-- Saumur-Champigny -->
-                    <div class="wine-card red-wine">
+                    <div class="wine-card red-wine" data-wine-type="red">
+                        <div class="wine-image red-wine-img">
+                            <div class="wine-icon">🍷</div>
+                        </div>
                         <div class="wine-header">
                             <h4>Saumur-Champigny</h4>
                             <div class="wine-type-badge red">Vin Rouge</div>
@@ -996,14 +1030,17 @@
                             <span class="wine-tag">🥩 Viandes grillées</span>
                         </div>
                         <div class="wine-actions">
-                            <a href="https://divineloire.fr/en/aop/saumur-champigny-aoc/" target="_blank" class="btn btn-wine-info">
+                            <a href="https://www.vinsdeloire.fr/fr/vins-loire/saumur-champigny" target="_blank" class="btn btn-wine-info">
                                 <i class="fas fa-info-circle"></i> <span data-key="common.wine_info">En savoir plus</span>
                             </a>
                         </div>
                     </div>
 
                     <!-- Anjou Villages -->
-                    <div class="wine-card red-wine">
+                    <div class="wine-card red-wine" data-wine-type="red">
+                        <div class="wine-image red-wine-img">
+                            <div class="wine-icon">🍇</div>
+                        </div>
                         <div class="wine-header">
                             <h4>Anjou Villages</h4>
                             <div class="wine-type-badge red">Vin Rouge</div>
@@ -1021,14 +1058,17 @@
                             <span class="wine-tag">🌿 Terroir</span>
                         </div>
                         <div class="wine-actions">
-                            <a href="https://www.anjou-tourisme.com/fr/decouvrir-lanjou/vos-emotions/les-vins-et-cepages-de-lanjou" target="_blank" class="btn btn-wine-info">
+                            <a href="https://www.vinsdeloire.fr/en/loire-wines/anjou-villages" target="_blank" class="btn btn-wine-info">
                                 <i class="fas fa-info-circle"></i> <span data-key="common.wine_info">En savoir plus</span>
                             </a>
                         </div>
                     </div>
 
                     <!-- Bonnezeaux -->
-                    <div class="wine-card sweet-wine">
+                    <div class="wine-card sweet-wine" data-wine-type="white">
+                        <div class="wine-image sweet-wine-img">
+                            <div class="wine-icon">🏛️</div>
+                        </div>
                         <div class="wine-header">
                             <h4>Bonnezeaux</h4>
                             <div class="wine-type-badge sweet">Vin Blanc Moelleux</div>
@@ -1053,7 +1093,10 @@
                     </div>
 
                     <!-- Crémant de Loire -->
-                    <div class="wine-card sparkling-wine">
+                    <div class="wine-card sparkling-wine" data-wine-type="sparkling">
+                        <div class="wine-image sparkling-wine-img">
+                            <div class="wine-icon">🍾</div>
+                        </div>
                         <div class="wine-header">
                             <h4>Crémant de Loire</h4>
                             <div class="wine-type-badge sparkling">Vin Effervescent</div>
@@ -1071,14 +1114,18 @@
                             <span class="wine-tag">✨ Méthode traditionnelle</span>
                         </div>
                         <div class="wine-actions">
-                            <a href="https://www.vinsdeloire.fr/en/loire-wines/cremant-de-loire" target="_blank" class="btn btn-wine-info">
+                            <a href="https://www.vinsdeloire.fr/en/loire-wines/cremant-loire" target="_blank" class="btn btn-wine-info">
                                 <i class="fas fa-info-circle"></i> <span data-key="common.wine_info">En savoir plus</span>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Rosé d'Anjou -->
-                    <div class="wine-card rose-wine">
+                    <!-- Rosé d'Anjou - FAVORITE -->
+                    <div class="wine-card rose-wine favorite-wine" data-wine-type="rose">
+                        <div class="favorite-badge">💎 Notre Coup de Cœur</div>
+                        <div class="wine-image rose-wine-img">
+                            <div class="wine-icon">🌹</div>
+                        </div>
                         <div class="wine-header">
                             <h4>Rosé d'Anjou</h4>
                             <div class="wine-type-badge rose">Vin Rosé</div>
@@ -1096,12 +1143,28 @@
                             <span class="wine-tag">❄️ Frais</span>
                         </div>
                         <div class="wine-actions">
-                            <a href="https://www.anjou-tourisme.com/fr/decouvrir-lanjou/vos-emotions/les-vins-et-cepages-de-lanjou" target="_blank" class="btn btn-wine-info">
+                            <a href="https://www.vinsdeloire.fr/en/loire-wines/rose-danjou" target="_blank" class="btn btn-wine-info">
                                 <i class="fas fa-info-circle"></i> <span data-key="common.wine_info">En savoir plus</span>
                             </a>
                         </div>
                     </div>
                 </div>
+                
+                <!-- Vineyard Map Section -->
+                <div class="vineyard-map-section">
+                    <div class="map-card">
+                        <div class="map-header">
+                            <h4>🗺️ Carte des Vignobles & Adresses des Vignerons</h4>
+                            <p>Découvrez tous les vignobles de la région et trouvez les adresses exactes des producteurs</p>
+                        </div>
+                        <div class="map-actions">
+                            <a href="https://www.anjou-tourisme.com/sites/public_files/upload/contenu/brochure/carte-vignoble-2025.pdf?srsltid=AfmBOor2HdTEDPQuzLhxTwD6gtNm7byIsYTdIAxQfvJdAWkl34eF0F1I" target="_blank" class="btn btn-map">
+                                <i class="fas fa-map"></i> <span data-key="common.vineyard_map">Télécharger la Carte des Vignobles 2025</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
             </div>
         </div>
