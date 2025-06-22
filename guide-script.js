@@ -385,19 +385,88 @@ function initializeFavorites() {
     });
 }
 
-// Language switching support for guide page
-if (typeof toggleLanguage === 'undefined') {
-    function toggleLanguage() {
-        // Basic language toggle for guide page
-        const currentLang = document.getElementById('currentLang').textContent;
-        const newLang = currentLang === 'FR' ? 'EN' : 'FR';
+// Translation system for guide page
+let translations = {};
+let currentLanguage = 'fr';
+
+// Load translations
+async function loadTranslations() {
+    try {
+        const [frResponse, enResponse] = await Promise.all([
+            fetch('./translations/fr.json'),
+            fetch('./translations/en.json')
+        ]);
         
-        document.getElementById('currentLang').textContent = newLang;
+        translations.fr = await frResponse.json();
+        translations.en = await enResponse.json();
         
-        // You can add translation logic here for guide content
-        console.log(`Language switched to: ${newLang}`);
+        // Set initial language based on browser language or stored preference
+        const browserLang = navigator.language.slice(0, 2);
+        const storedLang = localStorage.getItem('guide-language');
+        currentLanguage = storedLang || (browserLang === 'en' ? 'en' : 'fr');
+        
+        // Update UI
+        updateLanguageDisplay();
+        translatePage();
+    } catch (error) {
+        console.error('Failed to load translations:', error);
     }
 }
+
+// Update language display in button
+function updateLanguageDisplay() {
+    const langButton = document.getElementById('currentLang');
+    if (langButton) {
+        langButton.textContent = currentLanguage.toUpperCase();
+    }
+    
+    // Update HTML lang attribute
+    document.documentElement.lang = currentLanguage;
+}
+
+// Toggle language function
+function toggleLanguage() {
+    currentLanguage = currentLanguage === 'fr' ? 'en' : 'fr';
+    localStorage.setItem('guide-language', currentLanguage);
+    updateLanguageDisplay();
+    translatePage();
+}
+
+// Translate the page content
+function translatePage() {
+    if (!translations[currentLanguage]) return;
+    
+    const t = translations[currentLanguage];
+    
+    // Translate elements with data-key attributes
+    document.querySelectorAll('[data-key]').forEach(element => {
+        const key = element.getAttribute('data-key');
+        const translation = getNestedTranslation(t, key);
+        
+        if (translation) {
+            if (element.innerHTML.includes('<') || translation.includes('<')) {
+                // Handle HTML content
+                element.innerHTML = translation;
+            } else {
+                // Handle plain text
+                element.textContent = translation;
+            }
+        }
+    });
+}
+
+// Get nested translation value (e.g., "nav.guide")
+function getNestedTranslation(obj, key) {
+    return key.split('.').reduce((current, prop) => current && current[prop], obj);
+}
+
+// Initialize translation system
+document.addEventListener('DOMContentLoaded', function() {
+    loadTranslations();
+});
+
+// Make toggleLanguage available globally
+window.toggleLanguage = toggleLanguage;
 
 // Back to top button
 document.addEventListener('DOMContentLoaded', function() {

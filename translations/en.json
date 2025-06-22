@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "guide": "Local Guide",
+    "overview": "Overview",
+    "amenities": "Amenities",
+    "location": "Location",
+    "reviews": "Reviews",
+    "instructions": "Instructions",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Local Guide & Recommendations",
+    "subtitle": "Discover our personal recommendations to make the most of your stay in Loire-Authion",
+    "address": "3 route de la crétaudière, 49630 Loire Authion"
+  },
+  "navigation": {
+    "guinguettes": "Riverside Cafés",
+    "restaurants": "Restaurants",
+    "bars": "Bars",
+    "shops": "Shops",
+    "activities": "Activities",
+    "vineyards": "Vineyards"
+  },
+  "guinguettes": {
+    "title": "Riverside Cafés - Our Summer Recommendation ☀️",
+    "experience_title": "🌞 The Essential Loire Summer Experience",
+    "description": "<strong>Guinguettes</strong> are riverside restaurants open only during the beautiful season (April to October). These establishments offer simple cuisine and drinks in an enchanting and very relaxing setting - perfect for enjoying nature and the Loire river view. Often featuring <strong>live music</strong>, it's the ideal place to savor a <strong>fresh rosé</strong> at sunset."
+  },
+  "restaurants": {
+    "title": "Restaurants",
+    "intro": "We lived 4 years in downtown Angers and tested many restaurants. Here are our favorite spots. Don't forget to book as early as possible!",
+    "angers_title": "Restaurants in Angers (20 minutes by car)",
+    "loire_authion_title": "Loire-Authion Restaurants"
+  },
+  "bars": {
+    "title": "Bars"
+  },
+  "shops": {
+    "title": "Shops & Commerce",
+    "gourmet_title": "Gourmet Groceries",
+    "bakeries_title": "Local Bakeries",
+    "supermarkets_title": "Supermarkets",
+    "specialized_title": "Specialized Shops"
+  },
+  "activities": {
+    "title": "Activities by Season",
+    "intro": "Loire-Authion offers different experiences depending on the seasons. Discover our current recommendations and plan according to your stay period!",
+    "current_season": "🌞 Currently - Summer Season (June - September)",
+    "current_description": "This is the best time to enjoy <strong>riverside cafés</strong>, water activities and long evenings by the Loire. Temperatures are perfect for outdoor activities!",
+    "spring": "Spring",
+    "summer": "Summer - THE Season Not to Miss! 🌞",
+    "autumn": "Autumn",
+    "winter": "Winter"
+  },
+  "vineyards": {
+    "title": "Vineyards & Wine Cellars",
+    "famous_wines_title": "Famous Wines of the Loire Valley",
+    "famous_wines_description": "The region around Angers is renowned for its exceptional wines. Here are the appellations we recommend:"
+  },
+  "common": {
+    "view_on_maps": "View on Maps",
+    "website": "Website",
+    "facebook": "Facebook",
+    "driving_time": "by car",
+    "minutes": "min",
+    "google": "Google"
+  },
+  "footer": {
+    "copyright": "© 2024 A.S. Cottage - Alexis & Sylvia. All rights reserved.",
+    "back_home": "Back to home",
+    "book_airbnb": "Book on Airbnb",
+    "contact_us": "Contact us"
+  }
+}

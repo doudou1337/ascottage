@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "guide": "Guide Local",
+    "overview": "Aperçu",
+    "amenities": "Équipements",
+    "location": "Localisation",
+    "reviews": "Avis",
+    "instructions": "Instructions",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Guide Local & Recommandations",
+    "subtitle": "Découvrez nos recommandations personnelles pour profiter au mieux de votre séjour dans la Loire-Authion",
+    "address": "3 route de la crétaudière, 49630 Loire Authion"
+  },
+  "navigation": {
+    "guinguettes": "Guinguettes",
+    "restaurants": "Restaurants",
+    "bars": "Bars",
+    "shops": "Boutiques",
+    "activities": "Activités",
+    "vineyards": "Vignobles"
+  },
+  "guinguettes": {
+    "title": "Guinguettes - Notre Recommandation Estivale ☀️",
+    "experience_title": "🌞 L'Expérience Estivale Incontournable de la Loire",
+    "description": "Les <strong>guinguettes</strong> sont des restaurants au bord de Loire ouverts uniquement pendant la belle saison (avril à octobre). Ces établissements offrent une cuisine simple et des boissons dans un cadre enchanteur et très relaxant - parfait pour profiter de la nature et de la vue sur la Loire. Souvent avec de la <strong>musique live</strong>, c'est l'endroit idéal pour savourer un <strong>rosé frais</strong> au coucher du soleil."
+  },
+  "restaurants": {
+    "title": "Restaurants",
+    "intro": "Nous avons vécu 4 ans au centre-ville d'Angers et testé de nombreux restaurants. Voici nos endroits préférés. N'oubliez pas de réserver le plus tôt possible !",
+    "angers_title": "Restaurants à Angers (20 minutes en voiture)",
+    "loire_authion_title": "Restaurants Loire-Authion"
+  },
+  "bars": {
+    "title": "Bars"
+  },
+  "shops": {
+    "title": "Boutiques & Commerces",
+    "gourmet_title": "Épiceries Gourmandes",
+    "bakeries_title": "Boulangeries Locales",
+    "supermarkets_title": "Supermarchés",
+    "specialized_title": "Boutiques Spécialisées"
+  },
+  "activities": {
+    "title": "Activités Selon les Saisons",
+    "intro": "La Loire-Authion offre des expériences différentes selon les saisons. Découvrez nos recommandations actuelles et planifiez selon la période de votre séjour !",
+    "current_season": "🌞 Actuellement - Saison Estivale (Juin - Septembre)",
+    "current_description": "C'est la meilleure période pour profiter des <strong>guinguettes</strong>, des activités nautiques et des longues soirées au bord de Loire. Les températures sont parfaites pour les activités extérieures !",
+    "spring": "Printemps",
+    "summer": "Été - LA Saison à Ne Pas Manquer ! 🌞",
+    "autumn": "Automne",
+    "winter": "Hiver"
+  },
+  "vineyards": {
+    "title": "Vignobles & Caves à Vin",
+    "famous_wines_title": "Vins Célèbres de la Vallée de la Loire",
+    "famous_wines_description": "La région autour d'Angers est renommée pour ses vins d'exception. Voici les appellations que nous vous recommandons :"
+  },
+  "common": {
+    "view_on_maps": "Voir sur Maps",
+    "website": "Site Web",
+    "facebook": "Facebook",
+    "driving_time": "en voiture",
+    "minutes": "min",
+    "google": "Google"
+  },
+  "footer": {
+    "copyright": "© 2024 A.S. Cottage - Alexis & Sylvia. Tous droits réservés.",
+    "back_home": "Retour à l'accueil",
+    "book_airbnb": "Réserver sur Airbnb",
+    "contact_us": "Nous contacter"
+  }
+}

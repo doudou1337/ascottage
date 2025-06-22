@@ -17,13 +17,13 @@
                 <a href="index.html"><h1>A.S. Cottage</h1></a>
             </div>
             <nav class="nav">
-                <a href="guide.html" class="nav-guide-highlight active" data-key="nav-guide">Guide Local</a>
-                <a href="index.html#overview" data-key="nav-overview">Aperçu</a>
-                <a href="index.html#amenities" data-key="nav-amenities">Équipements</a>
-                <a href="index.html#location" data-key="nav-location">Localisation</a>
-                <a href="index.html#reviews" data-key="nav-reviews">Avis</a>
-                <a href="rules.html" data-key="nav-instructions">Instructions</a>
-                <a href="mailto:hello@ascottage.fr" data-key="nav-contact">Contact</a>
+                <a href="guide.html" class="nav-guide-highlight active" data-key="nav.guide">Guide Local</a>
+                <a href="index.html#overview" data-key="nav.overview">Aperçu</a>
+                <a href="index.html#amenities" data-key="nav.amenities">Équipements</a>
+                <a href="index.html#location" data-key="nav.location">Localisation</a>
+                <a href="index.html#reviews" data-key="nav.reviews">Avis</a>
+                <a href="rules.html" data-key="nav.instructions">Instructions</a>
+                <a href="mailto:hello@ascottage.fr" data-key="nav.contact">Contact</a>
             </nav>
             <div class="language-switcher">
                 <button class="lang-btn" onclick="toggleLanguage()">
@@ -38,8 +38,8 @@
     <section class="guide-hero">
         <div class="container">
             <div class="guide-hero-content">
-                <h1>Guide Local & Recommandations</h1>
-                <p class="guide-subtitle">Découvrez nos recommandations personnelles pour profiter au mieux de votre séjour dans la Loire-Authion</p>
+                <h1 data-key="hero.title">Guide Local & Recommandations</h1>
+                <p class="guide-subtitle" data-key="hero.subtitle">Découvrez nos recommandations personnelles pour profiter au mieux de votre séjour dans la Loire-Authion</p>
                 <div class="guide-address">
                     <i class="fas fa-map-marker-alt"></i>
                     <span>3 route de la crétaudière, 49630 Loire Authion</span>
@@ -54,27 +54,27 @@
             <div class="guide-nav-grid">
                 <a href="#guinguettes" class="guide-nav-item">
                     <i class="fas fa-umbrella-beach"></i>
-                    <span>Guinguettes</span>
+                    <span data-key="navigation.guinguettes">Guinguettes</span>
                 </a>
                 <a href="#restaurants" class="guide-nav-item">
                     <i class="fas fa-utensils"></i>
-                    <span>Restaurants</span>
+                    <span data-key="navigation.restaurants">Restaurants</span>
                 </a>
                 <a href="#bars" class="guide-nav-item">
                     <i class="fas fa-wine-glass"></i>
-                    <span>Bars</span>
+                    <span data-key="navigation.bars">Bars</span>
                 </a>
                 <a href="#shops" class="guide-nav-item">
                     <i class="fas fa-shopping-bag"></i>
-                    <span>Boutiques</span>
+                    <span data-key="navigation.shops">Boutiques</span>
                 </a>
                 <a href="#activities" class="guide-nav-item">
                     <i class="fas fa-hiking"></i>
-                    <span>Activités</span>
+                    <span data-key="navigation.activities">Activités</span>
                 </a>
                 <a href="#vineyards" class="guide-nav-item">
                     <i class="fas fa-wine-bottle"></i>
-                    <span>Vignobles</span>
+                    <span data-key="navigation.vineyards">Vignobles</span>
                 </a>
             </div>
         </div>
@@ -83,15 +83,15 @@
     <!-- Guinguettes Section -->
     <section id="guinguettes" class="guide-section">
         <div class="container">
-            <h2><i class="fas fa-umbrella-beach"></i> Guinguettes - Notre Recommandation Estivale ☀️</h2>
+            <h2><i class="fas fa-umbrella-beach"></i> <span data-key="guinguettes.title">Guinguettes - Notre Recommandation Estivale ☀️</span></h2>
                 <div class="guinguette-banner">
                     <img src="img/guinguette-banner.jpg" alt="Ambiance guinguette au bord de Loire" style="width: 100%; height: 200px; object-fit: cover;">
                 </div>
             
             <div class="seasonal-highlight">
                 <div class="season-banner">
-                    <br><h3>🌞 L'Expérience Estivale Incontournable de la Loire</h3>
-                    <p class="season-description">Les <strong>guinguettes</strong> sont des restaurants au bord de Loire ouverts uniquement pendant la belle saison (avril à octobre). Ces établissements offrent une cuisine simple et des boissons dans un cadre enchanteur et très relaxant - parfait pour profiter de la nature et de la vue sur la Loire. Souvent avec de la <strong>musique live</strong>, c'est l'endroit idéal pour savourer un <strong>rosé frais</strong> au coucher du soleil.</p><br>
+                    <br><h3 data-key="guinguettes.experience_title">🌞 L'Expérience Estivale Incontournable de la Loire</h3>
+                    <p class="season-description" data-key="guinguettes.description">Les <strong>guinguettes</strong> sont des restaurants au bord de Loire ouverts uniquement pendant la belle saison (avril à octobre). Ces établissements offrent une cuisine simple et des boissons dans un cadre enchanteur et très relaxant - parfait pour profiter de la nature et de la vue sur la Loire. Souvent avec de la <strong>musique live</strong>, c'est l'endroit idéal pour savourer un <strong>rosé frais</strong> au coucher du soleil.</p><br>
                 </div>
             
             
@@ -114,10 +114,10 @@
                     </div>
                     <div class="guinguette-actions">
                         <a href="https://maps.app.goo.gl/ofcdePS5iJu2tsxw5" target="_blank" class="btn btn-maps">
-                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            <i class="fas fa-map-marker-alt"></i> <span data-key="common.view_on_maps">Voir sur Maps</span>
                         </a>
                         <a href="https://www.caparica-guinguette.fr/" target="_blank" class="btn btn-website">
-                            <i class="fas fa-globe"></i> Site Web
+                            <i class="fas fa-globe"></i> <span data-key="common.website">Site Web</span>
                         </a>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                     </div>
                     <div class="guinguette-actions">
                         <a href="https://www.google.com/maps/search/La+Barbe+À+Maman+Port+Maillard" target="_blank" class="btn btn-maps">
-                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            <i class="fas fa-map-marker-alt"></i> <span data-key="common.view_on_maps">Voir sur Maps</span>
                         </a>
                     </div>
                 </div>
@@ -165,10 +165,10 @@
                     </div>
                     <div class="guinguette-actions">
                         <a href="https://maps.app.goo.gl/xN4WbEaefzDWeSjt9" target="_blank" class="btn btn-maps">
-                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            <i class="fas fa-map-marker-alt"></i> <span data-key="common.view_on_maps">Voir sur Maps</span>
                         </a>
                         <a href="https://www.guinguettedeportthibault.fr/" target="_blank" class="btn btn-website">
-                            <i class="fas fa-globe"></i> Site Web
+                            <i class="fas fa-globe"></i> <span data-key="common.website">Site Web</span>
                         </a>
                     </div>
                 </div>
@@ -193,7 +193,7 @@
                     </div>
                     <div class="guinguette-actions">
                         <a href="https://www.google.com/maps/search/Le+Héron+carré+Angers" target="_blank" class="btn btn-maps">
-                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            <i class="fas fa-map-marker-alt"></i> <span data-key="common.view_on_maps">Voir sur Maps</span>
                         </a>
                         <a href="https://www.facebook.com/heroncarre/" target="_blank" class="btn btn-website">
                             <i class="fas fa-globe"></i> Facebook
@@ -221,10 +221,10 @@
                     </div>
                     <div class="guinguette-actions">
                         <a href="https://www.google.com/maps/search/Guinguette+La+Dérive+Port+Saint-Maur" target="_blank" class="btn btn-maps">
-                            <i class="fas fa-map-marker-alt"></i> Voir sur Maps
+                            <i class="fas fa-map-marker-alt"></i> <span data-key="common.view_on_maps">Voir sur Maps</span>
                         </a>
                         <a href="https://www.facebook.com/GuinguetteLaDerive/" target="_blank" class="btn btn-website">
-                            <i class="fas fa-globe"></i> Facebook
+                            <i class="fas fa-globe"></i> <span data-key="common.facebook">Facebook</span>
                         </a>
                     </div>
                 </div>
@@ -253,7 +253,7 @@
                             <i class="fas fa-map-marker-alt"></i> Voir sur Maps
                         </a>
                         <a href="https://www.guinguetteajojo.fr/" target="_blank" class="btn btn-website">
-                            <i class="fas fa-globe"></i> Site Web
+                            <i class="fas fa-globe"></i> <span data-key="common.website">Site Web</span>
                         </a>
                     </div>
                 </div>
@@ -264,11 +264,11 @@
     <!-- Restaurants Section -->
     <section id="restaurants" class="guide-section alt-bg">
         <div class="container">
-            <h2><i class="fas fa-utensils"></i> Restaurants</h2>
-            <p class="section-intro">Nous avons vécu 4 ans au centre-ville d'Angers et testé de nombreux restaurants. Voici nos endroits préférés. N'oubliez pas de réserver le plus tôt possible !</p>
+            <h2><i class="fas fa-utensils"></i> <span data-key="restaurants.title">Restaurants</span></h2>
+            <p class="section-intro" data-key="restaurants.intro">Nous avons vécu 4 ans au centre-ville d'Angers et testé de nombreux restaurants. Voici nos endroits préférés. N'oubliez pas de réserver le plus tôt possible !</p>
             
             <div class="location-group">
-                <h3>Restaurants à Angers (20 minutes en voiture)</h3>
+                <h3 data-key="restaurants.angers_title">Restaurants à Angers (20 minutes en voiture)</h3>
                 
                 <div class="restaurant-grid">
                     <div class="restaurant-card featured">
@@ -429,7 +429,7 @@
             </div>
 
             <div class="location-group">
-                <h3>Restaurants Loire-Authion</h3>
+                <h3 data-key="restaurants.loire_authion_title">Restaurants Loire-Authion</h3>
                 
                 <div class="restaurant-grid">
                     <div class="restaurant-card scenic">
@@ -489,7 +489,7 @@
     <!-- Bars Section -->
     <section id="bars" class="guide-section alt-bg">
         <div class="container">
-            <h2><i class="fas fa-wine-glass"></i> Bars</h2>
+            <h2><i class="fas fa-wine-glass"></i> <span data-key="bars.title">Bars</span></h2>
             
             <div class="bar-grid">
                 <div class="bar-card featured">
@@ -545,11 +545,11 @@
     <!-- Shops Section -->
     <section id="shops" class="guide-section">
         <div class="container">
-            <h2><i class="fas fa-shopping-bag"></i> Boutiques & Commerces</h2>
+            <h2><i class="fas fa-shopping-bag"></i> <span data-key="shops.title">Boutiques & Commerces</span></h2>
             
             <div class="shop-categories">
                 <div class="shop-category">
-                    <h3><i class="fas fa-cheese"></i> Épiceries Gourmandes</h3>
+                    <h3><i class="fas fa-cheese"></i> <span data-key="shops.gourmet_title">Épiceries Gourmandes</span></h3>
                     <div class="shop-grid">
                         <div class="shop-card featured">
                             <div class="restaurant-image">
@@ -601,7 +601,7 @@
                 </div>
 
                 <div class="shop-category">
-                    <h3><i class="fas fa-bread-slice"></i> Boulangeries Locales</h3>
+                    <h3><i class="fas fa-bread-slice"></i> <span data-key="shops.bakeries_title">Boulangeries Locales</span></h3>
                     <div class="shop-grid">
                         <div class="shop-card">
                             <div class="restaurant-image">
@@ -629,7 +629,7 @@
                 </div>
 
                 <div class="shop-category">
-                    <h3><i class="fas fa-shopping-cart"></i> Supermarchés</h3>
+                    <h3><i class="fas fa-shopping-cart"></i> <span data-key="shops.supermarkets_title">Supermarchés</span></h3>
                     <div class="shop-grid">
                         <div class="shop-card">
                             <h4>Super U Mazé</h4>
@@ -654,7 +654,7 @@
                 </div>
 
                 <div class="shop-category">
-                    <h3><i class="fas fa-leaf"></i> Boutiques Spécialisées</h3>
+                    <h3><i class="fas fa-leaf"></i> <span data-key="shops.specialized_title">Boutiques Spécialisées</span></h3>
                     <div class="shop-grid">
                         <div class="shop-card eco">
                             <h4>La Ferme de Sainte Marthe</h4>
@@ -688,19 +688,19 @@
     <!-- Activities Section -->
     <section id="activities" class="guide-section alt-bg">
         <div class="container">
-            <h2><i class="fas fa-sun"></i> Activités Selon les Saisons</h2>
-            <p class="section-intro">La Loire-Authion offre des expériences différentes selon les saisons. Découvrez nos recommandations actuelles et planifiez selon la période de votre séjour !</p>
+            <h2><i class="fas fa-sun"></i> <span data-key="activities.title">Activités Selon les Saisons</span></h2>
+            <p class="section-intro" data-key="activities.intro">La Loire-Authion offre des expériences différentes selon les saisons. Découvrez nos recommandations actuelles et planifiez selon la période de votre séjour !</p>
             
             <div class="current-season-highlight">
                 <div class="season-now">
-                    <h3>🌞 Actuellement - Saison Estivale (Juin - Septembre)</h3>
-                    <p>C'est la meilleure période pour profiter des <strong>guinguettes</strong>, des activités nautiques et des longues soirées au bord de Loire. Les températures sont parfaites pour les activités extérieures !</p>
+                    <h3 data-key="activities.current_season">🌞 Actuellement - Saison Estivale (Juin - Septembre)</h3>
+                    <p data-key="activities.current_season_desc">C'est la meilleure période pour profiter des <strong>guinguettes</strong>, des activités nautiques et des longues soirées au bord de Loire. Les températures sont parfaites pour les activités extérieures !</p>
                 </div>
             </div>
             
             <div class="activities-grid">
                 <div class="activity-season spring">
-                    <h3><i class="fas fa-seedling"></i> Printemps</h3>
+                    <h3><i class="fas fa-seedling"></i> <span data-key="activities.spring">Printemps</span></h3>
                     <div class="activity-cards">
                         <div class="activity-card">
                             <h4>Terra Botanica</h4>
@@ -729,7 +729,7 @@
                 </div>
 
                 <div class="activity-season summer featured-season">
-                    <h3><i class="fas fa-sun"></i> Été - LA Saison à Ne Pas Manquer ! 🌞</h3>
+                    <h3><i class="fas fa-sun"></i> <span data-key="activities.summer">Été - LA Saison à Ne Pas Manquer ! 🌞</span></h3>
                     <div class="season-description">
                         <p><strong>C'est maintenant !</strong> L'été est la période magique où la Loire s'anime. Profitez des longues journées ensoleillées et de l'art de vivre ligérien.</p>
                     </div>
@@ -780,7 +780,7 @@
                 </div>
 
                 <div class="activity-season autumn">
-                    <h3><i class="fas fa-leaf"></i> Automne</h3>
+                    <h3><i class="fas fa-leaf"></i> <span data-key="activities.autumn">Automne</span></h3>
                     <div class="activity-cards">
                         <div class="activity-card">
                             <h4>Vendanges</h4>
@@ -795,7 +795,7 @@
                 </div>
 
                 <div class="activity-season winter">
-                    <h3><i class="fas fa-snowflake"></i> Hiver</h3>
+                    <h3><i class="fas fa-snowflake"></i> <span data-key="activities.winter">Hiver</span></h3>
                     <div class="activity-cards">
                         <div class="activity-card">
                             <h4>Marchés de Noël</h4>
@@ -815,7 +815,7 @@
     <!-- Vineyards Section -->
     <section id="vineyards" class="guide-section">
         <div class="container">
-            <h2><i class="fas fa-wine-bottle"></i> Vignobles & Caves à Vin</h2>
+            <h2><i class="fas fa-wine-bottle"></i> <span data-key="vineyards.title">Vignobles & Caves à Vin</span></h2>
             
             <div class="vineyard-grid">
                 <div class="vineyard-card featured">
@@ -886,8 +886,8 @@
             </div>
 
             <div class="wine-info">
-                <h3>Vins Célèbres de la Vallée de la Loire</h3>
-                <p>La région autour d'Angers est renommée pour ses vins d'exception. Voici les appellations que nous vous recommandons :</p>
+                <h3 data-key="vineyards.famous_wines_title">Vins Célèbres de la Vallée de la Loire</h3>
+                <p data-key="vineyards.famous_wines_desc">La région autour d'Angers est renommée pour ses vins d'exception. Voici les appellations que nous vous recommandons :</p>
                 <div class="wine-appellations">
                     <span class="wine-appellation">Savennières</span>
                     <span class="wine-appellation">Coteaux du Layon</span>
@@ -906,11 +906,11 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-bottom">
-                <p>&copy; 2024 A.S. Cottage - Alexis & Sylvia. Tous droits réservés.</p>
+                <p data-key="footer.copyright">&copy; 2024 A.S. Cottage - Alexis & Sylvia. Tous droits réservés.</p>
                 <div class="footer-links">
-                    <a href="index.html">Retour à l'accueil</a>
-                    <a href="https://www.airbnb.fr/rooms/1150517326023370688" target="_blank">Réserver sur Airbnb</a>
-                    <a href="mailto:hello@ascottage.fr">Nous contacter</a>
+                    <a href="index.html" data-key="footer.back_home">Retour à l'accueil</a>
+                    <a href="https://www.airbnb.fr/rooms/1150517326023370688" target="_blank" data-key="footer.book_airbnb">Réserver sur Airbnb</a>
+                    <a href="mailto:hello@ascottage.fr" data-key="footer.contact_us">Nous contacter</a>
                 </div>
             </div>
         </div>
