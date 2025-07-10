@@ -93,10 +93,115 @@
     overflow-x: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE and Edge */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 .guide-nav-grid::-webkit-scrollbar {
     display: none; /* Chrome, Safari and Opera */
+}
+
+/* Mobile navigation improvements */
+@media (max-width: 768px) {
+    .guide-nav {
+        position: relative;
+        background: white;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+    
+    /* Visual scroll indicators */
+    .guide-nav::before,
+    .guide-nav::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 50px;
+        pointer-events: none;
+        z-index: 3;
+        transition: opacity 0.3s ease;
+    }
+    
+    .guide-nav::before {
+        left: 0;
+        background: linear-gradient(90deg, rgba(255,255,255,0.95), transparent);
+        border-radius: 0 12px 12px 0;
+    }
+    
+    .guide-nav::after {
+        right: 0;
+        background: linear-gradient(-90deg, rgba(255,255,255,0.95), transparent);
+        border-radius: 12px 0 0 12px;
+    }
+    
+    /* Scroll hint dots */
+    .guide-nav::after {
+        background-image: 
+            linear-gradient(-90deg, rgba(255,255,255,0.95), transparent),
+            radial-gradient(circle, #FF385C 1px, transparent 1px);
+        background-size: 100% 100%, 8px 8px;
+        background-position: 0 0, 12px 50%;
+        background-repeat: no-repeat, repeat-y;
+    }
+    
+    .guide-nav-grid {
+        justify-content: flex-start;
+        padding: 8px 32px 8px 16px;
+        gap: 6px;
+        scroll-snap-type: x mandatory;
+        scroll-padding: 32px;
+        position: relative;
+    }
+    
+    .guide-nav-item {
+        scroll-snap-align: center;
+        flex-shrink: 0;
+        min-width: fit-content;
+        padding: 14px 18px;
+        font-size: 13px;
+        transition: all 0.2s ease;
+        position: relative;
+        border-radius: 22px;
+        font-weight: 500;
+    }
+    
+    .guide-nav-item:active {
+        transform: scale(0.96);
+        background: rgba(255, 56, 92, 0.15);
+    }
+    
+    .guide-nav-item:hover {
+        background: rgba(255, 56, 92, 0.08);
+    }
+    
+    .guide-nav-item.active {
+        background: #FF385C;
+        color: white;
+        box-shadow: 0 2px 8px rgba(255, 56, 92, 0.3);
+        transform: scale(1.02);
+    }
+    
+    .guide-nav-item i {
+        font-size: 14px;
+    }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+    .guide-nav-grid {
+        padding: 6px 28px 6px 12px;
+        gap: 4px;
+    }
+    
+    .guide-nav-item {
+        padding: 12px 14px;
+        font-size: 12px;
+    }
+    
+    .guide-nav-item i {
+        font-size: 13px;
+    }
 }
 
 .guide-nav-item {
@@ -409,12 +514,17 @@
 .distance-badge {
     background: linear-gradient(135deg, #06466A, #054159);
     color: white;
-    padding: 6px 12px;
+    padding: 8px 16px;
     border-radius: 20px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     margin-bottom: 12px;
     display: inline-block;
+    white-space: nowrap;
+    min-width: 160px;
+    text-align: center;
+    line-height: 1.2;
+    box-sizing: border-box;
 }
 
 .michelin-badge {
@@ -497,25 +607,88 @@
     font-size: 12px;
 }
 
-/* Bar Cards */
-.bar-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px;
+/* Bars Timeline Layout */
+.bars-timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px 0;
 }
 
-.bar-card {
+.bar-entry {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 48px;
+    position: relative;
+}
+
+.bar-entry:last-child .bar-line {
+    display: none;
+}
+
+.bar-marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 32px;
+    position: relative;
+}
+
+.bar-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #722F37, #A0522D);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0 4px 16px rgba(114, 47, 55, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.bar-entry.featured .bar-icon {
+    background: linear-gradient(135deg, #FF385C, #E31C5F);
+    box-shadow: 0 4px 16px rgba(255, 56, 92, 0.3);
+}
+
+.bar-entry.unique .bar-icon {
+    background: linear-gradient(135deg, #06466A, #054159);
+    box-shadow: 0 4px 16px rgba(6, 70, 106, 0.3);
+}
+
+.bar-entry.specialty .bar-icon {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    box-shadow: 0 4px 16px rgba(76, 175, 80, 0.3);
+}
+
+.bar-entry.chain .bar-icon {
+    background: linear-gradient(135deg, #9C27B0, #673AB7);
+    box-shadow: 0 4px 16px rgba(156, 39, 176, 0.3);
+}
+
+.bar-line {
+    width: 3px;
+    height: 80px;
+    background: linear-gradient(180deg, #722F37, rgba(114, 47, 55, 0.3));
+    margin-top: 8px;
+}
+
+.bar-content {
+    flex: 1;
     background: white;
-    border-radius: 16px;
-    padding: 24px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    border: 2px solid transparent;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
 
-.bar-card::before {
+.bar-content::before {
     content: '';
     position: absolute;
     top: 0;
@@ -527,32 +700,195 @@
     transition: transform 0.3s ease;
 }
 
-.bar-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+.bar-entry:hover .bar-content {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.12);
 }
 
-.bar-card:hover::before {
+.bar-entry:hover .bar-content::before {
     transform: scaleX(1);
 }
 
-.bar-card.featured {
-    border: 2px solid #722F37;
-    background: linear-gradient(135deg, #f9f5f5 0%, #ffffff 100%);
+.bar-entry.featured .bar-content::before {
+    background: linear-gradient(90deg, #FF385C, #E31C5F);
 }
 
-.bar-card h4 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 12px;
+.bar-entry.unique .bar-content::before {
+    background: linear-gradient(90deg, #06466A, #054159);
+}
+
+.bar-entry.specialty .bar-content::before {
+    background: linear-gradient(90deg, #4CAF50, #2E7D32);
+}
+
+.bar-entry.chain .bar-content::before {
+    background: linear-gradient(90deg, #9C27B0, #673AB7);
+}
+
+.bar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.bar-title-section h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
     color: #222;
+}
+
+.bar-specialty {
+    background: linear-gradient(135deg, #722F37, #A0522D);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+.bar-entry.featured .bar-specialty {
+    background: linear-gradient(135deg, #FF385C, #E31C5F);
+}
+
+.bar-entry.unique .bar-specialty {
+    background: linear-gradient(135deg, #06466A, #054159);
+}
+
+.bar-entry.specialty .bar-specialty {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+}
+
+.bar-entry.chain .bar-specialty {
+    background: linear-gradient(135deg, #9C27B0, #673AB7);
+}
+
+.bar-rating {
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+}
+
+.bar-status {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.bar-description {
+    margin-bottom: 20px;
+}
+
+.bar-description p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    margin: 0;
+}
+
+.bar-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 24px;
+    margin-bottom: 20px;
+}
+
+.bar-info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #666;
+}
+
+.bar-info-item i {
+    color: #722F37;
+    font-size: 14px;
+    width: 16px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.bar-specialties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.specialty-tag {
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    border: 1px solid transparent;
+}
+
+.specialty-tag.wine {
+    background: linear-gradient(135deg, #f8f4ff, #f0ebff);
+    color: #722F37;
+    border-color: #d4c5ff;
+}
+
+.specialty-tag.food {
+    background: linear-gradient(135deg, #fff8f0, #fff5eb);
+    color: #8B4513;
+    border-color: #ffd4a3;
+}
+
+.specialty-tag.atmosphere {
+    background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
+    color: #06466A;
+    border-color: #b3d9ff;
+}
+
+.specialty-tag.location {
+    background: linear-gradient(135deg, #f1f8e9, #e8f5e8);
+    color: #2d5a2d;
+    border-color: #c3e6c3;
 }
 
 .bar-actions {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
-    margin-top: 16px;
+}
+
+.btn.compact {
+    padding: 8px 16px;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.btn-social {
+    background: linear-gradient(135deg, #4267B2, #365899);
+    color: white;
+}
+
+.btn-social:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(66, 103, 178, 0.4);
+}
+
+.btn-phone {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+}
+
+.btn-phone:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(76, 175, 80, 0.4);
 }
 
 /* Shop Categories */
@@ -1019,6 +1355,115 @@
     color: #FF385C;
 }
 
+/* Mobile Bars Timeline */
+@media (max-width: 768px) {
+    .bars-timeline {
+        padding: 20px 0;
+    }
+    
+    .bar-entry {
+        margin-bottom: 32px;
+    }
+    
+    .bar-marker {
+        margin-right: 16px;
+    }
+    
+    .bar-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+    }
+    
+    .bar-line {
+        height: 60px;
+        width: 2px;
+    }
+    
+    .bar-content {
+        padding: 20px;
+        border-radius: 16px;
+    }
+    
+    .bar-header {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+    
+    .bar-title-section h3 {
+        font-size: 20px;
+    }
+    
+    .bar-specialty {
+        align-self: flex-start;
+    }
+    
+    .bar-info-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .bar-info-item {
+        font-size: 12px;
+    }
+    
+    .bar-description p {
+        font-size: 14px;
+    }
+    
+    .bar-specialties {
+        gap: 6px;
+    }
+    
+    .specialty-tag {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+    
+    .bar-actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .btn.compact {
+        justify-content: center;
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bar-entry {
+        margin-bottom: 24px;
+    }
+    
+    .bar-marker {
+        margin-right: 12px;
+    }
+    
+    .bar-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+    
+    .bar-line {
+        height: 40px;
+    }
+    
+    .bar-content {
+        padding: 16px;
+    }
+    
+    .bar-title-section h3 {
+        font-size: 18px;
+    }
+    
+    .bar-description p {
+        font-size: 13px;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .guide-hero-content h1 {
@@ -1053,25 +1498,7 @@
         font-size: 14px;
     }
     
-    .guide-nav-grid {
-        display: flex;
-        justify-content: flex-start;
-        gap: 8px;
-        padding: 8px 16px;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-    
-    .guide-nav-item {
-        padding: 12px 16px;
-        font-size: 13px;
-        min-width: fit-content;
-        flex-shrink: 0;
-    }
-    
-    .guide-nav-item i {
-        font-size: 14px;
-    }
+    /* Mobile nav styles are now handled in the main mobile section above */
     
     .guide-section {
         padding: 60px 0;
@@ -1082,7 +1509,6 @@
     }
     
     .restaurant-grid,
-    .bar-grid,
     .shop-grid,
     .vineyard-grid,
     .guinguette-grid {
@@ -1098,7 +1524,6 @@
     }
     
     .restaurant-actions,
-    .bar-actions,
     .shop-actions,
     .vineyard-actions,
     .activity-actions,
@@ -1713,27 +2138,60 @@
     font-size: 14px;
 }
 
-/* Enhanced Restaurant Card */
+/* Enhanced Restaurant Card - Compact Version */
 .restaurant-card.enhanced-card {
     background: white;
-    border-radius: 20px;
+    border-radius: 16px;
     padding: 0;
-    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
     border: 2px solid transparent;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
     display: flex;
     flex-direction: column;
     height: 100%;
-    min-height: 680px;
+    min-height: 480px;
+}
+
+/* Ensure all restaurant cards have consistent structure */
+.restaurant-card.enhanced-card .restaurant-features {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.restaurant-card.enhanced-card .feature-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.restaurant-card.enhanced-card .feature {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+    font-size: 12px;
+    color: #666;
+    padding: 6px 10px;
+    background: rgba(6, 70, 106, 0.05);
+    border-radius: 6px;
+    border: 1px solid rgba(6, 70, 106, 0.1);
+}
+
+.restaurant-card.enhanced-card .feature i {
+    color: #FF385C;
+    font-size: 14px;
+    flex-shrink: 0;
 }
 
 .restaurant-card.enhanced-card .restaurant-image {
     width: 100%;
-    height: 200px;
-    border-radius: 20px 20px 0 0;
+    height: 160px;
+    border-radius: 16px 16px 0 0;
     overflow: hidden;
     margin-bottom: 0;
     position: relative;
@@ -1751,32 +2209,45 @@
 }
 
 .restaurant-card.enhanced-card .restaurant-header {
-    padding: 24px 28px 0 28px;
+    padding: 16px 20px 0 20px;
     flex-shrink: 0;
 }
 
+.restaurant-card.enhanced-card .distance-badge {
+    margin-bottom: 12px;
+    margin-top: 6px;
+    display: block;
+    width: fit-content;
+}
+
 .restaurant-card.enhanced-card .restaurant-details {
-    padding: 0 28px;
+    padding: 0 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
 .restaurant-card.enhanced-card .restaurant-description {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+}
+
+.restaurant-card.enhanced-card .restaurant-description p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
 }
 
 .restaurant-card.enhanced-card .restaurant-features {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
 
 .restaurant-card.enhanced-card .restaurant-specialties {
     margin-bottom: auto;
-    padding-bottom: 20px;
+    padding-bottom: 14px;
 }
 
 .restaurant-card.enhanced-card .restaurant-actions {
-    padding: 0 28px 28px 28px;
+    padding: 0 20px 20px 20px;
     margin-top: auto;
     flex-shrink: 0;
 }
@@ -1812,30 +2283,49 @@
 }
 
 .restaurant-info h4 {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 700;
-    margin: 0 0 12px 0;
+    margin: 0 0 8px 0;
     color: #222;
+    line-height: 1.2;
 }
 
 .restaurant-badges {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 8px;
     margin-bottom: 8px;
     align-items: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.restaurant-badges::-webkit-scrollbar {
+    display: none;
+}
+
+/* Ensure all badges have consistent sizing and stay on same line */
+.restaurant-badges .cuisine-badge,
+.restaurant-badges .price-badge,
+.restaurant-badges .rating-badge {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 16px;
+    white-space: nowrap;
+    line-height: 1;
+    flex-shrink: 0;
+    min-width: fit-content;
 }
 
 .cuisine-badge {
-    padding: 6px 12px;
-    border-radius: 16px;
-    font-size: 12px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
+    /* Inherits consistent sizing from .restaurant-badges rules above */
     gap: 4px;
-    height: 28px;
-    line-height: 1;
 }
 
 .cuisine-badge.brasserie {
@@ -1858,17 +2348,35 @@
     color: white;
 }
 
+.cuisine-badge.international {
+    background: linear-gradient(135deg, #9C27B0, #673AB7);
+    color: white;
+}
+
+.cuisine-badge.gastronomique {
+    background: linear-gradient(135deg, #B8860B, #DAA520);
+    color: white;
+}
+
+.cuisine-badge.francaise {
+    background: linear-gradient(135deg, #1976D2, #1565C0);
+    color: white;
+}
+
+.cuisine-badge.japonaise {
+    background: linear-gradient(135deg, #D32F2F, #C62828);
+    color: white;
+}
+
+.cuisine-badge.creperie {
+    background: linear-gradient(135deg, #F57C00, #EF6C00);
+    color: white;
+}
+
 .price-badge {
     background: linear-gradient(135deg, #FF385C, #E31C5F);
     color: white;
-    padding: 6px 12px;
-    border-radius: 16px;
-    font-size: 12px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    height: 28px;
-    line-height: 1;
+    /* Inherits consistent sizing from .restaurant-badges rules above */
 }
 
 .price-badge.budget {
@@ -1883,18 +2391,15 @@
     background: linear-gradient(135deg, #E91E63, #C2185B);
 }
 
+.price-badge.luxury {
+    background: linear-gradient(135deg, #8E24AA, #7B1FA2);
+}
+
 .rating-badge {
     background: linear-gradient(135deg, #FFD700, #FFA500);
     color: #8B4513;
-    padding: 6px 12px;
-    border-radius: 16px;
-    font-size: 12px;
-    font-weight: 600;
     border: 1px solid #DAA520;
-    display: flex;
-    align-items: center;
-    height: 28px;
-    line-height: 1;
+    /* Inherits consistent sizing from .restaurant-badges rules above */
 }
 
 .restaurant-status {
@@ -1912,6 +2417,14 @@
 
 .restaurant-status.closed {
     background: linear-gradient(135deg, #f44336, #d32f2f);
+}
+
+.restaurant-status.busy {
+    background: linear-gradient(135deg, #FF9800, #F57C00);
+}
+
+.restaurant-status.favorite {
+    background: linear-gradient(135deg, #E91E63, #C2185B);
 }
 
 .status-dot {
@@ -1979,13 +2492,13 @@
 }
 
 .restaurant-specialties h5 {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     color: #333;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 4px;
 }
 
 .restaurant-specialties h5 i {
@@ -1995,15 +2508,15 @@
 .specialty-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 4px;
 }
 
 .specialty-tag {
     background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
     color: #06466A;
-    padding: 4px 10px;
-    border-radius: 12px;
-    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 10px;
     font-weight: 500;
     border: 1px solid #b3d9ff;
 }
@@ -2039,12 +2552,12 @@
 /* Responsive Restaurant Filter */
 @media (max-width: 768px) {
     .restaurant-filter-section {
-        padding: 20px;
-        margin: 24px 0;
+        padding: 16px;
+        margin: 20px 0;
     }
     
     .filter-row {
-        gap: 16px;
+        gap: 12px;
     }
     
     .filter-buttons {
@@ -2052,13 +2565,13 @@
     }
     
     .filter-btn {
-        padding: 8px 12px;
-        font-size: 12px;
+        padding: 6px 10px;
+        font-size: 11px;
     }
     
     .restaurant-header {
         flex-direction: column;
-        gap: 12px;
+        gap: 8px;
         align-items: stretch;
     }
     
@@ -2068,50 +2581,108 @@
     
     .restaurant-details-grid {
         grid-template-columns: 1fr;
-        gap: 12px;
+        gap: 8px;
     }
     
     .restaurant-card.enhanced-card {
-        padding: 24px;
+        min-height: 420px;
+        margin-bottom: 6px;
+    }
+    
+    .restaurant-card.enhanced-card .restaurant-header {
+        padding: 12px 16px 0 16px;
+    }
+    
+    .restaurant-card.enhanced-card .restaurant-details {
+        padding: 0 16px;
+    }
+    
+    .restaurant-card.enhanced-card .restaurant-actions {
+        padding: 0 16px 16px 16px;
+    }
+    
+    .restaurant-card.enhanced-card .restaurant-image {
+        height: 140px;
     }
     
     .restaurant-info h4 {
-        font-size: 22px;
+        font-size: 18px;
+    }
+    
+    /* Allow badges to wrap on mobile but still prioritize same line */
+    .restaurant-badges {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    
+    .restaurant-badges .cuisine-badge,
+    .restaurant-badges .price-badge,
+    .restaurant-badges .rating-badge {
+        font-size: 11px;
+        padding: 4px 8px;
+        height: 24px;
     }
 }
 
 @media (max-width: 480px) {
     .filter-group {
-        gap: 8px;
-    }
-    
-    .filter-group label {
-        font-size: 14px;
-    }
-    
-    .filter-btn {
-        padding: 6px 10px;
-        font-size: 11px;
-        gap: 4px;
-    }
-    
-    .restaurant-badges {
         gap: 6px;
     }
     
-    .cuisine-badge,
-    .price-badge,
-    .rating-badge {
-        padding: 4px 8px;
-        font-size: 11px;
+    .filter-group label {
+        font-size: 13px;
+    }
+    
+    .filter-btn {
+        padding: 5px 8px;
+        font-size: 10px;
+        gap: 3px;
+    }
+    
+    .restaurant-badges {
+        gap: 4px;
     }
     
     .restaurant-card.enhanced-card {
-        padding: 20px;
+        min-height: 380px;
+        margin-bottom: 4px;
+    }
+    
+    .restaurant-card.enhanced-card .restaurant-header {
+        padding: 10px 12px 0 12px;
+    }
+    
+    .restaurant-card.enhanced-card .restaurant-details {
+        padding: 0 12px;
+    }
+    
+    .restaurant-card.enhanced-card .restaurant-actions {
+        padding: 0 12px 12px 12px;
+    }
+    
+    .restaurant-card.enhanced-card .restaurant-image {
+        height: 120px;
+    }
+    
+    .restaurant-card.enhanced-card .restaurant-description p {
+        font-size: 13px;
+    }
+    
+    .restaurant-card.enhanced-card .feature {
+        font-size: 11px;
+        padding: 4px 8px;
     }
     
     .restaurant-info h4 {
-        font-size: 20px;
+        font-size: 16px;
+    }
+    
+    .restaurant-badges .cuisine-badge,
+    .restaurant-badges .price-badge,
+    .restaurant-badges .rating-badge {
+        font-size: 10px;
+        padding: 3px 6px;
+        height: 20px;
     }
 }
 

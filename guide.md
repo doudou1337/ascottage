@@ -250,3 +250,6 @@ Provide detailed descriptions, event calendars, and contact information for each
 - Seasonal activities vary greatly, with summer offering the best water activities and guinguette experiences
 
 *This guide is designed to help you make the most of your stay in the beautiful Loire Valley region. Enjoy your visit!*
+
+
+Add mo
