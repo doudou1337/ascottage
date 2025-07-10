@@ -24,23 +24,326 @@
   "guinguettes": {
     "title": "Riverside Cafés - Our Summer Recommendation ☀️",
     "experience_title": "🌞 The Essential Loire Summer Experience",
-    "description": "<strong>Guinguettes</strong> are riverside restaurants open only during the beautiful season (April to October). These establishments offer simple cuisine and drinks in an enchanting and very relaxing setting - perfect for enjoying nature and the Loire river view. Often featuring <strong>live music</strong>, it's the ideal place to savor a <strong>fresh rosé</strong> at sunset."
+    "description": "<strong>Guinguettes</strong> are riverside restaurants open only during the beautiful season (April to October). These establishments offer simple cuisine and drinks in an enchanting and very relaxing setting - perfect for enjoying nature and the Loire river view. Often featuring <strong>live music</strong>, it's the ideal place to savor a <strong>fresh rosé</strong> at sunset.",
+    "caparica": {
+      "description": "You can walk in nature around the island and visit the very beautiful small village and its church known for its summer pilgrimage."
+    },
+    "barbe_maman": {
+      "badge": "📍 Our daily spot - The closest one",
+      "description": "Our daily spot! At Port Maillard, relaxed atmosphere by the Loire. Delicious mixed platters and excellent value for money. The perfect place for an impromptu aperitif."
+    },
+    "port_thibault": {
+      "description": "Near downtown Angers with a magnificent view and a beautiful park for walking by the river. Ideal setting for lunch or an aperitif."
+    },
+    "heron_carre": {
+      "badge": "🎉 The most lively in downtown Angers",
+      "description": "The liveliest place in downtown Angers! Cool and relaxed atmosphere, excellent selection of draft beers. Perfect for an evening with friends in an urban setting by the Maine."
+    },
+    "la_derive": {
+      "badge": "🍺 Local beer specialist",
+      "description": "Excellent concept at Port Saint-Maur! Specialized in local craft beers and quality products. Relaxed atmosphere by the Loire, perfect for discovering regional flavors."
+    },
+    "guinguette_jojo": {
+      "badge": "🏰 The oldest and most famous in Anjou",
+      "description": "The oldest and most famous of the Anjou guinguettes! Exceptional setting on the banks of the Loire, Loire riverbank specialties, musical entertainment and panoramic view of the sunset."
+    },
+    "features": {
+      "vue_loire": "🌅 Loire view",
+      "jolie_village": "🏘️ Beautiful village",
+      "vins_locaux": "🍷 Local wines",
+      "parc_promenade": "🏞️ Walking park",
+      "vue_loire_alt": "🌊 Loire view",
+      "parking_facile": "🚗 Easy parking",
+      "bieres_pression": "🍺 Draft beers",
+      "centre_ville": "🏙️ Downtown",
+      "vue_maine": "🌊 Maine view",
+      "bieres_artisanales": "🍺 Craft beers",
+      "produits_locaux": "🥘 Local products",
+      "ambiance_nature": "🌿 Nature atmosphere",
+      "animations_musicales": "🎵 Musical entertainment",
+      "vue_panoramique": "🌅 Panoramic view",
+      "patrimoine_unesco": "🏛️ UNESCO Heritage",
+      "aires_jeux": "👨‍👩‍👧‍👦 Play areas"
+    }
   },
   "restaurants": {
     "title": "Restaurants",
     "intro": "We lived 4 years in downtown Angers and tested many restaurants. Here are our favorite spots. Don't forget to book as early as possible!",
     "angers_title": "Restaurants in Angers (20 minutes by car)",
-    "loire_authion_title": "Loire-Authion Restaurants"
+    "loire_authion_title": "Loire-Authion Restaurants",
+    "filter_cuisine": "Cuisine:",
+    "filter_price": "Price:",
+    "bouillon_saint_laud": {
+      "description": "Welcoming brasserie with a varied menu at very reasonable prices and efficient, friendly service. Warm atmosphere opposite Saint-Laud station.",
+      "features": {
+        "hours": "7am-midnight daily",
+        "wifi": "Free WiFi",
+        "station": "Opposite the station",
+        "bar": "Bar & Cocktails"
+      },
+      "specialties": {
+        "profiteroles": "🥟 Profiteroles",
+        "plats_traditionnels": "🍖 Traditional dishes"
+      }
+    },
+    "bistrot_des_ducs": {
+      "badge": "💎 Our favorite #1",
+      "description": "After testing many restaurants in big cities around the world, \"Des Duc\" remains my favorite French bistro, for the quality, professional service and reasonable price.",
+      "features": {
+        "cuisine_traditionnelle": "Traditional cuisine",
+        "carte_vins": "Wine list",
+        "parking": "Nearby parking",
+        "favori": "Our favorite #1"
+      },
+      "specialties": {
+        "plats_traditionnels": "🥩 Traditional dishes",
+        "vins_loire": "🍷 Loire wines",
+        "fromages": "🧀 Regional cheeses"
+      }
+    },
+    "kazumi": {
+      "description": "Not many Japanese restaurants in Angers, this one is the best. Only 12 seats and 1 chef. Daily menu decided by the chef, Japanese teppanyaki with French touch.",
+      "features": {
+        "places": "Only 12 seats",
+        "chef": "1 unique chef",
+        "menu_quotidien": "Daily menu",
+        "teppanyaki": "Teppanyaki"
+      },
+      "specialties": {
+        "menu_degustation": "🍱 Tasting menu",
+        "teppanyaki": "🔥 Teppanyaki",
+        "fusion": "🇫🇷 Franco-Japanese fusion"
+      }
+    },
+    "la_cantina": {
+      "description": "Cute little bistro, always full. Classic bistro food, good price. Great for a cozy evening or a tasty lunch break.",
+      "features": {
+        "ambiance": "Warm atmosphere",
+        "prix": "Affordable prices",
+        "service": "Fast service",
+        "populaire": "Popular bistro"
+      },
+      "specialties": {
+        "salades": "🥗 Composed salads",
+        "plats_jour": "🍖 Daily specials",
+        "cafe": "☕ Excellent coffee"
+      }
+    },
+    "affames": {
+      "description": "French bistro with a modern touch, located in a cute Parisian-style square near the railway station. One of our favorite lunch places.",
+      "features": {
+        "gare": "Near the station",
+        "moderne": "Modern cuisine",
+        "parisien": "Parisian style",
+        "dejeuner": "Perfect for lunch"
+      },
+      "specialties": {
+        "moderne": "🥘 Modern cuisine",
+        "vins": "🍷 Selected wines",
+        "contemporain": "🌟 Contemporary touch"
+      }
+    },
+    "autour_cep": {
+      "description": "Traditional French food, tasty and generous, no fancy decor, just a place for food and wine. Good choice for dinner.",
+      "features": {
+        "cave_vins": "Wine cellar",
+        "portions": "Generous portions",
+        "familiale": "Family atmosphere",
+        "diner": "Ideal for dinner"
+      },
+      "specialties": {
+        "viandes": "🍖 Grilled meats",
+        "vins_loire": "🍷 Loire wines",
+        "fromages": "🧀 Local cheeses"
+      }
+    },
+    "marie_milgoules": {
+      "badge": "🥞 Our favorite crêperie",
+      "description": "There are many crêperies in this area, this is our favorite. Located in a little lane opposite the Castle. Cute decor, no fuss classic menu, nice cider.",
+      "features": {
+        "chateau": "Opposite the Castle",
+        "cidre": "Excellent cider",
+        "deco": "Authentic decor",
+        "frais": "Fresh products"
+      },
+      "specialties": {
+        "completes": "🥞 Complete crêpes",
+        "sucrees": "🍯 Sweet crêpes",
+        "cidre": "🍺 Breton cider"
+      }
+    },
+    "restaurant_sens": {
+      "badge": "Aiming for 2nd star",
+      "description": "Great venue, fine dining, we believe they are aiming for the second Michelin star in Angers. Better try before they get the star and raise the price!",
+      "features": {
+        "michelin": "Aiming for 2nd Michelin star",
+        "raffinee": "Fine dining",
+        "reservation": "Reservation required",
+        "exclusive": "Exclusive experience"
+      },
+      "specialties": {
+        "degustation": "🍽️ Tasting menu",
+        "etoile": "⭐ Future 2nd star",
+        "accords": "🍷 Wine pairings"
+      }
+    },
+    "lait_thym_sel": {
+      "badge": "⭐ 1 Michelin star",
+      "description": "Fine dining with one Michelin star, we liked it since they started, creative food always, but can be a bit over-priced now. If you are looking for something special, book early.",
+      "features": {
+        "michelin": "1 Michelin star",
+        "creative": "Creative cuisine",
+        "reservation": "Book early",
+        "debuts": "Loved since beginning"
+      },
+      "specialties": {
+        "etoile": "⭐ Starred menu",
+        "creative": "🎨 Creative cuisine",
+        "occasion": "🎆 Special occasion"
+      }
+    },
+    "loire_authion_restaurants": {
+      "la_bafouille": {
+        "badge": "Exceptional view",
+        "description": "You cannot find better view than this. Just enjoy a glass of rosé and the best Loire view in front of you. Even parking in this little town 'La Pointe' is fun and beautiful.",
+        "specialties": {
+          "rose": "🍷 Loire rosé",
+          "coucher_soleil": "🌅 Sunset",
+          "photo": "📸 Perfect photo"
+        }
+      },
+      "route_du_sel": {
+        "badge": "Must-visit summer",
+        "description": "A must go place especially for summer. Stunning view of Loire, friendly environment. No over the top menu, I would recommend to order a nice bottle of wine and a simple plate.",
+        "specialties": {
+          "bouteille": "🍷 Nice bottle of wine",
+          "simple": "🥗 Simple dishes",
+          "vue": "🌅 Loire view"
+        }
+      },
+      "douceurs_pilessis": {
+        "badge": "Neighborhood restaurant",
+        "description": "A typical neighborhood restaurant owned by a French couple. Good value for lunch set, and the husband will try to speak English which is cute.",
+        "specialties": {
+          "dejeuner": "🍽️ Lunch menu",
+          "couple": "👫 Lovely couple",
+          "anglais": "💬 English-speaking service"
+        }
+      },
+      "bellus_fortis": {
+        "badge": "Country bistro",
+        "description": "Another neighborhood restaurant, if you don't want to cook in our little kitchen, it's not a bad choice for a bite, like a typical French countryside bistro.",
+        "specialties": {
+          "encas": "🥪 Quick bites",
+          "bistrot": "🍺 Typical bistro",
+          "cuisine": "🏡 Cooking alternative"
+        }
+      }
+    },
+    "status": {
+      "ouvert_7j": "Open 7 days",
+      "ouvert_aujourd_hui": "Open today",
+      "sur_reservation": "By reservation",
+      "toujours_plein": "Always full",
+      "excellent_diner": "Excellent for dinner",
+      "notre_creperie": "Our favorite crêperie",
+      "vise_etoile": "Aiming for 2nd star",
+      "une_etoile": "1 Michelin star"
+    }
   },
   "bars": {
-    "title": "Bars"
+    "title": "Wine Bars in Angers",
+    "intro": "Discover our selection of exceptional wine bars in downtown Angers. Each with its unique character and specialty.",
+    "le_cercle_rouge": {
+      "specialty": "🍷 Natural Wine Bar",
+      "description": "Our favorite wine bar! Specialized in Loire natural wines with producers like Mosse and Villemade. Unique atmosphere inspired by the film \"Le Cercle Rouge\" with bottles hanging from the ceiling. DJ and outdoor terrace.",
+      "features": {
+        "vins_naturels": "🍇 Loire natural wines",
+        "charcuterie": "🧀 Charcuterie platters",
+        "dj": "🎵 DJ · Vinyl",
+        "historique": "🏛️ Historic center"
+      },
+      "address": "4 Rue des 2 Haies · Ralliement District",
+      "hours": "Tue-Sat 5:30pm-2am · Closed Sun-Mon",
+      "price": "Reasonable prices · Natural wines"
+    },
+    "barco_vino": {
+      "specialty": "⛵ Floating Wine Bar",
+      "description": "Unique experience! Floating wine bar on a barge facing Angers Castle. Over 300 references of organic and biodynamic wines. Panoramic view of the Maine and historical monuments. Mathilde (sommelier) will guide you.",
+      "features": {
+        "vins_bio": "🍷 300+ organic wines",
+        "ceviche": "🐟 Ceviche · Pastrami",
+        "peniche": "⛵ Floating barge",
+        "chateau": "🏰 Castle view"
+      },
+      "address": "Quai des Carmes · Barge on the Maine",
+      "hours": "Tue-Sat 5pm-1am",
+      "price": "~€20/person · Delivery available"
+    },
+    "le_1745": {
+      "specialty": "🧀 Aperitif Temple",
+      "description": "\"The aperitif temple\"! Unique concept: compose your own platter among 40+ French artisanal products. Exceptional charcuterie and aged cheeses. Perfect for an aperitif dinner in a friendly atmosphere.",
+      "features": {
+        "artisanaux": "🧀 40+ artisanal products",
+        "accords": "🍷 Wine pairings",
+        "composes": "🍽️ Composed platters",
+        "livraison": "🚚 Delivery"
+      },
+      "address": "3 Rue Saint-Etienne · Downtown",
+      "hours": "Mon-Sat 5:45pm-11pm/midnight",
+      "price": "€6-10/glass · 30min delivery"
+    },
+    "trois_pinardiers": {
+      "specialty": "⚓ Wine Pirates",
+      "description": "\"Wine pirates\" concept with nautical theme. Over 100 carefully selected wines, renewed monthly. 30min delivery service and educational tastings with maps and charts.",
+      "features": {
+        "vins_rotes": "🍷 100+ rotating wines",
+        "plateaux": "🥩 Meat/cheese platters",
+        "nautique": "⚓ Nautical theme",
+        "livraison_rapide": "🚚 Fast delivery"
+      },
+      "address": "66 Rue du Mail · Angers",
+      "hours": "Open from 8am · Variable hours",
+      "price": "Competitive prices · Express delivery"
+    }
   },
   "shops": {
     "title": "Shops & Commerce",
     "gourmet_title": "Gourmet Groceries",
     "bakeries_title": "Local Bakeries",
     "supermarkets_title": "Supermarkets",
-    "specialized_title": "Specialized Shops"
+    "specialized_title": "Specialized Shops",
+    "le_luluberlu": {
+      "description": "We love this place since the first day it opened. If you are looking for the best local cheeses and cold cuts, wines and a lovely owner, go there!"
+    },
+    "des_halles": {
+      "description": "Paris has 'Bon Marché', we have this classic gourmet shop in Angers. Great local products, much better prices."
+    },
+    "biltoki": {
+      "description": "The trendy marketplace of Angers. Lively atmosphere with gourmet food and drinks. You can always find something you like, facing the Castle."
+    },
+    "epicerie_premium": {
+      "description": "The best gourmet grocery to find the finest local specialties. Exceptional selection of regional and artisanal products."
+    },
+    "maison_becam": {
+      "description": "Artisanal bakery recognized for the quality of its breads and pastries."
+    },
+    "ptit_moulin": {
+      "description": "Traditional bakery with fresh daily products."
+    },
+    "super_u_maze": {
+      "description": "The biggest supermarket nearby, you can find everything you need there."
+    },
+    "carrefour_contact": {
+      "description": "Multiple locations in the region for your local shopping."
+    },
+    "ferme_sainte_marthe": {
+      "badge": "Organic & Seeds",
+      "description": "Seeds supplier and organic shop. Excellent selection of organic products with bread, seasonal and organic vegetables, essential fresh products, wine and beer cellar, numerous wellness products."
+    },
+    "boucherie_royale": {
+      "description": "Local butcher offering quality meats and regional specialties."
+    }
   },
   "activities": {
     "title": "Activities by Season",
@@ -50,12 +353,175 @@
     "spring": "Spring",
     "summer": "Summer - THE Season Not to Miss! 🌞",
     "autumn": "Autumn",
-    "winter": "Winter"
+    "winter": "Winter",
+    "terra_botanica": {
+      "description": "The first European park dedicated to the plant world."
+    },
+    "velo_angers": {
+      "description": "Enjoy the bike paths and the Loire by Bike route that passes near us."
+    },
+    "villages_fleurs": {
+      "description": "Discover the flowering villages of the region in spring."
+    },
+    "summer_guinguettes": {
+      "title": "🍷 Riverside Cafés - The Essential Experience",
+      "description": "**Our #1 recommendation**: The riverside cafés are open and offer the quintessence of Loire summer. Rosé at sunset, Loire view, relaxed atmosphere.",
+      "status": "Open now!",
+      "recommendation": "Tip: Book in late afternoon for sunset aperitif"
+    },
+    "summer_nautique": {
+      "title": "🚣 Water Activities on Loire",
+      "description": "Kayak, canoe, stand-up paddle... Explore the Loire from the water! Several water sports centers nearby.",
+      "status": "Perfect in summer",
+      "features": {
+        "kayak": "🛶 Kayak rental",
+        "baignade": "🏊 Swimming areas",
+        "balades": "🌊 River cruises"
+      }
+    },
+    "summer_velo": {
+      "title": "🚴 Loire by Bike",
+      "description": "Cycle the 900 km of bike paths along the Loire. Routes adapted to all levels, with numerous heritage stops.",
+      "status": "Ideal in summer",
+      "features": {
+        "chateaux": "🏰 Castles",
+        "vignobles": "🍇 Vineyards",
+        "nature": "🌳 Nature"
+      }
+    },
+    "summer_festivals": {
+      "title": "🎪 Festivals & Events",
+      "description": "Summer is rich in festivals: music, theater, gastronomy. Check the cultural calendar of Angers and the region.",
+      "status": "July - August"
+    },
+    "summer_note": "**It's now!** Summer is the magical period when the Loire comes alive. Enjoy the long sunny days and the Loire lifestyle.",
+    "autumn_vendanges": {
+      "description": "Participate in the harvest in Loire vineyards."
+    },
+    "autumn_randonnees": {
+      "description": "Enjoy the autumn colors during forest hikes."
+    },
+    "winter_marches_noel": {
+      "description": "Discover the Christmas markets of Angers and surroundings."
+    },
+    "winter_degustations": {
+      "description": "Ideal season to visit cellars and taste Loire wines."
+    }
   },
   "vineyards": {
     "title": "Vineyards & Wine Cellars",
     "famous_wines_title": "Famous Wines of the Loire Valley",
-    "famous_wines_description": "The region around Angers is renowned for its exceptional wines. Here are the appellations we recommend:"
+    "famous_wines_description": "The region around Angers is renowned for its exceptional wines. Here are the appellations we recommend:",
+    "chateau_epire": {
+      "description": "Domain renowned for its dry white wines from Savennières, in an exceptional historical setting."
+    },
+    "cave_robert_marcel": {
+      "description": "Traditional cellar specializing in Saumur sparkling wines, carved into the tufa."
+    },
+    "caves_marson": {
+      "description": "Troglodyte caves offering guided tours and tastings in a unique setting."
+    },
+    "domaine_giraudieres": {
+      "description": "Family wine estate offering organic wines and tastings in a friendly setting."
+    },
+    "wines": {
+      "savennieres": {
+        "title": "Savennières",
+        "description": "Aromatic, elegant and mineral. Timeless and refined white wine to keep for at least 5 years. Three appellations: AOC Savennières, Roche aux Moines, Coulée de Serrant.",
+        "ceepage": "🍇 **Grape:** Chenin Blanc",
+        "terroir": "🏔️ **Terroir:** Schist facing the Loire",
+        "superficie": "📍 **Area:** 350 hectares",
+        "color": "🎨 **Color:** Dry White Wine",
+        "tags": {
+          "coup_coeur": "💎 Our Favorite",
+          "mineral": "🍯 Mineral",
+          "elegant": "🌿 Elegant",
+          "garde": "⏳ Aging 5-20 years"
+        }
+      },
+      "coteaux_layon": {
+        "title": "Coteaux du Layon",
+        "description": "Largest sweet wine appellation of the Loire. Late harvest with noble rot, developing aromas of dried fruits, exotic fruits and citrus. Six villages can add their name.",
+        "color": "🎨 **Color:** Sweet White Wine",
+        "tags": {
+          "grandes_occasions": "🥂 Special occasions",
+          "moelleux": "🍯 Sweet",
+          "fruits_confits": "🍑 Candied fruits",
+          "miel": "🍯 Honey & Quince",
+          "foie_gras": "🧀 Foie gras"
+        }
+      },
+      "quarts_chaume": {
+        "title": "Quarts de Chaume Grand Cru",
+        "description": "Only Grand Cru of the Loire (2011). Golden and complex wines with notes of candied fruits and honey. Exceptional microterroir with noble rot, aging 20-25 years minimum.",
+        "color": "🎨 **Color:** Grand Cru",
+        "tags": {
+          "grand_cru": "👑 Grand Cru",
+          "prestige": "🥇 Prestige",
+          "liquoreux": "🍯 Sweet wine",
+          "collectionneur": "💎 Collector"
+        }
+      },
+      "saumur_champigny": {
+        "title": "Saumur-Champigny",
+        "description": "Reference red wine of the Loire. Bright garnet color, red fruit aromas (raspberry, blackcurrant), violet floral notes. Light to medium body, lively acidity.",
+        "color": "🎨 **Color:** Red Wine",
+        "tags": {
+          "fruits_rouges": "🍇 Red fruits",
+          "floral": "🌸 Floral",
+          "garde": "⏳ Aging 5-20 years",
+          "viandes": "🥩 Grilled meats"
+        }
+      },
+      "anjou_villages": {
+        "title": "Anjou Villages",
+        "description": "AOC created in 1991 for exceptional reds. Deep red color, black fruit aromas. Marked tannins, aging 5-6 years. Perfect with grilled meats served at 16°C.",
+        "color": "🎨 **Color:** Red Wine",
+        "tags": {
+          "fruits_noirs": "🍇 Black fruits",
+          "tannique": "💪 Tannic",
+          "viandes_rouges": "🥩 Red meats",
+          "terroir": "🌿 Terroir"
+        }
+      },
+      "bonnezeaux": {
+        "title": "Bonnezeaux",
+        "description": "Historic sweet wine (1055), the lightest of sweet wines. Golden color with orange reflections, dried and white fruit aromas, floral notes. Indefinite aging.",
+        "color": "🎨 **Color:** Sweet White Wine",
+        "tags": {
+          "historique": "🏛️ Historic",
+          "gelee_fruits": "🍯 Fruit jelly",
+          "floral": "🌸 Floral",
+          "foie_gras": "🧀 Foie gras"
+        }
+      },
+      "cremant_loire": {
+        "title": "Crémant de Loire",
+        "description": "Traditional method, investment from major Champagne houses, promising future. White or rosé, perfect for aperitif or festive toast. Superior quality guaranteed.",
+        "color": "🎨 **Color:** Sparkling Wine",
+        "tags": {
+          "bulles": "🍾 Fine bubbles",
+          "aperitif": "🥂 Aperitif",
+          "fete": "🎉 Party",
+          "traditionnelle": "✨ Traditional method"
+        }
+      },
+      "rose_anjou": {
+        "title": "Rosé d'Anjou",
+        "description": "Light rosé wines to drink fresh under the pergola. Perfect accompaniment for charcuterie and composed salads. Summer freshness and conviviality.",
+        "color": "🎨 **Color:** Rosé Wine",
+        "tags": {
+          "leger": "🌿 Light",
+          "estival": "🌞 Summer",
+          "charcuterie": "🥗 Charcuterie",
+          "frais": "❄️ Fresh"
+        }
+      }
+    },
+    "vineyard_map": {
+      "title": "🗺️ Vineyard Map & Winemaker Addresses",
+      "description": "Discover all the vineyards in the region and find the exact addresses of the producers"
+    }
   },
   "booking_cta": {
     "guinguettes": "🏡 Stay with us to discover these riverside treasures just minutes away",
@@ -84,13 +550,27 @@
     "budget": "€",
     "moderate": "€€",
     "expensive": "€€€",
+    "luxury": "€€€€",
     "brasserie": "Brasserie",
     "traditional": "Traditional",
     "gastronomique": "Fine Dining",
     "bistrot": "Bistro",
+    "francaise": "French",
+    "japonaise": "Japanese",
+    "brasserie_cuisine": "Brasserie",
+    "creperie_cuisine": "Crêperie",
+    "french_cuisine": "French",
+    "japanese_cuisine": "Japanese",
+    "budget_price": "€",
+    "moderate_price": "€€",
+    "expensive_price": "€€€",
+    "luxury_price": "€€€€",
     "filter_by": "Filter by",
     "our_recommendation": "Our recommendation:",
-    "egg_mayonnaise": "classic egg mayonnaise"
+    "egg_mayonnaise": "classic egg mayonnaise",
+    "call": "Call",
+    "maps": "Maps",
+    "voir_maps": "View Maps"
   },
   "footer": {
     "copyright": "© 2025 A.S. Cottage - Alexis & Sylvia. All rights reserved.",
